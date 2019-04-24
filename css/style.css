@@ -43,7 +43,8 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
+a:hover,
+a:focus {
   color: #E799FF;
 }
 
@@ -51,6 +52,35 @@ a:hover {
 a:active {
   color: #CC80FF;
 }
+
 img {
   width: 100%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #19141A;
+  color: #ffffff !important;
+  font-family: "Rokkitt", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.2s opacity;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
+.button.contact {
+background-color: transparent;
+color: #ffffff !important;
+border: 2px solid #cacaca;
+}
+
+.button.contact:hover {
+  color: #CC80FF;
 }
