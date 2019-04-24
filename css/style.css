@@ -1,0 +1,47 @@
+body {
+  background-color: #19141a;
+  color: #cacaca;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #cacaca;
+}
+
+h1 {
+  font-family: "Rokkitt", serif;
+  color: #e4d8cb;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Rokkitt", serif;
+  font-weight: 400;
+  color: #e4d8cb;
+  font-size: 32px;
+}
+
+/* unvisited link */
+a:link {
+  color: #CC80FF;
+}
+
+/* visited link */
+a:visited {
+  color: #C300FF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #E799FF;
+}
+
+/* selected link */
+a:active {
+  color: #CC80FF;
+}
