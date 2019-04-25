@@ -21,6 +21,12 @@ body {
   font-weight: 300;
 }
 
+header {
+  background-color: #E4D8CB;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 p {
   font-family: "Lato", sans-serif;
   font-size: 18px;
@@ -85,10 +91,12 @@ img {
 
 #ombulari-section {
   background-color: #ffffff;
+  padding: 40px 20px;
 }
 
 #ink-tank-section {
-
+  background-color: #cacaca;
+  padding: 40px 20px;
 }
 
 /* ----- END Home IDs ----- */
