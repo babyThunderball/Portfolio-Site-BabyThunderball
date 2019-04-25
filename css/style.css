@@ -70,6 +70,89 @@ img {
   width: 100%;
 }
 
+/* ----- Home IDs ----- */
+#hero-home {
+
+}
+
+#work {
+
+}
+
+#ombulari-section {
+
+}
+
+#ink-tank-section {
+
+}
+
+/* ----- END Home IDs ----- */
+
+/* ----- Footer IDs ----- */
+
+#contact {
+
+}
+
+#copyright {
+
+}
+
+/* ----- END Footer IDs ----- */
+
+/* ----- About IDs ----- */
+
+#hero-about {
+
+}
+
+#story {
+
+}
+
+#story-col {
+
+}
+
+#skills-n-tools-col {
+
+}
+
+#skills-col {
+
+}
+
+#tools-col {
+
+}
+
+/* ----- END About IDs ----- */
+
+/* ----- Om:bulari IDs ----- */
+
+#hero-ombulari {
+
+}
+
+#ombulari-table {
+
+}
+
+/* ----- END Om:bulari IDs ----- */
+
+/* ----- Ink Tank IDs ----- */
+
+#hero-ink-tank {
+
+}
+
+#ink-tank-table {
+
+}
+
+/* ----- END Ink Tank IDs ----- */
+
 .button {
   display: inline-block;
   background-color: #19141A;
