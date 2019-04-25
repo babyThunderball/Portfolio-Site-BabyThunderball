@@ -70,6 +70,10 @@ img {
   width: 100%;
 }
 
+.black-currant-text {
+  color: #19141A !important;
+}
+
 /* ----- Home IDs ----- */
 #hero-home {
 
@@ -80,7 +84,7 @@ img {
 }
 
 #ombulari-section {
-
+  background-color: #ffffff;
 }
 
 #ink-tank-section {
