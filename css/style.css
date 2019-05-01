@@ -108,6 +108,11 @@ img, svg {
 .black-currant-text, .black-currant-text p {
   color: #19141A;
 }
+/* ----- Layout styling ----- */
+
+.container {
+  padding: 0 15px;
+}
 
 /* ----- Home IDs ----- */
 #hero-home {
