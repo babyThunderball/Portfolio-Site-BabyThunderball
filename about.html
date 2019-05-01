@@ -5,8 +5,11 @@
   <meta charset="utf-8">
   <meta name="author" content="Jodi N. Bennett">
   <meta name="description" content="UX Design portfolio for Jodi N. Bennett, UX Architect.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Rokkitt:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -16,55 +19,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>About | BabyThunderball | UX Architect | Brighton, UK</title>
-  <style>
-    body {
-      background-color: #19141a;
-      color: #cacaca;
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-    }
-
-    p {
-      font-family: "Lato", sans-serif;
-      font-size: 18px;
-      font-weight: 300;
-      color: #cacaca;
-    }
-
-    h1 {
-      font-family: "Rokkitt", serif;
-      color: #e4d8cb;
-      font-size: 48px;
-      font-weight: 400;
-    }
-
-    h2 {
-      font-family: "Rokkitt", serif;
-      font-weight: 400;
-      color: #e4d8cb;
-      font-size: 32px;
-    }
-
-    /* unvisited link */
-    a:link {
-      color: #CC80FF;
-    }
-
-    /* visited link */
-    a:visited {
-      color: #C300FF;
-    }
-
-    /* mouse over link */
-    a:hover {
-      color: #E799FF;
-    }
-
-    /* selected link */
-    a:active {
-      color: #CC80FF;
-    }
-  </style>
 </head>
 
 <body>
@@ -170,7 +124,7 @@
   </header>
   <main>
     <!--TITLE & IMAGE SECTION-->
-    <div>
+    <div id="hero-about">
 
       <h1>ABOUT</h1>
       <picture>
@@ -182,7 +136,7 @@
     <!--END TITLE & IMAGE SECTION-->
 
     <!--STORY & SKILLS COLUMNS WRAPPER-->
-    <div>
+    <div id="story">
       <!--STORY COLUMN-->
       <div id="story-col">
         <h2>My Story</h2>
@@ -194,7 +148,7 @@
         <p>My time in customer service and managing support put me on the frontline of the user experience and has made me more <strong>empathetic</strong> towards the humans on the receiving end of products and services.</p>
         <p>From a young age, I’ve always wanted to <strong>help make life easier</strong> for people. Now, with an employer who knows what it means to <strong>make a difference</strong> in the world, I can put my <strong>extensive UX skill
             set</strong> to use doing just that!</p>
-        <a href="files/Bennett-Jodi-N-CV.pdf">Download my CV</a>
+        <a href="files/Bennett-Jodi-N-CV.pdf" class="button">Download my CV</a>
       </div>
       <!--END STORY COLUMN-->
 <!--ADD A VIDEO OF ME PLAYING STEEL PAN IN EUPHORIA AND A BLURB TO GO WITH IT, LIKE I DID ON MY ELUCIDAT QUESTIONNAIRE!-->
@@ -268,7 +222,7 @@
       <p>Like what you've seen and think we'd work well together?</p>
       <div>
         <!--EMAIL-->
-        <a href="mailto:jodi.n.bennett@gmail.com">Drop me a line</a>
+        <a href="mailto:jodi.n.bennett@gmail.com" class="button contact">Drop me a line</a>
       </div>
       <!--END EMAIL-->
       <diV>
@@ -286,7 +240,7 @@
         </ul>
       </div>
       <!--END SOCIAL-->
-      <div>
+      <div id="copyright">
         <!--COPYRIGHT-->
         <i class="far fa-copyright"></i>BabyThunderball
         <h5>All rights reserved.</h5>
