@@ -55,6 +55,7 @@ header {
   /*-- background-color: #E4D8CB; --*/
   padding: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 p {
@@ -114,6 +115,40 @@ img, svg {
   padding: 0 15px;
 }
 
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { /* --- THIS DIDN'T DO ANYTHING!!! ----- */
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cacaca;
+}
+
+#hero-home h1 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 /* ----- Home IDs ----- */
 #hero-home {
   padding: 40px 20px;
