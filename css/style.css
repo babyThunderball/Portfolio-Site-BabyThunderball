@@ -52,7 +52,7 @@ body {
 }
 
 header {
-  /*-- background-color: #E4D8CB; --*/
+  background-color: #E4D8CB; 
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -138,6 +138,7 @@ img, svg {
 
 nav > ul {
   list-style-type: none;
+  padding: 0px;
 }
 
 nav > ul > li {
@@ -147,11 +148,31 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
+  font-family: "Rokkitt", sans-serif;
   font-weight: 700;
 }
+
+nav > ul > li > a:visited {
+
+}
+
+nav > ul > li > a:hover, a:focus {
+
+}
+
+nav > ul > li > a:active {
+
+}
+ nav {
+   display: inline-block;
+   width: 100%;
+ }
+
+
 /* ----- Home IDs ----- */
 #hero-home {
   padding: 40px 20px;
+  background-color: #ffe4c4;
 }
 
 #work {
