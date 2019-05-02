@@ -52,10 +52,14 @@ body {
 }
 
 header {
-  background-color: #E4D8CB; 
+  position: relative;
+  /* background-color: #ffe4c4; */
   padding: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center;
+  -webkit-box-shadow: 0px 10px 15px -5px rgba(204,128,255, 0.5);
+  -moz-box-shadow:    0px 10px 15px -5px rgba(204,128,255, 0.5);
+  box-shadow:         0px 10px 15px -5px rgba(204,128,255, 0.5);
 }
 
 p {
@@ -88,7 +92,7 @@ a:link {
 
 /* visited link */
 a:visited {
-  color: #C300FF;
+  color: #CC80FF;
 }
 
 /* mouse over link */
@@ -119,7 +123,7 @@ img, svg {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { /* --- THIS DIDN'T DO ANYTHING!!! ----- */
+#work .row { /* --- THIS DIDN'T DO ANYTHING!!! IS IT NOT POSSIBLE TO HAVE A CLASS AS A "CHILD" OF AN ID? ----- */
   padding-bottom: 25px;
   border-bottom: 1px solid #cacaca;
 }
@@ -148,6 +152,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
+  text-decoration: none;
   font-family: "Rokkitt", sans-serif;
   font-weight: 700;
 }
@@ -172,7 +177,9 @@ nav > ul > li > a:active {
 /* ----- Home IDs ----- */
 #hero-home {
   padding: 40px 20px;
-  background-color: #ffe4c4;
+  /* background-color: #ffe4c4; */
+  display: inline-block;
+  width: 100%;
 }
 
 #work {
