@@ -14,9 +14,11 @@ Gallery  —        #E4D8CB (228,216,203)
     font-style: normal;
 }
 
+/* ----- UNIVERSAL SELECTOR! ALWAYS ADD THIS AT THE BEGINNING! -----*/
 * {
   box-sizing: border-box;
 }
+/* ----- END UNIVERSAL SELECTOR ----- */
 
 html {
   font-size: 18px;
@@ -52,14 +54,15 @@ body {
 }
 
 header {
-  position: relative;
-  /* background-color: #ffe4c4; */
-  padding: 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #19141a;
+  padding: 10px 0px;
   /* margin-bottom: 20px; */
   text-align: center;
-  -webkit-box-shadow: 0px 10px 15px -5px rgba(204,128,255, 0.5);
-  -moz-box-shadow:    0px 10px 15px -5px rgba(204,128,255, 0.5);
-  box-shadow:         0px 10px 15px -5px rgba(204,128,255, 0.5);
+  -webkit-box-shadow: 0px 15px 15px -10px rgba(204,128,255, 0.5);
+  -moz-box-shadow:    0px 15px 15px -10px rgba(204,128,255, 0.5);
+  box-shadow:         0px 15px 15px -10px rgba(204,128,255, 0.5);
 }
 
 p {
@@ -154,18 +157,19 @@ nav > ul > li > a {
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Rokkitt", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 nav > ul > li > a:visited {
-
+  color: #CACACA;
 }
 
 nav > ul > li > a:hover, a:focus {
-
+  color: #E4D8CB;
 }
 
 nav > ul > li > a:active {
+  color: #CC80FF;
 
 }
  nav {
@@ -173,6 +177,9 @@ nav > ul > li > a:active {
    width: 100%;
  }
 
+main {
+  padding-top: 273px;
+}
 
 /* ----- Home IDs ----- */
 #hero-home {
