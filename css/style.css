@@ -178,8 +178,9 @@ nav > ul > li > a:active {
  }
 
 main {
-  padding-top: 273px;
+  padding-top: 158px;
 }
+
 
 /* ----- Home IDs ----- */
 #hero-home {
@@ -187,6 +188,7 @@ main {
   /* background-color: #ffe4c4; */
   display: inline-block;
   width: 100%;
+  background-image: url("HmPg-Mobile-Splash-Pic-1.png");
 }
 
 #work {
