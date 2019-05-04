@@ -46,6 +46,30 @@ html {
   }
 }
 
+@media screen and (min-width: 320px) {
+  h2 {
+    font-size: calc(32px + 6 * ((100vw - 320px) / 600));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #hero-home p {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 600));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #hero-home p {
+    font-size: 22px;
+  }
+}
+
 body {
   background-color: #19141a;
   color: #cacaca;
@@ -84,7 +108,6 @@ h2 {
   font-family: "Rokkitt", serif;
   font-weight: 400;
   color: #e4d8cb;
-  font-size: 32px;
   line-height: 150%;
 }
 
@@ -116,6 +139,7 @@ img, svg {
 .black-currant-text, .black-currant-text p {
   color: #19141A;
 }
+
 /* ----- Layout styling ----- */
 
 .container {
@@ -131,8 +155,13 @@ img, svg {
   border-bottom: 1px solid #cacaca;
 }
 
-#hero-home h1 {
+#hero-home {
   text-align: center;
+}
+
+#hero-home h1, h2 {
+  line-height: 1em;
+  margin: 0px;
 }
 
 .center {
@@ -185,18 +214,18 @@ main {
   padding-top: 158px;
 }
 
-
 /* ----- Home IDs ----- */
 #hero-home {
   padding: 40px 20px;
   /* background-color: #ffe4c4; */
   display: inline-block;
   width: 100%;
-  background-image: url("HmPg-Mobile-Splash-Pic-1.png");
+  background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/HmPg-Mobile-Splash-Pic-1.png");
+  background-repeat:no-repeat;
 }
 
 #work {
-
+  padding: 20px 0px;
 }
 
 #work h2 {
