@@ -499,7 +499,7 @@ main {
 }
 
 input:hover + .slider {
-  background-color: none;
+  background-color: rgba(204,128,255,.8);
 }
 
 input:focus + .slider {
