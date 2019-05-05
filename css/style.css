@@ -226,7 +226,7 @@ main {
   /* background-color: #ffe4c4; */
   display: inline-block;
   width: 100%;
-  background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/HmPg-Mobile-Splash-Pic-1.png");
+  background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/hmpg-placeholder-dark-@1x.png");
   background-repeat: no-repeat;
 }
 
@@ -319,7 +319,9 @@ main {
 /* ----- Om:bulari IDs ----- */
 #hero-ombulari {}
 
-#ombulari-table {}
+#ombulari-table, #ink-tank-table {
+  padding: 0px 20px;
+}
 
 /* ----- END Om:bulari IDs ----- */
 /* ----- Ink Tank IDs ----- */
@@ -337,8 +339,13 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   padding: 20px;
   transition: 0.2s opacity;
+}
+
+.button:visited {
+  color: #CC80FF;
 }
 
 .button:hover,
