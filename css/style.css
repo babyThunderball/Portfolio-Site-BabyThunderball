@@ -133,7 +133,7 @@ a:active {
   color: #CC80FF;
 }
 
-svg {
+img, svg {
   width: 100%;
 }
 
@@ -156,13 +156,18 @@ svg {
   border-bottom: 1px solid #cacaca;
 }
 
-#hero-home {
+#hero-home, #hero-about, #hero-ombulari, #hero-ink-tank {
   text-align: center;
 }
 
 #hero-home h1, h2 {
   line-height: 1em;
   margin: 0px;
+}
+
+#hero-about, #hero-ombulari, #hero-ink-tank h1 {
+  line-height: 1em;
+  padding: 20px;
 }
 
 .center {
@@ -238,17 +243,27 @@ main {
   padding: 40px 20px;
 }
 
+/*.rect-behind-phone {
+  background-color: rgb(25, 20, 26);
+  position: relative;
+  left: 0px;
+  top: 790px;
+  width: 285px;
+  height: 285px;
+  z-index: 7;
+}*/
+
 #ink-tank-section {
   background-color: #cacaca;
   padding: 40px 20px;
 }
 
 #ombulari-section.row {
-
+  margin: 25px 0px; /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
 
 #ink-tank-section.row {
-  
+  margin: 25px 0px; /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
 /* ----- END Home IDs ----- */
 /* ----- Footer IDs ----- */
@@ -256,21 +271,49 @@ main {
   padding: 40px 20px;
 }
 
+#contact p {
+  color: #cacaca;
+}
+
 #copyright {}
 
 /* ----- END Footer IDs ----- */
 /* ----- About IDs ----- */
-#hero-about {}
+#hero-about {
+  padding: 0px 20px;
+  /* background-color: #ffe4c4; */
+  display: inline-block;
+  width: 100%;
+}
 
-#story {}
+#story {
+  padding: 20px;
+}
 
-#story-col {}
+#story-col {
+  display: inline-block;
+  padding: 20px;
+  /* width: 960px; */
+  background-color: #fff;
+}
 
-#skills-n-tools-col {}
+#story-col h2, p {
+  color: #19141A;
+}
 
-#skills-col {}
+#skills-n-tools-col {
+  display: inline-block;
+  padding: 20px;
+  /* width: 480px; */
+}
 
-#tools-col {}
+#skills-col {
+  display: inline-block;
+}
+
+#tools-col {
+  display: inline-block;
+}
 
 /* ----- END About IDs ----- */
 /* ----- Om:bulari IDs ----- */
