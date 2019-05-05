@@ -141,6 +141,85 @@ img, svg {
   color: #19141A;
 }
 
+/* ----- SVG Styling ----- */
+.cls-1 {
+  filter: url(#filter);
+}
+
+/*.cls-2 {
+fill: none;
+stroke: #333;
+stroke-width: 19.859px;
+}*/
+.cls-2,
+.cls-4 {
+  fill-rule: evenodd;
+}
+
+.cls-2,
+.cls-3,
+.cls-4 {
+  fill: #333;
+}
+
+.cls-5 {
+  font-size: 48px;
+}
+
+.cls-5,
+.cls-8 {
+  fill: #fff;
+}
+
+.cls-5,
+.cls-9 {
+  font-family: "Poiret One";
+}
+
+.cls-6 {
+  fill: #cc80ff;
+}
+
+.cls-7,
+.cls-9 {
+  fill: #cacaca;
+}
+
+.cls-7 {
+  font-family: "julius_blackregular";
+}
+
+.cls-9 {
+  font-size: 24px;
+}
+
+.cls-10 {
+  font-size: 32px;
+  fill: #e4d8cb;
+  font-family: "Rokkitt Light";
+}
+
+.cls-11 {
+  font-size: 48px;
+}
+
+.cls-12 {
+  font-family: Rokkitt;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cls-13 {
+  font-size: 24px;
+  fill: #cacaca;
+  font-family: "Lato Light";
+}
+
+.cls-14 {
+  fill: #cc80ff;
+}
+
+/* -----END SVG Styling -----*/
 /* ----- Layout styling ----- */
 .container {
   padding: 0 15px;
@@ -178,9 +257,7 @@ img, svg {
   max-width: 250px;
 }
 
-.home-splash {
-
-}
+.home-splash {}
 
 nav>ul {
   list-style-type: none;
@@ -252,19 +329,21 @@ main {
   height: 285px;
   z-index: 7;
 }*/
-
 #ink-tank-section {
   background-color: #cacaca;
   padding: 40px 20px;
 }
 
 #ombulari-section.row {
-  margin: 25px 0px; /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
+  margin: 25px 0px;
+  /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
 
 #ink-tank-section.row {
-  margin: 25px 0px; /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
+  margin: 25px 0px;
+  /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
+
 /* ----- END Home IDs ----- */
 /* ----- Footer IDs ----- */
 #contact {
