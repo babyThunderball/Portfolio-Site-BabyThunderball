@@ -153,7 +153,7 @@ h4 {
 h5 {
   font-family: "Rokkitt", serif;
   font-weight: 300;
-  color: #e4d8cb;
+  color: #cacaca;
   line-height: 150%;
 }
 
@@ -337,33 +337,53 @@ nav {
   display: inline-block;
   width: 100%;
 }
-
-  .fontawesome {
+main {
+  padding-top: 158px;
+}
+.fontawesome {
     display: inline-block;
     padding: 10px 40px;
   }
 
-  .linkedin, .behance, .twitter {
+.linkedin, .behance, .twitter {
     display: inline-block;
   }
 
-  .social-title {
+.social-title {
     display: inline-block;
     padding: 10px 20px;
   }
 
-  .social-title span {
+.social-title span {
     font-family: "Rokkitt", serif;
     font-weight: 700;
     font-size: 32px;
   }
 
-  .title-row h4{
+.title-row h4{
     margin: 0px;
   }
 
-main {
-  padding-top: 158px;
+  .phone {
+  text-decoration: none;
+}
+
+.baby {
+  font-family: "Poiret One";
+  color: #fff;
+}
+
+.thunderball {
+  font-family: "julius_blackregular";
+  color: #cacaca;
+}
+
+.heliotrope {
+  color: #cc80ff;
+}
+
+.white {
+  color: #fff;
 }
 
 
@@ -490,7 +510,7 @@ input:hover + .slider:before {
   -webkit-transform: translateY(61px);
   -ms-transform: translateY(61px);
   transform: translateY(61px);
-  background-color: #cc80ff;
+  background-image: linear-gradient(to bottom right, #CC80FF, white, #CC80FF);
 }
 
 /* Rounded sliders */
