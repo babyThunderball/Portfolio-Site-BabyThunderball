@@ -239,9 +239,9 @@ stroke-width: 19.859px;
 }
 
 .cls-10 {
-  font-size: 32px;
+  font-size: 30px;
   fill: #e4d8cb;
-  font-family: "Rokkitt Light";
+  font-family: "Lato Light";
 }
 
 .cls-11 {
@@ -249,7 +249,7 @@ stroke-width: 19.859px;
 }
 
 .cls-12 {
-  font-family: Rokkitt;
+  font-family: "Rokkitt";
   font-size: 36px;
   font-weight: 700;
 }
@@ -326,7 +326,9 @@ nav>ul>li>a:visited {
 }
 
 nav>ul>li>a:hover, a:focus {
-  color: #E4D8CB;
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav>ul>li>a:active {
@@ -343,6 +345,7 @@ main {
 .fontawesome {
     display: inline-block;
     padding: 10px 40px;
+    font-size: 36px;
   }
 
 .linkedin, .behance, .twitter {
@@ -352,6 +355,9 @@ main {
 .social-title {
     display: inline-block;
     padding: 10px 20px;
+    background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
 .social-title span {
@@ -451,8 +457,16 @@ main {
 
 #copyright {
   padding: 40px 0px;
-
+  color: #cc80ff;
 }
+
+#copyright a {
+  text-decoration: none;
+}
+.grey-text {
+  color: #cacaca;
+}
+
 
 /* ----- END Footer IDs ----- */
 
@@ -605,6 +619,9 @@ input:hover + .slider:before {
   background-color: transparent;
   color: #ffffff !important;
   border: 2px solid #cacaca;
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .button.contact:hover {
