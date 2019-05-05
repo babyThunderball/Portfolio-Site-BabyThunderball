@@ -343,9 +343,19 @@ nav {
     padding: 10px 40px;
   }
 
+  .linkedin, .behance, .twitter {
+    display: inline-block;
+  }
+
   .social-title {
     display: inline-block;
     padding: 10px 20px;
+  }
+
+  .social-title span {
+    font-family: "Rokkitt", serif;
+    font-weight: 700;
+    font-size: 32px;
   }
 
   .title-row h4{
