@@ -188,6 +188,10 @@ img, svg {
   color: #19141A;
 }
 
+.helio-text {
+  color: #CC80FF;
+}
+
 /* ----- SVG Styling ----- */
 .cls-1 {
   filter: url(#filter);
@@ -441,12 +445,12 @@ main {
 }
 
 #ombulari-section.row {
-  margin: 25px 0px;
+  margin: 25px 0px 0px 0px;
   /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
 
 #ink-tank-section.row {
-  margin: 25px 0px;
+  margin: 0px;
   /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
 }
 
