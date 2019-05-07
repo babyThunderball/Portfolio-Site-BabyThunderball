@@ -272,9 +272,9 @@ stroke-width: 19.859px;
 
 /* -----END SVG Styling -----*/
 /* ----- Layout styling ----- */
-.container {
+/*.container {
   padding: 0 15px;
-}
+} ------------- Since I've added this to the wildcard column class down below, does it mean that I can remove this or do I need both? */
 
 .work-container {
   padding: 0px;
@@ -668,6 +668,7 @@ Medium devices (640px and larger)
   }
   [class*="col-"] {
     float: left;
+    padding: 0px 15px; /* Since I've added this, does it mean that I can remove the same from the container class or do I need both? */
   }
 }
 
