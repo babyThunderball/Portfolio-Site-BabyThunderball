@@ -95,6 +95,7 @@ html {
   }
 }
 
+
 body {
   background-color: #19141a;
   color: #cacaca;
@@ -274,6 +275,12 @@ stroke-width: 19.859px;
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #work {
@@ -630,3 +637,50 @@ input:hover + .slider:before {
 }
 
 /*----- END Button Styling -----*/
+
+/* ----- MEDIA BREAKPOINTS -----*/
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 99px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  [class*="col-"] {
+    float: left;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
+}
+
+/* ==============================
+Extra-large devices (1920px or larger) [Not often used, but included for reference]
+================================= */
+@media only screen and (min-width: 1920px) {
+
+}
+
+/* ----- END MEDIA BREAKPOINTS ----- */
