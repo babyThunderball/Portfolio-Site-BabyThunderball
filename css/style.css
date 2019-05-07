@@ -192,6 +192,10 @@ img, svg {
   color: #CC80FF;
 }
 
+.gallery-text {
+  color: #E4D8CB;
+}
+
 /* ----- SVG Styling ----- */
 .cls-1 {
   filter: url(#filter);
@@ -299,12 +303,12 @@ stroke-width: 19.859px;
   text-align: center;
 }
 
-#hero-home h1, h2 {
+#hero-home h1, #hero-home h2 { /* THIS w/ the ">" makes the text appear spaced out. The default margins kick in adn you can see all of the background image. The background image is not part of the flow which is why I can't see all of it at the mo. */
   line-height: 1em;
   margin: 0px;
 }
 
-#hero-about, #hero-ombulari, #hero-ink-tank h1 {
+#hero-about h1, #hero-ombulari h1, #hero-ink-tank h1 {
   line-height: 1em;
   padding: 20px;
 }
@@ -554,14 +558,14 @@ input:hover + .slider:before {
 
 /* ----- About IDs ----- */
 #hero-about {
-  padding: 0px 20px;
+  /*padding: 0px 20px;*/
   /* background-color: #ffe4c4; */
   display: inline-block;
   width: 100%;
 }
 
 #story {
-  padding: 20px;
+  /*padding: 20px;*/
 }
 
 #story-col {
@@ -669,6 +673,9 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
     padding: 0px 15px; /* Since I've added this, does it mean that I can remove the same from the container class or do I need both? */
+  }
+  #about-page h3 {
+    margin-top: 0;
   }
 }
 
