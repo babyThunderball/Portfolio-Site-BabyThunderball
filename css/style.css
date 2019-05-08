@@ -295,6 +295,24 @@ stroke-width: 19.859px;
   display: table;
 }
 
+.berlin-illustration {
+  width 100%;
+  max-width 100%;
+  height: auto;
+}
+
+.sun {
+
+}
+
+.cloud-front {
+
+}
+
+.cloud-back {
+
+}
+
 #work {
   padding-bottom: 25px;
 }
@@ -623,7 +641,7 @@ input:hover + .slider:before {
   text-decoration: none;
   text-align: center;
   padding: 20px;
-  transition: 0.2s opacity;
+  transition: 0.8s opacity;
 }
 
 .button:visited {
