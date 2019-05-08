@@ -683,6 +683,21 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: -px 15px;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .container { /* THIS ISN'T AFFECTING THE OM:BULARI AND INK TANK SECTIONS!! WHY??? */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 }
 /* ==============================
