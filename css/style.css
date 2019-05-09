@@ -94,7 +94,85 @@ html {
     font-size: 22px;
   }
 }
+/* ----- NAVIGATION ANIMATION ----- */
 
+/* Border from Y to X  */
+div.container a
+{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+/* ----- END NAVIGATION ANIMATION ----- */
+nav>div>ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav>div>ul>li {
+  display: inline-block;
+}
+
+nav>div>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Rokkitt", sans-serif;
+  font-weight: 400;
+}
+
+nav>div>ul>li>a:visited {
+  color: #CACACA;
+}
+
+nav>div>ul>li>a:hover, a:focus {
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav>div>ul>li>a:active {
+  color: #CC80FF;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
 
 body {
   background-color: #19141a;
@@ -196,7 +274,7 @@ img, svg {
   color: #E4D8CB;
 }
 
-/* ----- SVG Styling ----- */
+/* ----- SVG Styling for LOGO and Headings ----- */
 .cls-1 {
   filter: url(#filter);
 }
@@ -274,11 +352,12 @@ stroke-width: 19.859px;
   fill: #cc80ff;
 }
 
-/* -----END SVG Styling -----*/
+/* -----END SVG Styling for LOGO and Headings-----*/
+
 /* ----- Layout styling ----- */
 /*.container {
   padding: 0 15px;
-} ------------- Since I've added this to the wildcard column class down below, does it mean that I can remove this or do I need both? */
+} ------------- QUESTION: Since I've added this to the wildcard column class down below, does it mean that I can remove this or do I need both? */
 
 .work-container {
   padding: 0px;
@@ -326,7 +405,7 @@ stroke-width: 19.859px;
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate ease-in-out;
 }
 
 
@@ -358,41 +437,6 @@ stroke-width: 19.859px;
 
 .home-splash {}
 
-nav>ul {
-  list-style-type: none;
-  padding: 0px;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Rokkitt", sans-serif;
-  font-weight: 400;
-}
-
-nav>ul>li>a:visited {
-  color: #CACACA;
-}
-
-nav>ul>li>a:hover, a:focus {
-  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-nav>ul>li>a:active {
-  color: #CC80FF;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-}
 main {
   padding-top: 158px;
 }
