@@ -189,7 +189,7 @@ nav>div>ul>li>a:active {
 /* ================ 6. NAVIGATION ANIMATION [CREDIT: StyleShit on https://codepen.io/EvyatarDa/pen/waKXMd] ================ */
 
 /* ----- Border from Y to X ----- */
-div.container a
+div.nav-container a
 {
     text-decoration: none;
     margin: 0px 10px;
