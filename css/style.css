@@ -8,14 +8,15 @@
  7. Alternate text colors
  8. SVG Styling for LOGO & HEADINGS
  9. Layout Styling
- 10. Home IDs
- 11. Footer IDs
- 12.About IDs
- 13.Om:bulari IDs
- 14.Ink Tank IDs
- 15.Social Switch Styles
- 16. Button Styles
- 17. Media Breakpoints
+ 10. Animations
+ 11. Home IDs
+ 12. Footer IDs
+ 13.About IDs
+ 14.Om:bulari IDs
+ 15.Ink Tank IDs
+ 16.Social Switch Styles
+ 17. Button Styles
+ 18. Media Breakpoints
 
 ================ END TABLE OF CONTENTS ================ */
 
@@ -353,35 +354,6 @@ stroke-width: 19.859px;
   height: auto;
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px,48px);}
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate ease-in-out;
-}
-
-
 #work {
   padding-bottom: 25px;
 }
@@ -463,8 +435,152 @@ stroke-width: 19.859px;
 
 /* ================ END LAYOUT STYLING ================ */
 
+/* ================ 10. ANIMATIONS ================ */
 
-/* ================ 10. HOME IDs ================ */
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px,48px);}
+}
+
+@keyframes white-flower-move {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+    opacity: 1.0;
+    fill: #fff;
+  }
+  25% {
+    fill: #cc80ff;
+  }
+  75% {
+    opacity: 0.0;
+  }
+  100% {
+    transform: rotate(365deg);
+    transform-origin: center;
+    opacity: 1.0;
+    fill: #fff;
+  }
+  /*from {
+    transform: translate(0, 0);*/
+    /* transform: scale(1.0); */ /* QUESTION: Why does adding this scale here on "from" and "to" change the direction of the translation? It was going up, but with this added it goes down. */
+  /*}
+  to {
+    transform: translate(50px, -50px);*/
+    /* transform: scale(1.25); */
+  /*}*/
+}
+
+@keyframes orange-paisley-grow {
+  from {
+    transform: scale(1.0);
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+}
+
+@keyframes solid-orange-grow {
+  from {
+    transform: scale(1.0);
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+}
+
+@keyframes green-grow {
+  from {
+    transform: scale(1.0);
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+}
+
+@keyframes van-swirls {
+  from {
+    transform: scale(1);
+    transform-origin: center;
+  }
+  to {
+    transform: scale(1.02);
+    transform-origin: center;
+  }
+}
+
+@keyframes van-green-color-change {
+  0% {fill: #E8EFBC;}
+  25% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  75% {fill: #f76414}
+  100% {fill: #CC80FF;}
+}
+
+@keyframes go-helio-color-change {
+  0% {fill: #fff;}
+  100% {fill: #CC80FF;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate ease-in-out;
+}
+
+.white-flower-1 {
+  animation: 30s white-flower-move infinite alternate ease-in-out;
+}
+
+#orange-paisley-far-back {
+  animation: 7s orange-paisley-grow infinite alternate ease-in-out;
+}
+
+#solid-orange {
+  animation: 10s solid-orange-grow infinite alternate ease 3s;
+}
+
+.green-gradient {
+  animation: 13s green-grow infinite alternate linear 6s;
+}
+
+.van-swirls {
+  animation: 10s van-swirls infinite alternate ease-in-out;
+}
+.van-green {
+  animation: 10s van-green-color-change infinite alternate linear;
+}
+
+.go-helio {
+  animation: 30s go-helio-color-change infinite alternate linear;
+}
+
+/* ================ END ANIMATIONS ================ */
+
+/* ================ 11. HOME IDs ================ */
 
 #hero-home {
   padding: 40px 20px;
@@ -517,7 +633,7 @@ stroke-width: 19.859px;
 
 /* ================ END HOME IDs ================ */
 
-/* ================ 11. FOOTER IDs ================ */
+/* ================ 12. FOOTER IDs ================ */
 #contact {
   padding: 40px 20px;
   text-align: center;
@@ -545,7 +661,7 @@ stroke-width: 19.859px;
 
 /* ================ END FOOTER IDs ================ */
 
-/* ================ 12. ABOUT IDs ================ */
+/* ================ 13. ABOUT IDs ================ */
 #hero-about {
   /*padding: 0px 20px;*/
   /* background-color: #ffe4c4; */
@@ -584,7 +700,7 @@ stroke-width: 19.859px;
 
 /* ================ END ABOUT IDs ================ */
 
-/* ================ 13. OM:BULARI IDs ================ */
+/* ================ 14. OM:BULARI IDs ================ */
 #hero-ombulari {}
 
 #ombulari-table, #ink-tank-table {
@@ -593,14 +709,14 @@ stroke-width: 19.859px;
 
 /* ================ END OM:BULARI IDs ================ */
 
-/* ================ 14. INK TANK IDs ================ */
+/* ================ 15. INK TANK IDs ================ */
 #hero-ink-tank {}
 
 #ink-tank-table {}
 
 /* ================ END INK TANK IDs ================ */
 
-/* ================ 15. SOCIAL SWITCH STYLES ================ */
+/* ================ 16. SOCIAL SWITCH STYLES ================ */
 
 .switch {
   position: relative;
@@ -668,7 +784,7 @@ input:hover + .slider:before {
 
 /* ================ END SOCIAL SWITCH STYLES ================ */
 
-/* ================ 16. BUTTON STYLES ================ */
+/* ================ 17. BUTTON STYLES ================ */
 .button {
   display: inline-block;
   background-color: #19141A;
@@ -707,7 +823,7 @@ input:hover + .slider:before {
 
 /* ================ END BUTTON STYLES ================ */
 
-/* ================ 17. MEDIA BREAKPOINTS ================ */
+/* ================ 18. MEDIA BREAKPOINTS ================ */
 
 /* ==============================
 Small devices (320px and larger)
@@ -801,7 +917,7 @@ Large devices (1024px or larger)
   .col-lg-4 {
     width: 30%;
   }
-  
+
   .container { /* QUESTION: THIS ISN'T AFFECTING THE OM:BULARI AND INK TANK SECTIONS!! WHY??? */
   max-width: 1200px;
   margin-left: auto;
