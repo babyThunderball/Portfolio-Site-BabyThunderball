@@ -502,6 +502,9 @@ stroke-width: 19.859px;
   padding: 40px 20px;
 }
 
+#test-section {
+  background-color: #E4D8CB;
+}
 #ombulari-section.row {
   margin: 25px 0px 0px 0px;
   /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
@@ -785,11 +788,20 @@ Large devices (1024px or larger)
   }
   [class*="col-"] {
     float: left;
-    padding: -px 15px;
+    padding: 0px 15px;
   }
   .col-lg-5 {
     width: 40%;
   }
+
+  .col-lg-8 {
+    width: 70%;
+  }
+
+  .col-lg-4 {
+    width: 30%;
+  }
+  
   .container { /* QUESTION: THIS ISN'T AFFECTING THE OM:BULARI AND INK TANK SECTIONS!! WHY??? */
   max-width: 1200px;
   margin-left: auto;
