@@ -896,8 +896,17 @@ Large devices (1024px or larger)
   h4 {
     font-size: 24px;
   }
+
+  picture img {
+    max-width: 316px;
+    max-height: 700px;
+  }
+
   #hero-home p {
     font-size: 22px;
+  }
+  .col-md-6 {
+    width: 100%;
   }
   .col-lg-7 {
     width: 60%;
