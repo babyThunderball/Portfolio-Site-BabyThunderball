@@ -50,6 +50,8 @@ Gallery  —        #E4D8CB (228,216,203)
 
 html {
   font-size: 18px;
+  width: 100%;
+  height: 100%;
 }
 
 nav {
@@ -62,6 +64,8 @@ body {
   color: #cacaca;
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  width: 100%;
+  height: 100%;
 }
 
 header {
@@ -360,6 +364,11 @@ stroke-width: 19.859px;
 
 #hero-home, #hero-about, #hero-ombulari, #hero-ink-tank {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 #hero-home h1, #hero-home h2 { /* THIS w/ the ">" makes the text appear spaced out. The default margins kick in adn you can see all of the background image. The background image is not part of the flow which is why I can't see all of it at the mo. */
@@ -585,10 +594,28 @@ stroke-width: 19.859px;
 #hero-home {
   padding: 40px 20px;
   /* background-color: #ffe4c4; */
-  display: inline-block;
+  /*display: inline-block;
   width: 100%;
-  background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/hmpg-placeholder-dark-@1x.png");
+  height: 100%;*/
+  /*background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/hmpg-placeholder-@2x.png");
+  background-repeat: no-repeat;*/
+}
+
+#hero-home::before {
+  /*padding: 40px 20px;*/
+  /* background-color: #ffe4c4; */
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Users/jaiben/Desktop/Portfolio-Site/Portfolio-Site-BabyThunderball/img/hmpg-placeholder-@2x.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -2;
 }
 
 #work {
@@ -897,7 +924,7 @@ Large devices (1024px or larger)
     font-size: 24px;
   }
 
-  picture img {
+  picture.work-pic img {
     max-width: 316px;
     max-height: 700px;
   }
