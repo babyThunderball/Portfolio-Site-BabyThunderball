@@ -72,7 +72,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: #19141a;
-  padding: 10px 0px;
+  padding: 10px 20px;
   /* margin-bottom: 20px; */
   text-align: center;
   -webkit-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
@@ -82,7 +82,7 @@ header {
 }
 
 main {
-  padding-top: 158px;
+  padding-top: 182px;
 }
 
 p {
@@ -386,7 +386,7 @@ stroke-width: 19.859px;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 400px;
 }
 
 .home-splash {}
@@ -741,6 +741,11 @@ stroke-width: 19.859px;
   display: inline-block;
 }
 
+/*  #story-col::after, #skills-n-tools::after, #skill-col::after, #tools-col::after { THIS ISN'T MAKING ANY DIFFERENCE TO THE ABOUT PAGE LAYOUT ISSUE.
+  content: "";
+  clear: both;
+} */
+
 /* ================ END ABOUT IDs ================ */
 
 /* ================ 14. OM:BULARI IDs ================ */
@@ -900,15 +905,15 @@ Small devices (320px and larger)
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 640px) { /* QUESTION: I don't like how the nav drops down and isn't centered at 767px width. I want to change just the nav behave this way at max-width: 767px but if I changed this number here, it affects everything. If I add a separate one for the nav, it and the logo wind up being left-aligned. How to do this? */
   header {
     text-align: unset;
   }
-  nav {
+  /*nav {
     width: auto;
     float: right;
-    margin-top: 4px;
-  }
+    margin-top: 15px;
+  }*/
   main {
     padding-top: 99px;
   }
@@ -922,9 +927,16 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
-
 }
 
+/*@media only screen and (min-width: 808px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+    align-items: center;
+  }*/
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
