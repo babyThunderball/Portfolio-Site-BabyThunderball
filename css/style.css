@@ -649,6 +649,13 @@ stroke-width: 19.859px;
   height: 285px;
   z-index: 7;
 }*/
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #ink-tank-section {
   background-color: #cacaca;
   padding: 40px 20px;
@@ -881,6 +888,10 @@ Small devices (320px and larger)
   h4 {
     font-size: calc(16px + 6 * ((100vw - 320px) / 600));
   }
+  .social-title span {
+    font-size: calc(20px + 6 * ((100vw - 320px) / 600));
+  }
+
   #hero-home p,  {
     font-size: calc(16px + 6 * ((100vw - 320px) / 600));
   }
@@ -906,7 +917,7 @@ Medium devices (640px and larger)
   }
   [class*="col-"] {
     float: left;
-    padding: 0px 15px; /* QUESTION: Since I've added this, does it mean that I can remove the same from the container class or do I need both? */
+    padding: 0px 15px; /* Since I've added this, does it mean that I can remove the same from the container class or do I need both? ANSWER: Padding style of container isn't relevant to that of the column inside the container, so maybe!*/
   }
   #about-page h3 {
     margin-top: 0;
@@ -927,16 +938,20 @@ Large devices (1024px or larger)
   h2 {
     font-size: 48px;
   }
-  h3 {
+  h3, .social-title span {
     font-size: 32px;
   }
   h4 {
     font-size: 24px;
   }
 
-  picture.work-pic img {
+  picture.work-pic-small img {
     max-width: 316px;
     max-height: 700px;
+  }
+
+  picture.work-pic-large img {
+    max-width: 700px;
   }
 
   #hero-home p {
@@ -964,7 +979,7 @@ Large devices (1024px or larger)
     width: 30%;
   }
 
-  .container { /* QUESTION: THIS ISN'T AFFECTING THE OM:BULARI AND INK TANK SECTIONS!! WHY??? */
+  .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
