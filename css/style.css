@@ -625,6 +625,7 @@ stroke-width: 19.859px;
   flex-direction: column;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 20px;
 }
 
 #work {
@@ -897,7 +898,7 @@ Small devices (320px and larger)
     font-size: calc(20px + 6 * ((100vw - 320px) / 600));
   }
 
-  #hero-home p,  {
+  #hero-home p  {
     font-size: calc(16px + 6 * ((100vw - 320px) / 600));
   }
 }
