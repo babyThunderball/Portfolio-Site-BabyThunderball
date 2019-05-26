@@ -617,11 +617,21 @@ stroke-width: 19.859px;
   top: 0;
   left: 0;
   width: auto;
-  height: 100vh;
-  background-image: url("../img/hmpg-placeholder-@2x.png");
+  /*height: 100vh;*/
+  /*background-image: url("../img/hmpg-placeholder-@2x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   /* opacity: 0.3; */
+  z-index: -2;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#hero-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /*min-width: 100%;
+  min-height: 100%;*/
   z-index: -2;
 }
 
@@ -912,12 +922,34 @@ Small devices (320px and larger)
   #hero-home p  {
     font-size: calc(16px + 6 * ((100vw - 320px) / 600));
   }
+
+  #hero-home {
+    width: 100vw;
+    min-height: 320px;
+  }
+}
+
+/* ==============================
+Video Aspect Ratio 16:9
+================================= */
+@media (min-aspect-ratio: 16/9) {
+  #hero-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #hero-video {
+    width: auto;
+    height: 100%;
+  }
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) { /* QUESTION: I don't like how the nav drops down and isn't centered at 767px width. I want to change just the nav behave this way at max-width: 767px but if I changed this number here, it affects everything. If I add a separate one for the nav, it and the logo wind up being left-aligned. How to do this? */
+@media only screen and (min-width: 640px) {
   /*header {
     text-align: unset;
   }*/
@@ -938,6 +970,17 @@ Medium devices (640px and larger)
   }
   #about-page h3 {
     margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #hero-video {
+    display: none;
+  }
+  #hero-home {
+    background-image: url("../img/hmpg-placeholder-@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1030,15 +1073,6 @@ Extra-large devices (1920px or larger) [Not often used, but included for referen
 
 /* ================ 19. VIDEO STYLES ================ */
 
-/* Style the video: 100% width and height to cover the entire window */
-#hero-video {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -99;
-}
 /*.video {
   height: 100vh;
   width: 100vw;
