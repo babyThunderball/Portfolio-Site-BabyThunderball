@@ -1,1 +1,1 @@
-alert("Hello");
+var video = document.getElementById("myVideo");
