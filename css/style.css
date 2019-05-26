@@ -1,7 +1,7 @@
  /* ================ TABLE OF CONTENTS ================
  1. Colors in use
- 2.Fonts
- 3.Global styles
+ 2. Fonts
+ 3. Global styles
  4. Link Styles
  5. Navigation Styles
  6. Navigation Animation
@@ -11,10 +11,10 @@
  10. Animations
  11. Home IDs
  12. Footer IDs
- 13.About IDs
- 14.Om:bulari IDs
- 15.Ink Tank IDs
- 16.Social Switch Styles
+ 13. About IDs
+ 14. Om:bulari IDs
+ 15. Ink Tank IDs
+ 16. Social Switch Styles
  17. Button Styles
  18. Media Breakpoints
 
@@ -180,13 +180,19 @@ nav>div>ul>li>a:visited {
 }
 
 nav>div>ul>li>a:hover, a:focus {
-  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 nav>div>ul>li>a:active {
   color: #CC80FF;
+}
+
+nav .current {
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ================  END NAVIGATION STYLING ================ */
@@ -211,7 +217,7 @@ div.borderYtoX a:before, div.borderYtoX a:after
     height: 100%;
     width: 2px;
     content: '';
-    background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+    background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
     transition: all 0.3s;
 }
 
@@ -405,7 +411,7 @@ stroke-width: 19.859px;
 .social-title {
     display: inline-block;
     padding: 10px 20px;
-    background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+    background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -691,6 +697,10 @@ stroke-width: 19.859px;
 
 }
 
+.icon-row a svg * {
+  fill: url(#lg);
+}
+
 #copyright {
   padding: 40px 0px;
   color: #cc80ff;
@@ -819,7 +829,7 @@ input:hover + .slider:before {
   -webkit-transform: translateY(61px);
   -ms-transform: translateY(61px);
   transform: translateY(61px);
-  background-image: linear-gradient(to bottom right, #CC80FF, white, #CC80FF);
+  background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 }
 
 /* ----- Rounded sliders ----- */
@@ -861,7 +871,7 @@ input:hover + .slider:before {
   background-color: transparent;
   color: #ffffff !important;
   border: 2px solid #cacaca;
-  background: -webkit-linear-gradient(right bottom, #cc80ff, #fff, #CC80FF);
+  background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -907,12 +917,12 @@ Small devices (320px and larger)
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) { /* QUESTION: I don't like how the nav drops down and isn't centered at 767px width. I want to change just the nav behave this way at max-width: 767px but if I changed this number here, it affects everything. If I add a separate one for the nav, it and the logo wind up being left-aligned. How to do this? */
-  header {
+  /*header {
     text-align: unset;
-  }
+  }*/
   nav {
     width: auto;
-    float: right;
+    /*float: right;*/
     margin-top: 15px;
   }
   main {
@@ -930,13 +940,13 @@ Medium devices (640px and larger)
   }
 }
 
-/*@media only screen and (min-width: 808px) {
+@media only screen and (min-width: 808px) {
   nav {
     width: auto;
     float: right;
     margin-top: 15px;
     align-items: center;
-  }*/
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -957,7 +967,9 @@ Large devices (1024px or larger)
   h4 {
     font-size: 24px;
   }
-
+  nav {
+    float: right;
+  }
   picture.work-pic-small img {
     max-width: 316px;
     max-height: 700px;
