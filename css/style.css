@@ -925,7 +925,13 @@ Small devices (320px and larger)
 
   #hero-home {
     width: 100vw;
-    min-height: 320px;
+    /*min-height: 320px;*/
+  }
+}
+
+@media (max-width: 320px) {
+  main {
+    padding-top: 205px;
   }
 }
 
@@ -981,6 +987,7 @@ Medium devices (640px and larger)
     background-image: url("../img/hmpg-placeholder-@2x.png");
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 400px;
   }
 }
 
@@ -990,6 +997,9 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 15px;
     align-items: center;
+  }
+  header {
+    text-align: unset;
   }
 }
 /* ==============================
