@@ -933,6 +933,9 @@ Small devices (320px and larger)
   main {
     padding-top: 205px;
   }
+  .hero__container {
+    height: 65vh;
+  }
 }
 
 /* ==============================
@@ -965,7 +968,7 @@ Medium devices (640px and larger)
     margin-top: 15px;
   }
   main {
-    padding-top: 99px;
+    padding-top: 124px;
   }
   .col-md-6 {
     width: 50%;
@@ -976,6 +979,14 @@ Medium devices (640px and larger)
   }
   #about-page h3 {
     margin-top: 0;
+  }
+  .section-heading {
+    transform: scale(1.5);
+    margin: 20px 0;
+  }
+  svg.section-heading {
+    width: 50%;
+    justify-content: center;
   }
 }
 
