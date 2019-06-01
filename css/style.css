@@ -75,7 +75,7 @@ header {
   background-color: #19141a;
   padding: 10px 20px;
   /* margin-bottom: 20px; */
-  text-align: center;
+  /* text-align: center; */ /* Removed in exercise 2.3 jQuery */
   -webkit-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
   -moz-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
   box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
@@ -164,9 +164,9 @@ nav>div>ul {
   padding: 0px;
 }
 
-nav>div>ul>li {
+/* nav>div>ul>li { /* Removed in exercise 2.3 jQuery
   display: inline-block;
-}
+} */
 
 nav>div>ul>li>a {
   padding: 0 15px;
@@ -393,7 +393,7 @@ stroke-width: 19.859px;
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 200px; /* Changed in exercise 2.3 jQuery from 400px */
 }
 
 .home-splash {}
@@ -990,9 +990,12 @@ Medium devices (640px and larger)
   }
 }
 
-@media only screen and (min-width: 641) {
+@media only screen and (min-width: 641) { /* Added in exercise 2.3 jQuery */
   .logo {
-    max-width: 400px;
+    max-width: 400px; /* Added in exercise 2.3 jQuery */
+  }
+  nav > div > ul > li { /* Added in exercise 2.3 jQuery but with div */
+  display: inline-block;
   }
 }
 
