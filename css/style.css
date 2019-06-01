@@ -159,13 +159,17 @@ a:active {
 
 /* ================  5. NAVIGATION STYLING ================ */
 
+.navtoggle li:not(:last-child) { /* Added in exercise 2.3 jQuery */
+  display: none;
+}
+
 nav>div>ul {
   list-style-type: none;
   padding: 0px;
 }
 
-/* nav>div>ul>li { /* Removed in exercise 2.3 jQuery
-  display: inline-block;
+/* nav>div>ul>li { /* Removed in exercise 2.3 jQuery */
+/*  display: inline-block;
 } */
 
 nav>div>ul>li>a {
@@ -393,7 +397,18 @@ stroke-width: 19.859px;
 }
 
 .logo {
-  max-width: 200px; /* Changed in exercise 2.3 jQuery from 400px */
+  max-width: 400px; /* Changed in exercise 2.3 jQuery from 400px */
+}
+
+.navtoggle, .navtoggle.responsive {   /* Added in exercise 2.3 jQuery */
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 48px;
 }
 
 .home-splash {}
@@ -970,13 +985,20 @@ Medium devices (640px and larger)
   main {
     padding-top: 124px;
   }
+
+  header {
+    text-align: center;
+  }
+
   .col-md-6 {
     width: 50%;
   }
+
   [class*="col-"] {
     float: left;
     padding: 0px 15px; /* Since I've added this, does it mean that I can remove the same from the container class or do I need both? ANSWER: Padding style of container isn't relevant to that of the column inside the container, so maybe!*/
   }
+
   #about-page h3 {
     margin-top: 0;
   }
@@ -984,19 +1006,26 @@ Medium devices (640px and larger)
     transform: scale(1.5);
     margin: 20px 0;
   }
+
   svg.section-heading {
     width: 50%;
     justify-content: center;
   }
-}
 
-@media only screen and (min-width: 641) { /* Added in exercise 2.3 jQuery */
   .logo {
     max-width: 400px; /* Added in exercise 2.3 jQuery */
   }
   nav > div > ul > li { /* Added in exercise 2.3 jQuery but with div */
   display: inline-block;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
 }
 
 @media only screen and (max-width: 767px) {
