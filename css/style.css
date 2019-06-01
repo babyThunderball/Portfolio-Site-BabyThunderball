@@ -55,10 +55,10 @@ html {
   height: 100%;
 }
 
-nav {
-  display: inline-block;
+/*nav { /* Removed in exercise 2.3 jQuery */
+  /*display: inline-block;
   width: 100%;
-}
+} */
 
 body {
   background-color: #19141a;
@@ -165,7 +165,8 @@ a:active {
 
 nav>div>ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0; /* Added in exercise 2.3 jQuery */
 }
 
 /* nav>div>ul>li { /* Removed in exercise 2.3 jQuery */
@@ -974,9 +975,10 @@ Video Aspect Ratio 16:9
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  /*header {
-    text-align: unset;
-  }*/
+  header {
+    text-align: center;
+  }
+
   nav {
     width: auto;
     /*float: right;*/
@@ -984,10 +986,6 @@ Medium devices (640px and larger)
   }
   main {
     padding-top: 124px;
-  }
-
-  header {
-    text-align: center;
   }
 
   .col-md-6 {
@@ -1017,6 +1015,10 @@ Medium devices (640px and larger)
   }
   nav > div > ul > li { /* Added in exercise 2.3 jQuery but with div */
   display: inline-block;
+  }
+
+  nav > div > ul { /* Added in exercise 2.3 jQuery */
+  margin: 1em 0;
   }
 
   .navtoggle li:not(:last-child) {
