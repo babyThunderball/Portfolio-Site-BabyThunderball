@@ -943,11 +943,15 @@ Small devices (320px and larger)
     width: 100vw;
     /*min-height: 320px;*/
   }
+
+  main {
+    padding-top: 123px;
+  }
 }
 
 @media (max-width: 320px) {
   main {
-    padding-top: 205px;
+    padding-top: 123px;
   }
   .hero__container {
     height: 65vh;
