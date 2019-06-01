@@ -342,7 +342,7 @@ stroke-width: 19.859px;
 
 /*.container {
   padding: 0 15px;
-} ------------- QUESTION: Since I've added this to the wildcard column class down below, does it mean that I can remove this or do I need both? */
+} ------------- Since I've added this to the wildcard column class down below, does it mean that I can remove this or do I need both? ANSWERED BELOW.*/
 
 .work-container {
   padding: 0px;
@@ -393,7 +393,7 @@ stroke-width: 19.859px;
 }
 
 .logo {
-  max-width: 400px;
+  max-width: 200px;
 }
 
 .home-splash {}
@@ -987,6 +987,12 @@ Medium devices (640px and larger)
   svg.section-heading {
     width: 50%;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 641) {
+  .logo {
+    max-width: 400px;
   }
 }
 
