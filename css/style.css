@@ -163,6 +163,23 @@ a:active {
   display: none;
 }
 
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 2px solid rgba(204,128,255,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav>div>ul {
   list-style-type: none;
   padding: 0;
