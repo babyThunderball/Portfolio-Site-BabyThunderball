@@ -218,7 +218,7 @@ nav>div>ul>li>a, .subnav{
 }
 
 nav>div>ul>li>a:visited {
-  color: #CACACA;
+  color: #CC80FF;
 }
 
 nav>div>ul>li>a:hover, nav>div>ul>li>a:focus {
@@ -227,8 +227,8 @@ nav>div>ul>li>a:hover, nav>div>ul>li>a:focus {
   -webkit-text-fill-color: transparent;
 }
 
-nav>div>ul>li>a:active {
-  color: #CC80FF;
+nav>div>ul>li>a:link, nav>div>ul>li>ul>li>a:link,nav>div>ul>li>a:active {
+  color: #CACACA;
 }
 
 nav .current {
