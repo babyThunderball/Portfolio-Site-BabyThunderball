@@ -209,7 +209,7 @@ nav>div>ul {
 /*  display: inline-block;
 } */
 
-nav>div>ul>li>a, .subnav{
+nav>div>ul>li>a, .subnav, .parent{
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -235,6 +235,53 @@ nav .current {
   background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  transform: translateY(10px);
+  background-color: rgba(25,20,26,.8); /* Remove this to have a clear BKGD with the box-shadow effect! Nice! */
+  min-width: 160px;
+  height: 110px;
+  text-align: -webkit-center;
+  text-align: center;
+  -webkit-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
+  -moz-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
+  box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #CACACA;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+ul ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #ddd;}*/
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover /*.dropbtn*/ {
+  background-color: rgba(25,20,26,.8);
 }
 
 /* ================  END NAVIGATION STYLING ================ */
@@ -1066,7 +1113,7 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
+  /*display: none;    ------    This is breaking the subnav! --- */
   }
 }
 
