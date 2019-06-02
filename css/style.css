@@ -202,7 +202,7 @@ nav>div>ul>li>a:visited {
   color: #CACACA;
 }
 
-nav>div>ul>li>a:hover, a:focus {
+nav>div>ul>li>a:hover, nav>div>ul>li>a:focus {
   background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
