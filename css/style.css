@@ -227,7 +227,7 @@ nav>div>ul>li>a:hover, nav>div>ul>li>a:focus {
   -webkit-text-fill-color: transparent;
 }
 
-nav>div>ul>li>a:link, nav>div>ul>li>ul>li>a:link,nav>div>ul>li>a:active {
+nav>div>ul>li>a:link, nav>div>ul>li>ul>li>a:link, nav>div>ul>li>a:active {
   color: #CACACA;
 }
 
@@ -1067,7 +1067,7 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
   display: none;
-}
+  }
 }
 
 @media only screen and (max-width: 767px) {
