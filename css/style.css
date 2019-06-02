@@ -170,14 +170,33 @@ a:active {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 2px solid rgba(204,128,255,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.subnav-ul {
+  padding-top: 10px;
+}
+
+.navtoggle.responsive .parent {
+  padding-bottom: 0;
+}
+
+.navtoggle.responsive .subnav {
+  display: block;
+  padding: 0 0;
+}
+
+.navtoggle.responsive li:last-child li:not(:.subnav) {
   padding: 0 0 10px;
+}
+
+.navtoggl.responsive li:.parent {
+  display: block;
+  padding: 10px 0 0 0;
+  border-top: 2px solid rgba(204,128,255,0.5);
 }
 
 nav>div>ul {
@@ -190,7 +209,7 @@ nav>div>ul {
 /*  display: inline-block;
 } */
 
-nav>div>ul>li>a {
+nav>div>ul>li>a, .subnav{
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
