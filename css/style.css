@@ -873,7 +873,7 @@ input:hover + .slider:before {
   -webkit-transform: translateY(61px);
   -ms-transform: translateY(61px);
   transform: translateY(61px);
-  background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
+  background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF); /* QUESTION: Do I need to add webkit here? */
 }
 
 /* ----- Rounded sliders ----- */
