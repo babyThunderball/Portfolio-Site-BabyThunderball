@@ -275,7 +275,7 @@ ul ul {
 /*.dropdown-content a:hover {background-color: #ddd;}*/
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
   display: block;
 }
 
@@ -1139,8 +1139,11 @@ Medium devices (640px and larger)
   .parent {
     display: none;
   }
-  nav>div>ul>div>li>div>ul>li.subnav {
-    display: inline-block;
+
+
+
+  nav>div>ul>div>li>div>ul>li.subnav { /* This doesn't seem to do anything, but check again. */
+    /*display: inline-block;*/
   }
 }
 @media only screen and (min-width: 808px) {
