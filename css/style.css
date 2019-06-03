@@ -1112,8 +1112,8 @@ Medium devices (640px and larger)
   display: inline-block;
   }
 
-  .navtoggle li:last-child {
-  /*display: none;    ------    This is breaking the subnav! --- */
+  .navtoggle nav>div>ul>li:last-child {
+  display: none;    /*------    This is breaking the subnav! --- */
   }
 }
 
@@ -1135,7 +1135,14 @@ Medium devices (640px and larger)
   }
 
 }
-
+@media only screen and (max-width: 640px) {
+  .parent {
+    display: none;
+  }
+  nav>div>ul>div>li>div>ul>li.subnav {
+    display: inline-block;
+  }
+}
 @media only screen and (min-width: 808px) {
   nav {
     width: auto;
