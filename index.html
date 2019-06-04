@@ -64,7 +64,8 @@
       <nav>
         <div class="nav-container borderYtoX">
           <ul class="navigation">
-            <div class="dropdown">
+            <!-- DROPDOWN DESKTOP MENU -->
+            <div id="desktop-menu" class="dropdown">
               <li class="parent"><a href="index.html">Work</a>
                 <!-- SUB NAV -->
                 <div class="dropdown-content">
@@ -76,6 +77,21 @@
                 <!-- END SUB NAV -->
               </li>
             </div>
+            <!-- END DROPDOWN DESKTOP MENU -->
+            <!-- MOBILE MENU -->
+            <div id="mobile-menu">
+              <li class="parent"><a href="index.html">Work</a>
+                <!-- SUB NAV -->
+                <!-- <div class="dropdown-content"> -->
+                  <ul class="subnav-ul">
+                    <li><a href="ombulari.html" class="subnav">Om:bulari</a></li>
+                    <li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
+                  </ul>
+                <!-- </div> -->
+                <!-- END SUB NAV -->
+              </li>
+            </div>
+            <!-- END MOBILE MENU -->
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
