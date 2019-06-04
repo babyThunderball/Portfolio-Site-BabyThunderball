@@ -284,7 +284,7 @@ ul ul {
   background-color: rgba(25,20,26,.8);
 }
 
-@media only screen and (max-width: 640) {
+@media only screen and (max-width: 640px) {
   #desktop-menu {
     display: none;
   }
@@ -293,7 +293,7 @@ ul ul {
   }
 }
 
-@media only screen and (min-width: 641) {
+@media only screen and (min-width: 641px) {
   #desktop-menu {
     display: inline-block;
   }
