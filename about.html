@@ -24,6 +24,7 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <!-- LOGO SVG CODE -->
       <a href="index.html"><svg class="logo" data-name="BabyThunderball LOGO LAYERS copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="703.25" height="100" viewBox="0 0 703.25 157">
           <metadata>
@@ -63,15 +64,43 @@
       <nav>
         <div class="nav-container borderYtoX">
           <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a class="current" href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!-- DROPDOWN DESKTOP MENU -->
+            <div id="desktop-menu" class="dropdown">
+              <li class="desktop-parent"><a href="index.html">Work</a>
+                <!-- SUB NAV -->
+                <div class="dropdown-content">
+                  <ul class="subnav-ul">
+                    <li><a href="ombulari.html" class="subnav">Om:bulari</a></li>
+                    <li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
+                  </ul>
+                </div>
+                <!-- END SUB NAV -->
+              </li>
+            </div>
+            <!-- END DROPDOWN DESKTOP MENU -->
+            <!-- MOBILE MENU -->
+            <div id="mobile-menu">
+              <li class="mobile-parent"><a href="index.html">Work</a>
+                <!-- SUB NAV -->
+                <!-- <div class="dropdown-content"> -->
+                  <ul class="subnav-ul">
+                    <li><a href="ombulari.html" class="subnav">Om:bulari</a></li>
+                    <li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
+                  </ul>
+                <!-- </div> -->
+                <!-- END SUB NAV -->
+              </li>
+            </div>
+            <!-- END MOBILE MENU -->
+            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </div>
       </nav>
 
     </div>
-
+  </div>
   </header>
   <main id="about-page">
     <!--TITLE & IMAGE SECTION-->
