@@ -163,10 +163,6 @@ a:active {
   display: none;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
@@ -187,6 +183,10 @@ a:active {
 .navtoggle.responsive .subnav {
   display: block;
   padding: 0 0;
+}
+
+.navtoggle.responsive a:link.desktop-parent {
+  color: #cacaca;
 }
 
 .navtoggle.responsive li:last-child li:not(:.subnav) {
@@ -1115,12 +1115,21 @@ Medium devices (640px and larger)
   .navtoggle nav>div>ul>li:last-child {
   display: none;    /*------    This is breaking the subnav! --- */
   }
+
+  .navtoggle.responsive li {
+    border-top: 0;
+  }
 }
 
 @media only screen and (min-width: 641px) {
   #desktop-menu {
     display: inline-block;
   }
+
+  #desktop-menu a:link {
+    color: #cacaca;
+  }
+
   #mobile-menu {
     display: none;
   }
@@ -1156,9 +1165,18 @@ Medium devices (640px and larger)
   #desktop-menu {
     display: none;
   }
+
   #mobile-menu {
-    display: inline-block;
+    display: block;
   }
+
+  #mobile-menu a:link {
+     color: #cacaca;
+   }
+
+   #mobile-menu .subnav-ul {
+     padding-left: 40px;
+   }
 
   div.borderYtoX a:before, div.borderYtoX a:after {
     background: transparent;
