@@ -163,9 +163,10 @@ a:active {
   display: none;
 }
 
-.navtoggle.responsive nav {
+/*.navtoggle.responsive nav {
   padding: 24px 0 0;
-}
+}*/
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -1113,7 +1114,7 @@ Medium devices (640px and larger)
   }
 
   .navtoggle nav>div>ul>li:last-child {
-  display: none;    /*------    This is breaking the subnav! --- */
+  display: none;    /*------    This WAS breaking the subnav when I only had one menu! --- */
   }
 
   .navtoggle.responsive li {
@@ -1160,6 +1161,10 @@ Medium devices (640px and larger)
 
   .navtoggle.responsive li.mobile-parent {
     padding-bottom: 0;
+  }
+
+  .navtoggle.responsive nav { /* ADDED FOR SUBNAV WORKING 1 TEST */
+    padding: 24px 0 0;
   }
 
   #desktop-menu {
