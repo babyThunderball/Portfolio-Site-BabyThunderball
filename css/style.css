@@ -180,7 +180,7 @@ a:active {
   padding-top: 10px;
 }
 
-.navtoggle.responsive .parent {
+.navtoggle.responsive .desktop-parent {
   padding-bottom: 0;
 }
 
@@ -193,7 +193,7 @@ a:active {
   padding: 0 0 10px;
 }
 
-.navtoggl.responsive li:.parent {
+.navtoggl.responsive li:.desktop-parent {
   display: block;
   padding: 10px 0 0 0;
   border-top: 2px solid rgba(204,128,255,0.5);
@@ -209,7 +209,7 @@ nav>div>ul {
 /*  display: inline-block;
 } */
 
-nav>div>ul>li>a, .subnav, .parent{
+nav>div>ul>li>a, .subnav, .desktop-parent, .mobile-parent{
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
@@ -284,23 +284,6 @@ ul ul {
   background-color: rgba(25,20,26,.8);
 }
 
-@media only screen and (max-width: 640px) {
-  #desktop-menu {
-    display: none;
-  }
-  #mobile-menu {
-    display: inline-block;
-  }
-}
-
-@media only screen and (min-width: 641px) {
-  #desktop-menu {
-    display: inline-block;
-  }
-  #mobile-menu {
-    display: none;
-  }
-}
 /* ================  END NAVIGATION STYLING ================ */
 
 /* ================ 6. NAVIGATION ANIMATION [CREDIT: StyleShit on https://codepen.io/EvyatarDa/pen/waKXMd] ================ */
@@ -1134,6 +1117,15 @@ Medium devices (640px and larger)
   }
 }
 
+@media only screen and (min-width: 641px) {
+  #desktop-menu {
+    display: inline-block;
+  }
+  #mobile-menu {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   #hero-video {
     display: none;
@@ -1153,17 +1145,30 @@ Medium devices (640px and larger)
 
 }
 @media only screen and (max-width: 640px) {
-  .parent {
+  .mobile-parent {
     display: none;
   }
 
+  .navtoggle.responsive li.mobile-parent {
+    padding-bottom: 0;
+  }
 
+  #desktop-menu {
+    display: none;
+  }
+  #mobile-menu {
+    display: inline-block;
+  }
+
+  div.borderYtoX a:before, div.borderYtoX a:after {
+    background: transparent;
+  }
 
   nav>div>ul>div>li>div>ul>li.subnav { /* This doesn't seem to do anything, but check again. */
     /*display: inline-block;*/
   }
 }
-@media only screen and (min-width: 808px) {
+@media only screen and (min-width: 840px) {
   nav {
     width: auto;
     float: right;
