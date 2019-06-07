@@ -1164,9 +1164,9 @@ Medium devices (640px and larger)
     background: transparent;
   }
 
-  nav>div>ul>div>li>div>ul>li.subnav { /* This doesn't seem to do anything, but check again. */
+  /*nav>div>ul>div>li>div>ul>li.subnav { /* This doesn't seem to do anything, but check again. */
     /*display: inline-block;*/
-  }
+  /*}*/
 }
 @media only screen and (min-width: 840px) {
   nav {
