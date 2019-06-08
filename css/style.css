@@ -134,6 +134,10 @@ img, svg {
   width: 100%;
 }
 
+img[src$=".svg"] { /* This is so IE will resize SVGs in responsive views. */
+  width: 100%;
+}
+
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
 a:link:not(.body-link):not(.icon):not(.phone) {
