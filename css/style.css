@@ -925,6 +925,8 @@ stroke-width: 19.859px;
 
 #ombulari-table, #ink-tank-table {
   padding: 0px 20px;
+  margin-top: 20px;
+  border: 1px solid #cacaca;
 }
 
 /* ================ END OM:BULARI IDs ================ */
@@ -932,7 +934,50 @@ stroke-width: 19.859px;
 /* ================ 15. INK TANK IDs ================ */
 #hero-ink-tank {}
 
-#ink-tank-table {}
+#ink-tank-title-table {
+  border: 1px solid #cacaca;
+  /*padding: 0 20px;*/
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td>h1 {
+  line-height: normal;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+td.top-align {
+  vertical-align: text-top;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+td {
+  padding-bottom: 20px;
+}
+
+.table-rokkitt {
+  font-family: "Rokkitt", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  padding-bottom: 0;
+}
+
+tr>td.top {
+  border-top: 1px solid #cacaca;
+}
+
+tr>td.right-top {
+  border-top: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+}
 
 /* ================ END INK TANK IDs ================ */
 
@@ -1138,7 +1183,7 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
-  /*.section-heading { 
+  /*.section-heading {
     transform: scale(1.5);
     margin: 20px 0;
   }*/
@@ -1332,7 +1377,7 @@ Large devices (1024px or larger)
     width: 30%;
   }
 
-  .container {
+  .container, .table {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
