@@ -956,6 +956,7 @@ td.top-align {
   vertical-align: text-top;
   padding-top: 15px;
   padding-left: 20px;
+  padding-right: 10px;
   font-size: 16px;
 }
 
@@ -1281,7 +1282,7 @@ Medium devices (640px and larger)
     padding-bottom: 0;
   }
 
-  .navtoggle.responsive nav { /* ADDED FOR SUBNAV WORKING 1 TEST */
+  .navtoggle.responsive nav {
     padding: 24px 0 0;
   }
 
@@ -1308,7 +1309,26 @@ Medium devices (640px and larger)
   div.borderYtoX a:before, div.borderYtoX a:after {
     background: transparent;
   }
-}
+/* RESPONSIVE TABLE STYLING */
+  table, tbody, td, tr {
+		display: block;
+	}
+  tr>td.right-top, tr>td.last {
+    border-right: 0;
+    border-top: 0;
+  }
+
+  td {
+    padding-left: 20px;
+  }
+  .table-rokkitt {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+/* ==============
+840px and larger
+============== */
 @media only screen and (min-width: 840px) {
   nav {
     width: auto;
@@ -1320,6 +1340,7 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
