@@ -134,7 +134,7 @@ img, svg {
   width: 100%;
 }
 
-img[src$=".svg"] { /* This is so IE will resize SVGs in responsive views. */
+img[src$=".svg"] { /* This is so IE will resize SVGs in responsive views. NOTE: CHECK THIS WORKS!!!! */
   width: 100%;
 }
 
