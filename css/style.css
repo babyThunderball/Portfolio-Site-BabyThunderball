@@ -1172,6 +1172,9 @@ Medium devices (640px and larger)
   }
 }
 
+/* =============
+641px and larger
+============= */
 @media only screen and (min-width: 641px) {
   #desktop-menu {
     display: inline-block;
@@ -1186,6 +1189,9 @@ Medium devices (640px and larger)
   }
 }
 
+/* ================
+ 767px and smaller
+================ */
 @media only screen and (max-width: 767px) {
   #hero-video {
     display: none;
@@ -1198,12 +1204,18 @@ Medium devices (640px and larger)
   }
 }
 
+/* ==============
+540px and smaller
+============== */
 @media only screen and (max-width: 540px) {
   .logo{
     max-width: 70%;
   }
-
 }
+
+/* ==============
+640px and smaller
+============== */
 @media only screen and (max-width: 640px) {
   .mobile-parent {
     display: none;
@@ -1247,10 +1259,6 @@ Medium devices (640px and larger)
   div.borderYtoX a:before, div.borderYtoX a:after {
     background: transparent;
   }
-
-  /*nav>div>ul>div>li>div>ul>li.subnav { /* This doesn't seem to do anything, but check again. */
-    /*display: inline-block;*/
-  /*}*/
 }
 @media only screen and (min-width: 840px) {
   nav {
