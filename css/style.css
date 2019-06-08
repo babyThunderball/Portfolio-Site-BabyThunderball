@@ -1138,15 +1138,15 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
-  .section-heading {
+  /*.section-heading { 
     transform: scale(1.5);
     margin: 20px 0;
-  }
+  }*/
 
-  svg.section-heading {
+  /*svg.section-heading {  /* NOTE: Don't need this to transform SVG after having removed the H & W from the SVG heading itself on index.html.
     width: 50%;
     justify-content: center;
-  }
+  }*/
 
   .logo {
     max-width: 400px; /* Added in exercise 2.3 jQuery */
