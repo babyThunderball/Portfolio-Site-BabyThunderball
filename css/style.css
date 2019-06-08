@@ -26,6 +26,7 @@ Black Currant —   #19141A (25,20,26)
 Very Light Grey — #CACACA (202,202,202)
 Heliotrope —      #CC80FF (204,128,255)
 Gallery  —        #E4D8CB (228,216,203)
+Honey Flower —    #5A3274 (90,50,116) [for Body Links]
 ================ END COLORS IN USE ================ */
 
 /* ================ 2. FONTS ================ */
@@ -135,8 +136,18 @@ img, svg {
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link {
+a:link:not(.body-link):not(.icon):not(.phone) {
   color: #CC80FF;
+}
+
+a:link.body-link {
+  font-family: "Rokkitt", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+a:link.phone {
+  text-decoration: none;
 }
 
 /* visited link */
@@ -147,7 +158,7 @@ a:visited {
 /* mouse over link */
 a:hover,
 a:focus {
-  color: #E799FF;
+  color: #5A3274;
 }
 
 /* selected link */
@@ -155,9 +166,44 @@ a:active {
   color: #CC80FF;
 }
 
+.body-link{
+    color: #5A3274;
+    /*font-family: "Rokkitt", sans-serif;
+    font-weight: 500;
+    font-size: 28px;*/
+    text-decoration: underline !important;
+    text-decoration-style: wavy !important;
+    font-weight: 400;
+  }
+
+  @media (-webkit-min-device-pixel-ratio:0) {
+  a.body-link {
+    background-color: #5A3274;
+    background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: .1s .2s;
+    -webkit-background-clip: text;
+  }
+  a:hover:not(.button):not(.icon):not(.phone) {
+    background-position: 0 0;
+    color: transparent;
+    transition: .4s 0;
+  }
+}
+
 /* ================  END LINK STYLING ================ */
 
 /* ================  5. NAVIGATION STYLING ================ */
+
+nav>a:link {
+  color: #CACACA;
+}
+
+nav>a:visited {
+  color: #CACACA;
+}
 
 .navtoggle li:not(:last-child) { /* Added in exercise 2.3 jQuery */
   display: none;
@@ -218,8 +264,8 @@ nav>div>ul>li>a, .subnav, .desktop-parent, .mobile-parent{
   font-weight: 400;
 }
 
-nav>div>ul>li>a:visited {
-  color: #CC80FF;
+nav>div>ul>li>a:visited, nav>div>ul>div>li>a:visited {
+  color: #CACACA;
 }
 
 nav>div>ul>li>a:hover, nav>div>ul>li>a:focus, nav>div>ul>div>li>a:hover, nav>div>ul>div>li>a:focus, nav>div>ul>div>li>div>ul>li>a:hover, nav>div>ul>div>li>div>ul>li>a:focus {
@@ -228,7 +274,7 @@ nav>div>ul>li>a:hover, nav>div>ul>li>a:focus, nav>div>ul>div>li>a:hover, nav>div
   -webkit-text-fill-color: transparent;
 }
 
-nav>div>ul>li>a:link, nav>div>ul>li>ul>li>a:link, nav>div>ul>li>a:active {
+nav>div>ul>li>a:link, nav>div>ul>li>ul>li>a:link, nav>div>ul>li>a:active, nav>div>ul>div>li>a:link {
   color: #CACACA;
 }
 
@@ -1120,6 +1166,10 @@ Medium devices (640px and larger)
   .navtoggle.responsive li {
     border-top: 0;
   }
+
+  a:link.phone {
+    color: #cacaca;
+  }
 }
 
 @media only screen and (min-width: 641px) {
@@ -1159,6 +1209,13 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  a:link:not(.phone):not(.icon) {
+    font-size: calc(22px + 6 * ((100vw - 320px) / 600));
+  }
+
+  a:link.phone {
+    color: #CC80FF;
+  }
   .navtoggle.responsive li.mobile-parent {
     padding-bottom: 0;
   }
@@ -1181,6 +1238,10 @@ Medium devices (640px and larger)
 
    #mobile-menu .subnav-ul {
      padding-left: 40px;
+   }
+
+   #mobile-menu a:visited {
+      color: #cacaca;
    }
 
   div.borderYtoX a:before, div.borderYtoX a:after {
@@ -1224,6 +1285,7 @@ Large devices (1024px or larger)
   nav {
     float: right;
   }
+
   picture.work-pic-small img {
     max-width: 316px;
     max-height: 700px;
