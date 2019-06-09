@@ -508,9 +508,9 @@ stroke-width: 19.859px;
  height: auto;
 }
 
-#work {
+/*#work {
  padding-bottom: 25px;
-}
+}*/
 
 #hero-home, #hero-about, #hero-ombulari, #hero-ink-tank {
  text-align: center;
@@ -800,7 +800,7 @@ stroke-width: 19.859px;
 }
 
 #work {
- padding: 20px 0px;
+ padding: 20px 0 0 0;
 }
 
 #work h2 {
@@ -895,7 +895,7 @@ stroke-width: 19.859px;
 
 #story {
  /*padding: 20px;*/
- height: auto;
+ overflow: auto;
 }
 
 #story-col {
@@ -1201,6 +1201,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
  }
  main {
    padding-top: 124px;
+   padding-bottom: 20px;
  }
 
  .col-md-6 {
