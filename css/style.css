@@ -858,6 +858,11 @@ stroke-width: 19.859px;
  color: #cacaca;
 }
 
+/* #contact-scroll {
+  display: inline-block;
+  height: 127px;
+} */
+
 #social {
 
 }
@@ -890,6 +895,7 @@ stroke-width: 19.859px;
 
 #story {
  /*padding: 20px;*/
+ height: auto;
 }
 
 #story-col {
@@ -1141,6 +1147,14 @@ Small devices (320px and larger)
  main {
    padding-top: 123px;
  }
+
+ #contact-scroll:before {
+   display: block;
+   content: " ";
+   margin-top: -127px;
+   height: 127px;
+   visibility: hidden;
+ }
 }
 
 /* ==============
@@ -1173,9 +1187,9 @@ Video Aspect Ratio 16:9
 }
 
 /* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
+Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm */
+/* ================================= */
+@media only screen and (min-width: 641px) {
  header {
    text-align: center;
  }
@@ -1243,24 +1257,33 @@ Medium devices (640px and larger)
  a:link.phone {
    color: #cacaca;
  }
-}
+
+  #desktop-menu {
+    display: inline-block;
+  }
+
+  #desktop-menu a:link {
+    color: #cacaca;
+  }
+
+  #mobile-menu {
+    display: none;
+  }
+
+  #contact-scroll:before {
+    display: block;
+    content: " ";
+    margin-top: -196px;
+    height: 196px;
+    visibility: hidden;
+  }
+ }
 
 /* =============
-641px and larger
-============= */
-@media only screen and (min-width: 641px) {
- #desktop-menu {
-   display: inline-block;
- }
+641px and larger /* NOTE: COMBINED W/ ABOVE ON 9 JUN 19 @ 7:30PM (from #desktop-menu down) */
+/* ============= */
 
- #desktop-menu a:link {
-   color: #cacaca;
- }
 
- #mobile-menu {
-   display: none;
- }
-}
 
 /* ================
 767px and smaller
@@ -1362,7 +1385,16 @@ Medium devices (640px and larger)
  header {
    text-align: unset;
  }
+ #contact-scroll:before {
+   display: block;
+   content: " ";
+   margin-top: -127px;
+   height: 127px;
+   visibility: hidden;
+ }
 }
+
+
 
 /* ==============================
 Large devices (1024px or larger)

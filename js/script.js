@@ -18,3 +18,13 @@ function removeResponsive(y) {
 var y = window.matchMedia("(min-width: 640px)")
 removeResponsive(y) // Call listener function at run time
 y.addListener(removeResponsive) // Attach listener function on state changes
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+});
