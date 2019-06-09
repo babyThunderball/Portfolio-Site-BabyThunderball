@@ -913,6 +913,18 @@ stroke-width: 19.859px;
   display: inline-block;
 }
 
+.why-bt-section {
+  background: #cacaca;
+}
+
+#why-bt-col p {
+  color: #19141A;
+}
+
+.van-pic-bkgd {
+  background: #19141A;
+}
+
 /*  #story-col::after, #skills-n-tools::after, #skill-col::after, #tools-col::after { THIS ISN'T MAKING ANY DIFFERENCE TO THE ABOUT PAGE LAYOUT ISSUE.
   content: "";
   clear: both;
@@ -924,7 +936,7 @@ stroke-width: 19.859px;
 #hero-ombulari {}
 
 #ombulari-table, #ink-tank-table {
-  padding: 0px 20px;
+  /*padding: 0px 20px;*/
   margin-top: 20px;
   border: 1px solid #cacaca;
 }
@@ -955,12 +967,12 @@ td.top-align {
   vertical-align: text-top;
   padding-top: 15px;
   padding-left: 20px;
-  padding-right: 10px;
   font-size: 16px;
 }
 
 td {
   padding-bottom: 20px;
+  padding-right: 10px;
 }
 
 .table-rokkitt {
@@ -1128,6 +1140,9 @@ Small devices (320px and larger)
   }
 }
 
+/* ==============
+320px and smaller
+============== */
 @media (max-width: 320px) {
   main {
     padding-top: 123px;
@@ -1397,11 +1412,14 @@ Large devices (1024px or larger)
     width: 30%;
   }
 
+  .col-lg-3 {
+    width: 25%;
+  }
   .container, .table {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+  }
 
 }
 /* ==============================
