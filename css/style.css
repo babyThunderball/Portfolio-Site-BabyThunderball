@@ -1339,7 +1339,7 @@ Medium devices (640px and larger)
     text-align: unset;
   }
 }
-
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -1362,7 +1362,9 @@ Large devices (1024px or larger)
   nav {
     float: right;
   }
-
+  header {
+    text-align: unset;
+  }
   picture.work-pic-small img {
     max-width: 316px;
     max-height: 700px;
