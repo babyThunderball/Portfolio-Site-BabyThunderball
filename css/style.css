@@ -487,6 +487,10 @@ stroke-width: 19.859px;
  padding: 0px;
 }
 
+.svg-container {
+  text-align: center;
+}
+
 .row {
  margin: 25px 0;
  /* 25px top and bottom, 0 left and right */
@@ -846,7 +850,7 @@ stroke-width: 19.859px;
 
 /* ================ 12. FOOTER IDs ================ */
 #contact {
- padding: 40px 20px;
+ padding: 0 20px 0 40px;
  text-align: center;
 }
 
