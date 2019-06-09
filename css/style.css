@@ -140,7 +140,7 @@ img[src$=".svg"] { /* This is so IE will resize SVGs in responsive views. NOTE: 
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link:not(.body-link):not(.icon):not(.phone) {
+a:link:not(.body-link):not(.icon):not(.phone):not(nav>div>ul>li>a>.not-me) {
  color: #CC80FF;
 }
 
