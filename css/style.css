@@ -502,12 +502,6 @@ stroke-width: 19.859px;
  display: table;
 }
 
-.berlin-illustration {
- width 100%;
- max-width 100%;
- height: auto;
-}
-
 /*#work {
  padding-bottom: 25px;
 }*/
@@ -923,16 +917,25 @@ stroke-width: 19.859px;
  display: inline-block;
 }
 
-.why-bt-section {
- background: #cacaca;
+#my-story-row {
+  display: inline;
 }
 
-#why-bt-col p {
+#why-bt-block p {
  color: #19141A;
 }
 
+#why-bt-block {
+  background: #cacaca;
+  width: inherit;
+}
+
 .van-pic-bkgd {
- background: #19141A;
+ /*background: #19141A;*/
+ display: inline-flex;
+ float: left;
+ shape-outside: circle(50%);
+ margin-right: 40px;
 }
 
 /*  #story-col::after, #skills-n-tools::after, #skill-col::after, #tools-col::after { THIS ISN'T MAKING ANY DIFFERENCE TO THE ABOUT PAGE LAYOUT ISSUE.
@@ -1457,7 +1460,7 @@ Large devices (1024px or larger)
  }
 
  .col-lg-3 {
-   width: 25%;
+   width: 50%;
  }
  .container {
  max-width: 1200px;
