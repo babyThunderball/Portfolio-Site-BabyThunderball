@@ -884,12 +884,62 @@ stroke-width: 19.859px;
  /*padding: 0px 20px;*/
  /* background-color: #ffe4c4; */
  display: inline-block;
+ position:relative;
  width: 100%;
+}
+
+#pitch-wrapper {
+  /*position: relative;*/
+  display: inline-block;
+  overflow: auto;
+}
+
+#pitch-pic-col, #pitch-text-col {
+  display: inline-block;
+}
+
+#pitch-pic-col {
+  float: left;
+  position: relative;
+  /*max-width: 720px;*/
+  text-align: center;
+  z-index: -1;
+}
+
+#pitch-text-col {
+  padding: 20px;
+  /*margin-top: -686px;*/ /* NOTE: I set this in order to get the section to overlap the #pitch-pic-col, but in responsive views, it rides up the page and hides behind the hero section. */
+  float: right;
+  background: rgba(202, 202, 202, 0.9);
+  color: #19141A;
+  z-index: 0;
+}
+
+.pitch-container {
+
+}
+
+.pitch-container h2, .pitch-container p {
+  color: #19141A;
+}
+
+.button.cv-download {
+ background-color: transparent;
+ color: #ffffff !important;
+ border: 2px solid #cacaca;
+ margin: 40px;
+}
+
+.button.cv-download:hover {
+background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 #story {
  /*padding: 20px;*/
  overflow: auto;
+ display: none; /* NOTE: HIDDEN SO I CAN SEE MY NEW LAYOUT WORKING */
 }
 
 #story-col {
@@ -915,10 +965,6 @@ stroke-width: 19.859px;
 
 #tools-col {
  display: inline-block;
-}
-
-#my-story-row {
-  display: inline;
 }
 
 #why-bt-block p {
@@ -1203,7 +1249,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
    margin-top: 15px;
  }
  main {
-   padding-top: 124px;
+   padding-top: 196px;
    padding-bottom: 20px;
  }
 
@@ -1396,6 +1442,9 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
    height: 127px;
    visibility: hidden;
  }
+ main {
+   padding-top: 124px;
+ }
 }
 
 
@@ -1440,6 +1489,11 @@ Large devices (1024px or larger)
  .col-md-6 {
    width: 100%;
  }
+
+ .col-lg-6 {
+   width: 50%;
+ }
+
  .col-lg-7 {
    width: 60%;
  }
