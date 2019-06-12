@@ -974,6 +974,27 @@ stroke-width: 19.859px;
   margin: 40px;
 }
 
+.left-col-skills ul, .right-col-skills ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.5em;
+}
+.left-col-skills ul {
+  text-align: right;
+}
+
+.right-col-skills ul {
+  text-align: left;
+}
+
+.left-col-skills.col-lg-4, .left-col-skills.col-md-4, .right-col-skills.col-lg-4, .right-col-skills.col-md-4, .mic.col-lg-4, .mic.col-md-4 {
+  width: 35%;
+}
+
+.mic {
+  max-width: 330px;
+}
+
 #story {
   /*padding: 20px;*/
   overflow: auto;
