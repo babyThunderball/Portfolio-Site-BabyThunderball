@@ -974,6 +974,10 @@ stroke-width: 19.859px;
   margin: 40px;
 }
 
+.left-col-skills, .mic, .right-col-skills {
+  position: relative;
+}
+
 .left-col-skills ul, .right-col-skills ul {
   list-style-type: none;
   padding-left: 0;
@@ -993,6 +997,10 @@ stroke-width: 19.859px;
 
 .mic {
   max-width: 330px;
+}
+
+#skills-wrapper {
+  display: inline;
 }
 
 #story {
