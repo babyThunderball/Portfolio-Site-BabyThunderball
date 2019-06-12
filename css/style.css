@@ -914,8 +914,8 @@ stroke-width: 19.859px;
 }
 
 #pitch-wrapper {
-  /*position: relative;*/
-  display: inline-block;
+  position: relative;
+  display: block;
   overflow: auto;
 }
 
@@ -933,12 +933,15 @@ stroke-width: 19.859px;
 
 #pitch-text-col {
   padding: 20px;
-  /*margin-top: -686px;*/
-  /* NOTE: I set this in order to get the section to overlap the #pitch-pic-col, but in responsive views, it rides up the page and hides behind the hero section. */
+  /*margin-top: -686px;*//* NOTE: I set this in order to get the section to overlap the #pitch-pic-col, but in responsive views, it rides up the page and hides behind the hero section. */
   float: right;
   background: rgba(202, 202, 202, 0.9);
   color: #19141A;
   z-index: 0;
+}
+
+.pitch-text {
+  padding-left: 20px;
 }
 
 #empty-spacer {
@@ -955,8 +958,13 @@ stroke-width: 19.859px;
 
 .pitch-container {}
 
+
 .pitch-container h2, .pitch-container p {
   color: #19141A;
+}
+
+#pitch-wrapper.row, .pounds-wrapper.row {
+  margin-top: 0;
 }
 
 .button.cv-download {
@@ -1300,7 +1308,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     margin-top: 0;
   }
 
-  #Portable_Parking_Lot_title_badge {
+  #Portable_Parking_Lot_title_badge, #Pounds_Im_Throwin_title_badge {
     max-width: 291px;
     height: auto;
   }
@@ -1366,6 +1374,9 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     margin-top: -196px;
     height: 196px;
     visibility: hidden;
+  }
+  #empty-spacer {
+    height: 80vh;
   }
 }
 
@@ -1503,6 +1514,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   main {
     padding-top: 124px;
   }
+
+  #empty-spacer {
+    height: 100vh;
+  }
 }
 
 /* ==============================
@@ -1591,6 +1606,16 @@ Large devices (1024px or larger)
 
   .table {
     max-width: 1200px;
+  }
+
+  #empty-spacer {
+    height: 80vh;
+  }
+}
+
+@media only screen (min-width: 1170px) {
+  #empty-spacer {
+    height: 100vh;
   }
 }
 
