@@ -1277,6 +1277,14 @@ Small devices (320px and larger)
     height: 127px;
     visibility: hidden;
   }
+
+  #cb-tools-dial {
+    display: none;
+  }
+
+  #tools-sm-screen {
+    display: block;
+  }
 }
 
 /* ==============
@@ -1411,6 +1419,14 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   }
   #empty-spacer {
     height: 80vh;
+  }
+
+  #cb-tools-dial {
+    display: block;
+  }
+
+  #tools-sm-screen {
+    display: none;
   }
 }
 
