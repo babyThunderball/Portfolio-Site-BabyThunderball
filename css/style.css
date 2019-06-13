@@ -1536,10 +1536,12 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
   .tools-row {
     display: flex;
+    margin: 0 auto;
   }
 
   .col-sm-6 {
     width: 50%;
+    padding: 20px;
   }
 }
 
