@@ -1003,7 +1003,7 @@ stroke-width: 19.859px;
 }
 
 .left-col-skills ul, .right-col-skills ul {
-  list-style-type: none;
+  list-style-type: square;
   padding-left: 0;
   line-height: 1.5em;
 }
@@ -1013,10 +1013,12 @@ stroke-width: 19.859px;
 
 .right-col-skills ul {
   text-align: left;
+  list-style-position: inside;
+  margin-left: 20px;
 }
 
 .left-col-skills.col-lg-4, .left-col-skills.col-md-4, .right-col-skills.col-lg-4, .right-col-skills.col-md-4, .mic.col-lg-4, .mic.col-md-4 {
-  width: 35%;
+  width: 33%;
   padding-top: 40px;
 }
 
@@ -1026,6 +1028,7 @@ stroke-width: 19.859px;
 
 #skills-wrapper {
   overflow: hidden;
+  margin-left: 50px;
 
 }
 
@@ -1558,9 +1561,13 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     width: 100vw;
   }
 
-  .tools-row {
+  .tools-row, .skills-row {
     display: flex;
     margin: 0 auto;
+  }
+
+  .skills-row {
+    justify-content: center;
   }
 
   .col-sm-6 {
