@@ -494,6 +494,10 @@ stroke-width: 19.859px;
   display: table;
 }
 
+.about-row {
+  margin: 0;
+}
+
 /*#work {
  padding-bottom: 25px;
 }*/
@@ -1021,7 +1025,7 @@ stroke-width: 19.859px;
 }
 
 #skills-wrapper {
-  display: inline;
+  overflow: hidden;
 
 }
 
