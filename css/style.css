@@ -464,6 +464,12 @@ stroke-width: 19.859px;
   fill: #cc80ff;
 }
 
+/* g>image>#sandbox-tuner-icon {
+  display: flex;
+  position: relative;
+  padding-left: 500px;
+} */
+
 /* ================ END SVG STYLING FOR LOGO & HEADINGS ================ */
 /* ================ 9. LAYOUT STYLING ================ */
 /*.container {
@@ -733,6 +739,20 @@ stroke-width: 19.859px;
     fill: #CC80FF;
   }
 }
+
+/* @-webkit-keyframes needle-move { /* NOTE: Can't figure out how to get the needle not to come off the bottom!!! */
+  /* 0%{transform:rotate(0deg);}
+  20%{transform:rotate(30deg);}
+  50%{transform:rotate(80deg);}
+  100%{transform:rotate(90deg);}
+}
+
+#Needle {
+  -webkit-animation: needle-move infinite alternate linear 5s;
+    transform:rotate(0deg);
+    transform-origin: bottom;
+    transform:
+} */
 
 .sun {
   animation: 4s color-change infinite alternate linear;
