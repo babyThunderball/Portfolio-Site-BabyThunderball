@@ -28,3 +28,8 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
+
+$('li.menuItem').click(function(){ //test to see if active state will work on click. Not finished yet.
+    $('li.menuItem').removeClass('active')
+    .filter(this).addClass('active');
+})
