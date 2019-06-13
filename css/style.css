@@ -1637,13 +1637,21 @@ Large devices (1024px or larger)
     text-align: unset;
   }
 
-  picture.work-pic-small img {
+  picture>img.work-pic-small { /* NOTE: THIS ISN'T BEING DISPLAYED! NONE OF THE SMALL SOURCE SRCSET IMAGES ARE! */
     max-width: 316px;
     max-height: 700px;
   }
 
-  picture.work-pic-large img {
+  picture>img.work-pic-large {
     max-width: 700px;
+  }
+
+  picture>img.mic-pic-large {
+    max-width: 525px;
+  }
+
+  picture>img.mic-pic-small {
+    max-width: 300px;
   }
 
   #hero-home p {
