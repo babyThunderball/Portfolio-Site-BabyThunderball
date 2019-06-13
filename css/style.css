@@ -1077,10 +1077,7 @@ stroke-width: 19.859px;
 
 #ink-tank-title-table, #ink-tank-table {
   border: 1px solid #cacaca;
-  margin: 20px;
-  0;
-  auto;
-  auto;
+  margin: 20px auto 0 auto;
 }
 
 table {
