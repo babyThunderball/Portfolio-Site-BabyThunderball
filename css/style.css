@@ -1018,7 +1018,7 @@ stroke-width: 19.859px;
 }
 
 .left-col-skills.col-lg-4, .left-col-skills.col-md-4, .right-col-skills.col-lg-4, .right-col-skills.col-md-4, .mic.col-lg-4, .mic.col-md-4 {
-  width: 33%;
+  /*width: 33%;*/
   padding-top: 40px;
 }
 
@@ -1473,6 +1473,12 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   }
 }
 
+@media only screen and (max-width: 760px) {
+  .left-col-skills, .right-col-skills {
+    width: 50%;
+  }
+}
+
 /* ==============
 540px and smaller
 ============== */
@@ -1578,6 +1584,12 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   .just-right {
     text-align: right;
   }
+
+  .left-col-skills ul, .right-col-skills ul {
+    width: 100%;
+    text-align: left;
+    direction: ltr;
+  }
 }
 
 /* ==============
@@ -1609,6 +1621,20 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
   #empty-spacer {
     height: 100vh;
+  }
+
+  .mic {
+    display: inline-block;
+  }
+
+  .left-col-skills ul {
+    direction: rtl;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .mic {
+    display: none;
   }
 }
 
