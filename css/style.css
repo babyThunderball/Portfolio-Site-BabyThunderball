@@ -594,6 +594,10 @@ stroke-width: 19.859px;
   color: #fff;
 }
 
+div #skills-wrapper {
+  width: 100vw;
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
@@ -921,6 +925,17 @@ stroke-width: 19.859px;
 
 #copyright a {
   text-decoration: none;
+  display: inline-block;
+  color: #cc80ff;
+}
+
+#copyright a.far.fa-copyright {
+  color: #cc80ff;
+}
+
+#copyright a:hover {
+  display: inline-block;
+  color: #cc80ff;
 }
 
 .grey-text {
@@ -1097,6 +1112,7 @@ stroke-width: 19.859px;
 #ink-tank-title-table, #ink-tank-table {
   border: 1px solid #cacaca;
   margin: 20px auto 0 auto;
+  width: 95%;
 }
 
 table {
