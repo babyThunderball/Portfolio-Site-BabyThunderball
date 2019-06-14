@@ -142,7 +142,7 @@ a:link:not(.body-link):not(.icon):not(.phone):not(nav>div>ul>li>a>.not-me) {
 
 a:link.body-link {
   font-family: "Rokkitt", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 28px;
 }
 
@@ -605,8 +605,9 @@ div #skills-wrapper {
   margin-top: 40px;
 }
 
-#why-bt-text-col h2 {
+#why-bt-wrapper h2  {
   color: #19141A;
+  margin-bottom: 0;
 }
 
 /* ================ END LAYOUT STYLING ================ */
@@ -1085,8 +1086,22 @@ div #skills-wrapper {
   display: inline-block;
 }
 
-#why-bt-block p {
+#why-bt-text-col-1 p, #why-bt-text-col-2 p {
   color: #19141A;
+  font-weight: 500;
+}
+
+#why-bt-text-col-1, #why-bt-text-col-2 {
+  display: inline-block;
+  padding-top: 0
+}
+
+#why-bt-text-col-1 {
+  padding-left: 0;
+}
+
+#why-bt-text-col-2 {
+  padding-right: 0;
 }
 
 #why-bt-block {
