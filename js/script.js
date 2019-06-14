@@ -33,3 +33,14 @@ $('li.menuItem').click(function(){ //test to see if active state will work on cl
     $('li.menuItem').removeClass('active')
     .filter(this).addClass('active');
 })
+
+function removeColMd4(z) {
+  if (z.matches) { // If media query matches
+    $( ".left-col-skills" , "right-col-skills").removeClass( "col-md-4 col-lg-4" )
+    $( ".left-col-skills" , "right-col-skills").addClass( "col-md-6 col-lg-6");
+  }
+}
+
+var y = window.matchMedia("(min-width: 640px)")
+removeResponsive(y) // Call listener function at run time
+y.addListener(removeResponsive) // Attach listener function on state changes
