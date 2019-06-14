@@ -36,8 +36,10 @@ $('li.menuItem').click(function(){ //test to see if active state will work on cl
 
 function removeColMd4(z) {
   if (z.matches) { // If media query matches
-    $( ".left-col-skills" , "right-col-skills").removeClass( "col-md-4 col-lg-4" )
-    $( ".left-col-skills" , "right-col-skills").addClass( "col-md-6 col-lg-6");
+    $( ".left-col-skills").removeClass( "col-md-4 col-lg-4" )
+    .filter(this).addClass( "col-md-6 col-lg-6");
+    //$( ".right-col-skills").removeClass( "col-md-4 col-lg-4")
+    //.filter(this).addClass( "col-md-6 col-lg-6");
   }
 }
 
