@@ -1004,7 +1004,6 @@ stroke-width: 19.859px;
 
 .left-col-skills ul, .right-col-skills ul {
   list-style-type: square;
-  padding-left: 0;
   line-height: 1.5em;
 }
 .left-col-skills ul {
@@ -1013,23 +1012,16 @@ stroke-width: 19.859px;
 
 .right-col-skills ul {
   text-align: left;
-  list-style-position: inside;
   margin-left: 20px;
 }
 
-.left-col-skills.col-lg-4, .left-col-skills.col-md-4, .right-col-skills.col-lg-4, .right-col-skills.col-md-4, .mic.col-lg-4, .mic.col-md-4 {
+.mic.col-lg-4, .mic.col-md-4 {
   /*width: 33%;*/
   padding-top: 40px;
 }
 
 .mic {
   max-width: 330px;
-}
-
-#skills-wrapper {
-  overflow: hidden;
-  margin-left: 50px;
-
 }
 
 #sandbox-wrapper {
@@ -1322,6 +1314,14 @@ Small devices (320px and larger)
   .hero__container {
     height: 65vh;
   }
+
+  #cb-tools-dial {
+    display: none;
+  }
+
+  #sandbox-sm-screen {
+    display: block;
+  }
 }
 
 /* ==============================
@@ -1452,6 +1452,22 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   #sandbox-sm-screen {
     display: none;
   }
+
+  /* .left-col-skills {
+    padding-left: 0;
+  } */
+
+  .left-col-skills ul {
+    direction: rtl;
+  }
+
+  .left-col-skills.col-md-4, .left-col-skills.col-lg-4, .right-col-skills.col-md-4, .right-col-skills.col-lg-4, {
+    padding-top: 40px;
+  }
+
+  /* .left-col-skills ul, .right-col-skills ul {
+    width: 50%;
+  } */
 }
 
 /* =============
@@ -1474,8 +1490,28 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 }
 
 @media only screen and (max-width: 760px) {
-  .left-col-skills, .right-col-skills {
+  /* .left-col-skills, .right-col-skills {
     width: 50%;
+  } */
+
+  .left-col-skills.col-md-4, .left-col-skills.col-lg-4, .right-col-skills.col-md-4, .right-col-skills.col-lg-4, {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  #skills-wrapper {
+    overflow: hidden;
+    margin-left: 50px;
+  }
+
+  .right-col-skills ul {
+    margin-left: 0;
+  }
+
+  .left-col-skills ul {
+    text-align: left;
+    direction: ltr;
+    padding-bottom: 0;
   }
 }
 
@@ -1586,9 +1622,18 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   }
 
   .left-col-skills ul, .right-col-skills ul {
-    width: 100%;
+    /*width: 100%;*/
     text-align: left;
     direction: ltr;
+  }
+
+  .left-col-skills, .right-col-skills {
+    width: 100%;
+  }
+
+  #skills-wrapper {
+    margin-left: 0;
+    margin-right: 10px;
   }
 }
 
@@ -1625,10 +1670,6 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
   .mic {
     display: inline-block;
-  }
-
-  .left-col-skills ul {
-    direction: rtl;
   }
 }
 
