@@ -603,6 +603,7 @@ div #skills-wrapper {
   display: inline-block;
   width: 100%;
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 
 #why-bt-wrapper h2  {
@@ -1086,12 +1087,12 @@ div #skills-wrapper {
   display: inline-block;
 }
 
-#why-bt-text-col-1 p, #why-bt-text-col-2 p {
+.why-bt-container p {
   color: #19141A;
   font-weight: 500;
 }
 
-#why-bt-text-col-1, #why-bt-text-col-2 {
+.why-bt-container {
   display: inline-block;
   padding-top: 0
 }
@@ -1104,17 +1105,9 @@ div #skills-wrapper {
   padding-right: 0;
 }
 
-#why-bt-block {
-  background: #cacaca;
-  width: inherit;
-}
 
 .van-pic-bkgd {
-  /*background: #19141A;*/
-  display: inline-flex;
-  float: left;
-  shape-outside: circle(50%);
-  margin-right: 40px;
+  display: contents;
 }
 
 /*  #story-col::after, #skills-n-tools::after, #skill-col::after, #tools-col::after { THIS ISN'T MAKING ANY DIFFERENCE TO THE ABOUT PAGE LAYOUT ISSUE.
