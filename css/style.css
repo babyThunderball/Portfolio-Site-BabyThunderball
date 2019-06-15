@@ -1168,6 +1168,11 @@ td {
   padding-bottom: 0;
 }
 
+.last {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 tr>td.top {
   border-top: 1px solid #cacaca;
 }
@@ -1175,6 +1180,11 @@ tr>td.top {
 tr>td.right-top {
   border-top: 1px solid #cacaca;
   border-right: 1px solid #cacaca;
+}
+
+tr>td.top-bottom {
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
 }
 
 /* ================ END INK TANK IDs & TABLE STYLING ================ */
@@ -1619,6 +1629,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   tr>td.right-top, tr>td.last {
     border-right: 0;
     border-top: 0;
+    padding-top: 15px;
   }
 
   td {
@@ -1832,6 +1843,14 @@ Large devices (1024px or larger)
   .table {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media only screen (max-width: 1250px) {
+  .contaner {
+    max-width: 95%;
+    /* padding-left: 20px;
+    padding-right: 20px; */
   }
 }
 
