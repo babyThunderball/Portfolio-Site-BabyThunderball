@@ -643,6 +643,11 @@ div #skills-wrapper {
   max-width: 900px;
 }
 
+.center-me {
+  text-align: center;
+  margin-top: 0;
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
@@ -903,9 +908,51 @@ div #skills-wrapper {
   margin-left: 20px;
 }
 
-#ombulari-section {
+#ombulari-section/*, #problem-section*/ {
   background-color: #ffffff;
   padding: 40px 20px;
+}
+
+#problem-section {
+  background-color: #cacaca;
+  padding: 40px 20px;
+}
+
+.problem-text-block {
+  background-color: #fff;
+  height: 388px;
+}
+
+div.problem-text-block h3, div.problem-text-block p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div.problem-text-block h3{
+  padding-top: 20px;
+}
+
+div.problem-text-block p {
+  padding-bottom: 20px;
+}
+
+.overview-heading-container {
+  background-image: url("../img/waveform.png");
+  /*background-color: #E4D8CB;*/
+  width: 100vw;
+  background-repeat:round;
+  background-size:contain;
+  display: inline-block;
+}
+
+h2.black-currant-text.center-me {
+  background-color: rgba(202,202,202,.65);
+}
+
+.process-switch-container {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
 }
 
 /*.rect-behind-phone {
@@ -932,9 +979,13 @@ div #skills-wrapper {
   background-color: #E4D8CB;
 }
 
-#ombulari-section.row {
+#ombulari-section.row/*, #problem-section.row*/ {
   margin: 25px 0px 0px 0px;
-  /* ----- I DON'T THINK THIS IS DOING ANYTHING!!! -----*/
+  /* ----- This is preventing the gap b/w sections.-----*/
+}
+
+#problem-section.row {
+  margin: 0px 0px 40px 0px;
 }
 
 #ink-tank-section.row {
@@ -1162,7 +1213,7 @@ div #skills-wrapper {
 
 #ink-tank-title-table, #ink-tank-table {
   border: 1px solid #cacaca;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 0 auto;
   width: 95%;
 }
 
@@ -1283,6 +1334,76 @@ input:hover+.slider:before {
 }
 
 /* ================ END SOCIAL SWITCH STYLES ================ */
+
+/* ================ 16. INK TANK SWITCH STYLES ================ */
+/* .switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 113px;
+  margin: 10px 23px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+} */
+
+.slider-ink-tank {
+  position: absolute;
+  cursor: url("../img/Ink-Tank-project/Project/CB-cursor.png"),auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #cc80ff;
+  background-color: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-ink-tank:before {
+  position: absolute;
+  content: "";
+  height: 33px;
+  width: 33px;
+  left: 5px;
+  bottom: 65px;
+  border: 3px solid #cc80ff;
+  background-color: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:hover+.slider-ink-tank {
+  background-color: rgba(204, 128, 255, .8);
+}
+
+input:focus+.slider-ink-tank {
+  box-shadow: 0 0 1px #cc80ff;
+}
+
+input:hover+.slider-ink-tank:before {
+  -webkit-transform: translateY(61px);
+  -ms-transform: translateY(61px);
+  transform: translateY(61px);
+  background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
+  /* QUESTION: Do I need to add webkit here? */
+}
+
+/* ----- Rounded sliders ----- */
+.slider-ink-tank.round {
+  border-radius: 34px;
+}
+
+.slider-ink-tank.round:before {
+  border-radius: 50%;
+}
+
+/* ================ END INK TANK SWITCH STYLES ================ */
+
+
 /* ================ 17. BUTTON STYLES ================ */
 .button {
   display: inline-block;
@@ -1871,6 +1992,10 @@ Large devices (1024px or larger)
   .table {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .problem-text-block {
+    height: auto;
   }
 }
 
