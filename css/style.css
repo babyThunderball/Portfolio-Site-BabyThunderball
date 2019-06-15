@@ -611,6 +611,10 @@ div #skills-wrapper {
   margin-bottom: 0;
 }
 
+#pitch-pounds-why {
+  overflow-x: auto;
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
