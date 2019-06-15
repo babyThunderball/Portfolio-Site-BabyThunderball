@@ -464,6 +464,29 @@ stroke-width: 19.859px;
   fill: #cc80ff;
 }
 
+.cls-15, .cls-19 {
+  font-size: 23.505px;
+  fill: #cc80ff;
+}
+
+.cls-15, .cls-20 {
+  font-family: Rokkitt;
+}
+
+.cls-16, .cls-20 {
+  font-weight: 700;
+}
+
+.cls-17, .cls-18 {
+  fill: #CACACA;
+  font-family: "Lato Light";
+  font-size: 19.588px;
+}
+
+.cls-19 {
+  font-family: "Rokkitt SemiBold";
+}
+
 /* g>image>#sandbox-tuner-icon {
   display: flex;
   position: relative;
@@ -613,6 +636,11 @@ div #skills-wrapper {
 
 #pitch-pounds-why {
   overflow-x: auto;
+}
+
+#quote {
+  padding: 40px 20px;
+  max-width: 900px;
 }
 
 /* ================ END LAYOUT STYLING ================ */
