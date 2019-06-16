@@ -971,10 +971,13 @@ h2.black-currant-text.center-me {
 }
 
 #ink-tank-section {
-  background-color: #cacaca;
+  /*background-color: #cacaca;*/
   padding: 40px 20px;
 }
 
+#process-section {
+  padding: 0 20px 40px 20px;
+}
 #test-section {
   background-color: #E4D8CB;
 }
@@ -985,7 +988,11 @@ h2.black-currant-text.center-me {
 }
 
 #problem-section.row {
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+div#problem-wrapper {
+    overflow: hidden;
 }
 
 #ink-tank-section.row {
@@ -1201,8 +1208,8 @@ h2.black-currant-text.center-me {
 /* ================ 14. OM:BULARI IDs ================ */
 #hero-ombulari {}
 
-#ombulari-table, #ink-tank-table {
-  /*padding: 0px 20px;*/
+#ombulari-table, #ink-tank-table, #process-table {
+  padding: 20px 20px;
   margin-top: 20px;
   border: 1px solid #cacaca;
 }
@@ -1211,11 +1218,31 @@ h2.black-currant-text.center-me {
 /* ================ 15. INK TANK IDs & TABLE STYLING ================ */
 #hero-ink-tank {}
 
-#ink-tank-title-table, #ink-tank-table {
+#ink-tank-title-table, #ink-tank-table, #process-table {
   border: 1px solid #cacaca;
   margin: 40px auto 0 auto;
-  width: 95%;
+  /*width: 95%;*/ /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSEING THE ISSUE! */
 }
+
+#process-table {
+  table-layout: fixed;
+}
+
+#process-table td {
+  text-align: center;
+  width: 10%;
+  font-size: small;
+}
+
+.button-section {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.button.contact.ink-tank-button {
+  margin: 0 20px;
+}
+
 
 table {
   width: 100%;
@@ -1336,19 +1363,19 @@ input:hover+.slider:before {
 /* ================ END SOCIAL SWITCH STYLES ================ */
 
 /* ================ 16. INK TANK SWITCH STYLES ================ */
-/* .switch {
+.switch-ink-tank {
   position: relative;
   display: inline-block;
-  width: 55px;
-  height: 113px;
-  margin: 10px 23px;
+  width: 45px;
+  height: 92px;
+  /*margin: 10px 23px;*/
 }
 
-.switch input {
+.switch-ink-tank input {
   opacity: 0;
   width: 0;
   height: 0;
-} */
+}
 
 .slider-ink-tank {
   position: absolute;
@@ -1357,7 +1384,7 @@ input:hover+.slider:before {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid #cc80ff;
+  border: 1px solid #cc80ff;
   background-color: none;
   -webkit-transition: .4s;
   transition: .4s;
@@ -1368,9 +1395,9 @@ input:hover+.slider:before {
   content: "";
   height: 33px;
   width: 33px;
-  left: 5px;
-  bottom: 65px;
-  border: 3px solid #cc80ff;
+  left: 4px;
+  bottom: 50px;
+  border: 1px solid #cc80ff;
   background-color: none;
   -webkit-transition: .4s;
   transition: .4s;
@@ -1387,7 +1414,7 @@ input:focus+.slider-ink-tank {
 input:hover+.slider-ink-tank:before {
   -webkit-transform: translateY(61px);
   -ms-transform: translateY(61px);
-  transform: translateY(61px);
+  transform: translateY(46px);
   background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
   /* QUESTION: Do I need to add webkit here? */
 }
@@ -1878,6 +1905,11 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   }
 }
 
+@media only screen and (max-width: 1023px) {
+  #process-table {
+    display: inline-flex;
+  }
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -1977,12 +2009,17 @@ Large devices (1024px or larger)
   #empty-spacer {
     height: 80vh;
   }
+
+  #process-table {
+    display: block;
+  }
 }
 
 @media only screen (min-width: 1170px) {
   #empty-spacer {
     height: 100vh;
   }
+
 }
 
 /* ==============
