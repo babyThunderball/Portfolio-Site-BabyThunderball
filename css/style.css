@@ -214,7 +214,7 @@ nav>a:visited {
 }*/
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
+  /*padding: 10px 0;*/
   border-top: 2px solid rgba(204, 128, 255, 0.5);
 }
 
@@ -228,7 +228,7 @@ nav>a:visited {
 
 .navtoggle.responsive .subnav {
   display: block;
-  padding: 0 0;
+  padding: 0 0; /* NOTE: Maybe this has something to do w/ the shifting. Tried putting this in 320+ media query, but it didn't work. */
 }
 
 .navtoggle.responsive a:link.desktop-parent {
@@ -648,6 +648,13 @@ div #skills-wrapper {
   margin-top: 0;
 }
 
+.scroll-icon {
+  height: 60px;
+  width: auto;
+  margin-top: 150px;
+  /*transform: translateY(200px);*/
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
@@ -812,6 +819,16 @@ div #skills-wrapper {
     transform:
 } */
 
+@-webkit-keyframes scroller-move {
+  0%{transform: translateY(40px);}
+  100%{transform: translateY(20px);}
+
+}
+
+.scroll-icon {
+  -webkit-animation: scroller-move infinite alternate linear 2s;
+}
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
@@ -971,7 +988,7 @@ h2.black-currant-text.center-me {
 }
 
 #ink-tank-section {
-  /*background-color: #cacaca;*/
+  background-color: #cacaca;
   padding: 40px 20px;
 }
 
@@ -1526,6 +1543,10 @@ Small devices (320px and larger)
   #sandbox-sm-screen {
     display: block;
   }
+
+  .navtoggle.responsive li {
+    padding: 10px 0;
+  }
 }
 
 /* ==============
@@ -1643,6 +1664,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     border-top: 0;
   }
 
+  .navtoggle.responsive li {
+    padding: 0;
+  }
+
   a:link.phone {
     color: #cacaca;
   }
@@ -1711,6 +1736,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 400px;
+  }
+
+  .scroll-icon {
+    display: none;
   }
 }
 
