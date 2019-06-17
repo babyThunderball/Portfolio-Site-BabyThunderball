@@ -651,8 +651,51 @@ div #skills-wrapper {
 .scroll-icon {
   height: 60px;
   width: auto;
-  margin-top: 150px;
+  /*margin-top: 150px;*/
   /*transform: translateY(200px);*/
+}
+
+p.micro-text {
+  color: #cc80ff;
+  font-size: 16px !important;
+}
+
+.email-addy {
+  display: inline-block;
+  color: #ffffff !important;
+  font-family: "Rokkitt", serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: unset;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+span.small-rokkitt {
+  font-size: .75em;
+  font-weight: 300;
+  text-transform: lowercase;
+  line-height: unset;
+}
+
+span.mid-rokkitt {
+  font-size: .75em;
+  font-weight: 400;
+  text-transform: lowercase;
+  line-height: .1em;
+}
+
+span.grey-text {
+  color: #cacaca;
+}
+
+hr {
+  max-width: 400px;
+  border: 1px dashed #cc80ff;
+  margin-top: 40px;
 }
 
 /* ================ END LAYOUT STYLING ================ */
@@ -918,7 +961,7 @@ div #skills-wrapper {
 }
 
 #work {
-  padding: 20px 0 0 0;
+  padding: 60px 0 0 0;
 }
 
 #work h2 {
@@ -992,9 +1035,14 @@ h2.black-currant-text.center-me {
   padding: 40px 20px;
 }
 
-#process-section {
+#process-section{
   padding: 0 20px 40px 20px;
 }
+
+#ink-tank-title-table-section {
+  padding: 0 20px;
+}
+
 #test-section {
   background-color: #E4D8CB;
 }
@@ -1235,10 +1283,15 @@ div#problem-wrapper {
 /* ================ 15. INK TANK IDs & TABLE STYLING ================ */
 #hero-ink-tank {}
 
-#ink-tank-title-table, #ink-tank-table, #process-table {
+#ink-tank-table, #process-table {
   border: 1px solid #cacaca;
   margin: 40px auto 0 auto;
   /*width: 95%;*/ /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSEING THE ISSUE! */
+}
+
+#ink-tank-title-table {
+  border: 1px solid #cacaca;
+  margin: 40px auto 0 auto;
 }
 
 #process-table {
@@ -1396,7 +1449,8 @@ input:hover+.slider:before {
 
 .slider-ink-tank {
   position: absolute;
-  cursor: url("../img/Ink-Tank-project/Project/CB-cursor.png"),auto;
+  /*cursor: url("../img/Ink-Tank-project/Project/CB-cursor.png"),auto;*/
+  cursor: default;
   top: 0;
   left: 0;
   right: 0;
@@ -1670,6 +1724,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
   a:link.phone {
     color: #cacaca;
+    cursor: default;
   }
 
   #desktop-menu {
