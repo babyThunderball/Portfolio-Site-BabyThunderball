@@ -197,7 +197,7 @@ a:active {
 	a:hover:not(.button):not(.icon):not(.phone) {
 		background-position: 0 0;
 		color: transparent;
-		transition: .4s 0;
+		transition: .4s;
 	}
 }
 
@@ -858,7 +858,7 @@ hr {
 		opacity: 0.0;
 	}
 
-	100% { 
+	100% {
 		fill: #fff; /* csslint allow: known-properties */
 		opacity: 1.0;
 		transform: rotate(365deg);
@@ -1039,7 +1039,7 @@ hr {
  background-repeat: no-repeat;*/
 /* } */
 #hero-home { /* csslint allow: ids */
-	
+
 	/* background-color: #ffe4c4; */
 	/*background-image: url("../img/hmpg-placeholder-@2x.png");
  background-repeat: no-repeat;
