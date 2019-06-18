@@ -244,11 +244,11 @@ nav > a:visited {
 	color: #cacaca;
 }
 
-.navtoggle.responsive li:last-child li:not(:.subnav) { /* csslint allow: adjoining-classes */
+.navtoggle.responsive li:last-child li:not(.subnav) { /* csslint allow: adjoining-classes */
 	padding: 0 0 10px;
 }
 
-.navtoggl.responsive li:.desktop-parent { /* csslint allow: adjoining-classes */
+.navtoggl.responsive li.desktop-parent { /* csslint allow: adjoining-classes */
 	border-top: 2px solid #cc80ff;
 	border-top: 2px solid rgba(204, 128, 255, 0.5);
 	display: block;
@@ -1937,8 +1937,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 	.left-col-skills.col-md-4,
 	.left-col-skills.col-lg-4,
 	.right-col-skills.col-md-4,
-	.right-col-skills.col-lg-4,
-		{
+	.right-col-skills.col-lg-4 {
 		padding-top: 40px;
 	}
 
@@ -1992,8 +1991,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 	.left-col-skills.col-md-4,
 	.left-col-skills.col-lg-4,
 	.right-col-skills.col-md-4,
-	.right-col-skills.col-lg-4,
-		{
+	.right-col-skills.col-lg-4 {
 		margin-left: 0;
 		padding-top: 0;
 	}
@@ -2300,15 +2298,14 @@ Large devices (1024px or larger)
 	}
 }
 
-@media only screen (min-width: 1170px) {
-	#empty-spacer { /* csslint allow: ids */
+@media only screen and (min-width: 1170px) {
+	#empty-spacer {
 		height: 100vh;
 	}
-
 }
 
-@media only screen (max-width: 1037px) {
-	a.button.contact.ink-tank-button {
+@media only screen and (max-width: 1037px) {
+	a.button.contact.ink-tank-button { /* csslint allow: adjoining-classes */
 		margin-top: 20px;
 	}
 }
@@ -2316,7 +2313,7 @@ Large devices (1024px or larger)
 /* ==============
 1240px or smaller
 ============== */
-@media only screen (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
 	.table {
 		margin-left: 20px;
 		margin-right: 20px;
@@ -2327,18 +2324,18 @@ Large devices (1024px or larger)
 	}
 }
 
-@media only screen (max-width: 1250px) {
+@media only screen and (max-width: 1250px) {
 	.contaner {
 		max-width: 95%;
 		/* padding-left: 20px;
-    padding-right: 20px; */
+    	padding-right: 20px; */
 	}
 }
 
 /* ==============
 1241px or larger
 ============== */
-@media only screen (min-width: 1241px) {
+@media only screen and (min-width: 1241px) {
 	.table {
 		margin-left: auto;
 		margin-right: auto;
