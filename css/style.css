@@ -176,8 +176,29 @@ a:active {
 	text-decoration: underline !important; /* csslint allow: known-properties, important */
 }
 
+@media (-ms-min-device-pixel-ratio:0) {
+	a.body-link {
+		-ms-background-clip: text;
+		-webkit-background-clip: text;
+		background-color: #5A3274;
+		background-image: -moz-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -ms-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -o-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -webkit-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-position: 100% 0;
+		background-size: 200% 200%;
+		color: transparent;
+		-moz-transition: .1s .2s;
+		-o-transition: .1s .2s;
+		-webkit-transition: .1s .2s;
+		transition: .1s .2s;
+	}
+}
+
 @media (-webkit-min-device-pixel-ratio:0) {
 	a.body-link {
+		-ms-background-clip: text;
 		-webkit-background-clip: text;
 		background-color: #5A3274;
 		background-image: -moz-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
@@ -292,6 +313,7 @@ nav > div > ul > div > li > div > ul > li > a:focus {
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	-ms-background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -309,6 +331,7 @@ nav .current {
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	-ms-background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -646,6 +669,7 @@ stroke-width: 19.859px;
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	-ms-background-clip: text;
 	-webkit-background-clip: text;
 	display: inline-block;
 	padding: 10px 20px;
@@ -1697,6 +1721,7 @@ input:hover + .slider-ink-tank:before {
 	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	opacity: 1;
+	-ms-background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
