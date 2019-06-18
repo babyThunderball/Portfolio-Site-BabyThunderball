@@ -698,6 +698,15 @@ hr {
   margin-top: 40px;
 }
 
+svg.vanimation {
+  max-width: 50vw;
+  max-height: none;
+  z-index:-9;
+  display: none; /* STOPPED HERE AT 12:20 AM ON TUESDAY 18 JUN 19 */
+  position: absolute;
+  float: left;
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
