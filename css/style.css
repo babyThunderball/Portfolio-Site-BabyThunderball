@@ -141,7 +141,7 @@ a:link:not(.body-link):not(.icon):not(.phone):not(nav>div>ul>li>a>.not-me) {
 }
 
 a:link.body-link {
-  font-family: "Rokkitt", sans-serif;
+  font-family: "Rokkitt", serif;
   font-weight: 600;
   font-size: 28px;
 }
@@ -259,7 +259,7 @@ nav>div>ul>li>a, .subnav, .desktop-parent, .mobile-parent {
   padding: 0 15px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Rokkitt", sans-serif;
+  font-family: "Rokkitt", serif;
   font-weight: 400;
 }
 
@@ -441,7 +441,8 @@ stroke-width: 19.859px;
 .cls-10 {
   font-size: 30px;
   fill: #e4d8cb;
-  font-family: "Lato Light";
+  font-family: "Lato", sans-serif;
+	font-weight: 300;
 }
 
 .cls-11 {
@@ -449,7 +450,7 @@ stroke-width: 19.859px;
 }
 
 .cls-12 {
-  font-family: "Rokkitt";
+  font-family: "Rokkitt", serif;
   font-size: 36px;
   font-weight: 700;
 }
@@ -457,7 +458,8 @@ stroke-width: 19.859px;
 .cls-13 {
   font-size: 24px;
   fill: #cacaca;
-  font-family: "Lato Light";
+  font-family: "Lato", sans-serif;
+	font-weight: 300;
 }
 
 .cls-14 {
@@ -470,7 +472,7 @@ stroke-width: 19.859px;
 }
 
 .cls-15, .cls-20 {
-  font-family: Rokkitt;
+  font-family: "Rokkitt", serif;
 }
 
 .cls-16, .cls-20 {
@@ -479,12 +481,14 @@ stroke-width: 19.859px;
 
 .cls-17, .cls-18 {
   fill: #CACACA;
-  font-family: "Lato Light";
+  font-family: "Lato", sans-serif;
+	font-weight: 300;
   font-size: 19.588px;
 }
 
 .cls-19 {
-  font-family: "Rokkitt SemiBold";
+  font-family: "Rokkitt", serif;
+	font-weight: 600;
 }
 
 /* g>image>#sandbox-tuner-icon {
@@ -1377,7 +1381,7 @@ td {
 }
 
 .table-rokkitt {
-  font-family: "Rokkitt", sans-serif;
+  font-family: "Rokkitt", serif;
   font-size: 28px;
   font-weight: 500;
   padding-bottom: 0;
