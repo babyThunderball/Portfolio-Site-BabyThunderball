@@ -712,6 +712,31 @@ svg.vanimation {
   float: left;
 }
 
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -260px;
+  display: inline-block;
+  padding: 200px 300px;
+  border-radius: 2px;
+  background-image: url(https://docs.moodle.org/dev/images_dev/a/a9/doughnut_pie_chart.png);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+[data-title]:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 8px;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;
+  border-bottom: 8px solid #000;
+}
+
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
 @keyframes color-change {
