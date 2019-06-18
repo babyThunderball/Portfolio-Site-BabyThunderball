@@ -47,8 +47,8 @@ Honey Flower —    #5A3274 (90,50,116) [for Body Links]
 /* ----- END UNIVERSAL SELECTOR ----- */
 html {
 	font-size: 18px;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
 
 /*nav { /* Removed in exercise 2.3 jQuery */
@@ -60,21 +60,21 @@ body {
 	color: #cacaca;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 }
 
 header {
-	position: fixed;
-	width: 100%;
 	background-color: #19141a;
 	padding: 10px 20px;
+	position: fixed;
 	/* margin-bottom: 20px; */
 	/* text-align: center; */
+	width: 100%;
 	/* Removed in exercise 2.3 jQuery */
-	-webkit-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
-	-moz-box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
-	box-shadow: 0px 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	z-index: 9999;
 }
 
@@ -83,45 +83,45 @@ main {
 }
 
 p {
+	color: #cacaca;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
-	color: #cacaca;
 	line-height: 1.75em;
 }
 
 h1 {
-	font-family: "Rokkitt", serif;
 	color: #e4d8cb;
+	font-family: "Rokkitt", serif;
 	/*-- font-size: 48px; --*/
 	font-weight: 400;
 	line-height: 150%;
 }
 
 h2 {
+	color: #e4d8cb;
 	font-family: "Rokkitt", serif;
 	font-weight: 400;
-	color: #e4d8cb;
 	line-height: 150%;
 }
 
 h3 {
+	color: #19141A;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
-	color: #19141A;
 	line-height: 150%;
 }
 
 h4 {
+	color: #e4d8cb;
 	font-family: "Lato", sans-serif;
 	font-weight: 300;
-	color: #e4d8cb;
 	line-height: 150%;
 }
 
 h5 {
+	color: #cacaca;
 	font-family: "Rokkitt", serif;
 	font-weight: 300;
-	color: #cacaca;
 	line-height: 150%;
 }
 
@@ -137,14 +137,14 @@ img[src$=".svg"] {
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link:not(.body-link):not(.icon):not(.phone):not(nav>div>ul>li>a>.not-me) {
+a:link:not(.body-link):not(.icon):not(.phone):not nav>div>ul>li>a>.not-me {
 	color: #CC80FF;
 }
 
 a:link.body-link {
 	font-family: "Rokkitt", serif;
-	font-weight: 600;
 	font-size: 28px;
+	font-weight: 600;
 }
 
 a:link.phone {
@@ -169,23 +169,27 @@ a:active {
 
 .body-link {
 	color: #5A3274;
+	font-weight: 400;
 	/*font-family: "Rokkitt", sans-serif;
    font-weight: 500;
    font-size: 28px;*/
 	text-decoration: underline !important;
-	text-decoration-style: wavy !important;
-	font-weight: 400;
+	/*text-decoration-style: wavy !important;*/
 }
 
 @media (-webkit-min-device-pixel-ratio:0) {
 	a.body-link {
 		background-color: #5A3274;
 		background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -moz-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -o-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -ms-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+		background-image: -webkit-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
 		background-position: 100% 0;
 		background-size: 200% 200%;
 		color: transparent;
-		-webkit-transition: .1s .2s;
 		-webkit-background-clip: text;
+		-webkit-transition: .1s .2s;
 	}
 
 	a:hover:not(.button):not(.icon):not(.phone) {
