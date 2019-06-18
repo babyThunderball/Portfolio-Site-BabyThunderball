@@ -698,6 +698,11 @@ hr {
   margin-top: 40px;
 }
 
+hr.long {
+  max-width: 1200px;
+}
+
+
 svg.vanimation {
   max-width: 50vw;
   max-height: none;
@@ -1319,7 +1324,7 @@ div#problem-wrapper {
 }
 
 .button.contact.ink-tank-button {
-  margin: 0 20px;
+  margin: 20px;
 }
 
 
@@ -1805,6 +1810,20 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   .scroll-icon {
     display: none;
   }
+
+  div#process-table {
+    display: none;
+  }
+
+  div#process-list {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  div#process-list {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -2113,6 +2132,12 @@ Large devices (1024px or larger)
     height: 100vh;
   }
 
+}
+
+@media only screen (max-width: 1037px) {
+  a.button.contact.ink-tank-button {
+    margin-top: 20px;
+  }
 }
 
 /* ==============
