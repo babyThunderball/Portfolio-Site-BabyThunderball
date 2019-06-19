@@ -1355,8 +1355,13 @@ div.problem-text-block p {
 }
 
 h2.black-currant-text.center-me { /* csslint allow: unique-headings */
-	background-color: #cacaca;
-	background-color: rgba(202, 202, 202, .65);
+	/* background-color: #cacaca;
+	background-color: rgba(202, 202, 202, .65); */
+  background-image: -moz-linear-gradient(left, transparent 10%, #5A3274 20%, #cc80ff 50%, #5A3274 80%, transparent 90%);
+  background-image: -ms-linear-gradient(left, transparent 10%, #5A3274 20%, #cc80ff 50%, #5A3274 80%, transparent 90%);
+  background-image: -o-linear-gradient(left, transparent 10%, #5A3274 20%, #cc80ff 50%, #5A3274 80%, transparent 90%);
+  background-image: -webkit-gradient(left, transparent 10%, #5A3274 20%, #cc80ff 50%, #5A3274 80%, transparent 90%);
+  background-image: -webkit-linear-gradient(left, transparent 5%, rgba(204, 128, 255, .8) 20%, rgba(204, 128, 255, .8) 50%, rgba(204, 128, 255, .8) 80%, transparent 95%)
 }
 
 .process-switch-container {
@@ -2250,6 +2255,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 	.logo {
 		max-width: 70%;
 	}
+
+  h2.black-currant-text.center-me {
+    background-color: rgba(204, 128, 255, .5);
+  }
 }
 
 /* ==============
