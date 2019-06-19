@@ -1345,7 +1345,7 @@ div.problem-text-block p {
 }
 
 .overview-heading-container {
-	background-image: url("../img/waveform.png");
+	background-image: url("../img/waveform.png"); /* IMAGE CREDIT: Background vector created by pikisuperstar - www.freepik.com https://www.freepik.com/free-photos-vectors/background */
 	/*background-color: #E4D8CB;*/
 	background-repeat: round;
 	background-size: contain;
