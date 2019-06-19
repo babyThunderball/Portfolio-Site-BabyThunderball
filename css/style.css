@@ -726,7 +726,7 @@ div #skills-wrapper { /* csslint allow: ids */
 }
 
 #pitch-pounds-why { /* csslint allow: ids */
-	overflow-x: auto;
+	overflow: auto;
 }
 
 #quote { /* csslint allow: ids */
@@ -1270,7 +1270,7 @@ h2.black-currant-text.center-me { /* csslint allow: unique-headings */
 
 #pitch-wrapper { /* csslint allow: ids */
 	display: block;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 }
 
