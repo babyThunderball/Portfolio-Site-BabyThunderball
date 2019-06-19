@@ -105,7 +105,7 @@ if (/Windows\ NT/.test(navigator.userAgent)) {
         browser.osversion = false;
     }
 } else if (/OS\ X\ /.test(navigator.userAgent)) {
-    browser.os = "os x"; // 
+    browser.os = "os x"; //
     browser.osversion = /OS\ X\ [0-9]{2}_([0-9]{1,2})_[0-9]{1,2}/i.exec(navigator.userAgent)[1];
 } else if (/(Linux)/.test(navigator.userAgent)) {
     browser.os = "linux";
