@@ -989,37 +989,45 @@ hr {
 */
 /* ---------- SCROLLBAR STYLES ---------- */
 /* width */
+/*
 ::-webkit-scrollbar {
   width: 10px;
 }
+*/
 
 /* Track */
+/*
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+*/
 
 /* Handle */
+/*
 ::-webkit-scrollbar-thumb {
   background: #5A3274;
 }
+*/
 
 /* Handle on hover */
+/*
 ::-webkit-scrollbar-thumb:hover {
-  /*background: #cc80ff;*/
-		background-color: #5A3274;
-		background-image: -moz-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
-		background-image: -ms-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
-		background-image: -o-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
-		background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
-		background-image: -webkit-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
-		background-position: 100% 0;
-		background-size: 100% 100%;
-		/*color: transparent;*/
-		-moz-transition: .1s .2s;
-		-o-transition: .1s .2s;
-		-webkit-transition: .1s .2s;
-		transition: .1s .2s;
+	background-color: #5A3274;
+	background-image: -moz-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+	background-image: -ms-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+	background-image: -o-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+	background-image: -webkit-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+	background-position: 100% 0;
+	background-size: 100% 100%;
+	color: transparent;
+	-moz-transition: .1s .2s;
+	-o-transition: .1s .2s;
+	-webkit-transition: .1s .2s;
+	transition: .1s .2s;
 }
+*/
+/* ---------- END SCROLLBAR STYLES ---------- */
 
 /* ================ END LAYOUT STYLING ================ */
 /* ================ 10. ANIMATIONS ================ */
