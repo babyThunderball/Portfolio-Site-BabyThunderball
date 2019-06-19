@@ -814,7 +814,7 @@ hr {
 }
 
 .ichi[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/SWOT-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -825,7 +825,7 @@ hr {
 	display: inline-block;
   	left: 50%;
   	margin-left: -81px;
-	padding: 200px 478px;
+	padding: 349px 478px;
 	position: absolute;
 	white-space: nowrap;
   	z-index: 1;
@@ -843,14 +843,14 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -209px;
-	padding: 200px 478px;
+	padding: 210px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 2;
 }
 
 .san[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Jason-Persona-LONG-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -861,14 +861,14 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -337px;
-	padding: 200px 478px;
+	padding: 263px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 3;
 }
 
 .shi[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Jason-User-Flow-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -879,14 +879,14 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -465px;
-	padding: 200px 478px;
+	padding: 263px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 4;
 }
 
 .go[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/ink-tank-card-sort-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -897,14 +897,14 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -480px;
-	padding: 200px 478px;
+	padding: 399px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 5;
 }
 
 .roku[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/rapid-prototype-MI-FI-960.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -915,14 +915,14 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -483px;
-	padding: 200px 478px;
+	padding: 325px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 6;
 }
 
 .shichi[data-title]:hover::before {
-	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/test-results-960.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
 	bottom: 160%;
@@ -933,7 +933,7 @@ hr {
 	display: inline-block;
 	left: 50%;
 	margin-left: -612px;
-	padding: 200px 478px;
+	padding: 365px 478px;
 	position: absolute;
 	white-space: nowrap;
 	z-index: 7;
@@ -973,6 +973,10 @@ hr {
 	position: absolute;
 	white-space: nowrap;
 	z-index: 9;
+}
+
+.container.col-md-6.col-lg-7.no-left-padding {
+	padding-left: 0;
 }
 
 /* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE TOOLTIP
@@ -1317,12 +1321,12 @@ hr {
 }
 
 #problem-section { /* csslint allow: ids */
-	background-color: #cacaca;
+	background-color: none;
 	padding: 40px 20px;
 }
 
 .problem-text-block {
-	background-color: #fff;
+	background-color: #cacaca;
 	height: 388px;
 }
 
@@ -1346,6 +1350,7 @@ div.problem-text-block p {
 	background-repeat: round;
 	background-size: contain;
 	display: inline-block;
+	margin-top: 100px;
 	width: 100vw;
 }
 
