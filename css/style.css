@@ -817,35 +817,165 @@ hr {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
-	bottom: 50%;
-	color: #fff;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	content: attr(data-title);
 	display: inline-block;
-	font-family: sans-serif;
-	font-size: 12px;
-  left: 50%;
-  margin-left: -81px;
-	padding: 200px 300px;
+  	left: 50%;
+  	margin-left: -81px;
+	padding: 200px 478px;
 	position: absolute;
 	white-space: nowrap;
-  z-index: 1;
+  	z-index: 1;
 }
 
 .ni[data-title]:hover::before {
-	background-image: url(https://www.wikihow.com/images/thumb/1/1b/Use-HTML-and-CSS-Step-1Bullet1.jpg/aid4545843-v4-728px-Use-HTML-and-CSS-Step-1Bullet1.jpg);
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
-	bottom: -260px;
-	color: #fff;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	content: attr(data-title);
 	display: inline-block;
-	font-family: sans-serif;
-	font-size: 12px;
-	padding: 200px 300px;
+	left: 50%;
+	margin-left: -209px;
+	padding: 200px 478px;
 	position: absolute;
 	white-space: nowrap;
+	z-index: 2;
 }
 
+.san[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -337px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 3;
+}
+
+.shi[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -465px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 4;
+}
+
+.go[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -480px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 5;
+}
+
+.roku[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -483px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 6;
+}
+
+.shichi[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -612px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 7;
+}
+
+.hachi[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -741px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 8;
+}
+
+.kyu[data-title]:hover::before {
+	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
+	background-repeat: no-repeat;
+	border-radius: 2px;
+	bottom: 160%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -870px;
+	padding: 200px 478px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 9;
+}
+
+/* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE TOOLTIP
 [data-title]:hover::after {
 	border: 8px solid transparent;
 	border-bottom: 8px solid #000;
@@ -856,6 +986,7 @@ hr {
 	left: 8px;
 	position: absolute;
 }
+*/
 /* ---------- SCROLLBAR STYLES ---------- */
 /* width */
 ::-webkit-scrollbar {
