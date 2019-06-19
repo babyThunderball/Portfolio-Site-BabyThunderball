@@ -40,15 +40,25 @@ Honey Flower —    #5A3274 (90,50,116) [for Body Links]
 /* ================ END FONTS ================ */
 /* ================ 3. GLOBAL STYLING ================ */
 /* ----- UNIVERSAL SELECTOR! ALWAYS ADD THIS AT THE BEGINNING! -----*/
-* { /* csslint allow: universal-selector */
+/** { /* csslint allow: universal-selector */
+	/*-moz-box-sizing: border-box;
 	box-sizing: border-box;
-}
+}*/
 
 /* ----- END UNIVERSAL SELECTOR ----- */
 html {
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 	font-size: 18px;
 	height: 100%;
 	width: 100%;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+  	-moz-box-sizing: inherit;
+  	box-sizing: inherit;
 }
 
 /*nav { /* Removed in exercise 2.3 jQuery */
@@ -726,7 +736,7 @@ div #skills-wrapper { /* csslint allow: ids */
 }
 
 #pitch-pounds-why { /* csslint allow: ids */
-	overflow-x: auto;
+	overflow: auto;
 }
 
 #quote { /* csslint allow: ids */
@@ -828,6 +838,41 @@ hr {
 	display: inline-block;
 	left: 8px;
 	position: absolute;
+}
+/* ---------- SCROLLBAR STYLES ---------- */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cacaca; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5A3274; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: #cc80ff;*/
+	/*-ms-background-clip: text;
+		-webkit-background-clip: text;*/
+		background-color: #5A3274;
+		background-image: -moz-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+		background-image: -ms-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+		background-image: -o-linear-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+		background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+		background-image: -webkit-gradient(top, #cc80ff 0%, #5A3274 100%, #cc80ff 0%, transparent 50%);
+		background-position: 100% 0;
+		background-size: 100% 100%;
+		/*color: transparent;*/
+		-moz-transition: .1s .2s;
+		-o-transition: .1s .2s;
+		-webkit-transition: .1s .2s;
+		transition: .1s .2s;
 }
 
 /* ================ END LAYOUT STYLING ================ */
@@ -1270,7 +1315,7 @@ h2.black-currant-text.center-me { /* csslint allow: unique-headings */
 
 #pitch-wrapper { /* csslint allow: ids */
 	display: block;
-	overflow: auto;
+	overflow: hidden;
 	position: relative;
 }
 
@@ -1568,6 +1613,7 @@ tr > td.top-bottom {
 }
 
 input:hover + .slider {
+	background-color: #cc80ff;
 	background-color: rgba(204, 128, 255, .8);
 }
 
@@ -1647,6 +1693,7 @@ input:hover + .slider:before {
 }
 
 input:hover + .slider-ink-tank {
+	background-color: #cc80ff;
 	background-color: rgba(204, 128, 255, .8);
 }
 
