@@ -1746,16 +1746,16 @@ tr > td.top-bottom {
 .slider:before {
 	background-color: none;
 	border: 3px solid #cc80ff;
-	bottom: 65px;
+	bottom: 60px;
 	content: "";
-	height: 33px;
-	left: 5px;
+	height: 43px;
+	left: 3px;
 	position: absolute;
 	-moz-transition: .4s;
 	-o-transition: .4s;
 	-webkit-transition: .4s;
 	transition: .4s;
-	width: 33px;
+	width: 43px;
 }
 
 input:hover + .slider {
@@ -1774,11 +1774,11 @@ input:hover + .slider:before {
 	background-image: -webkit-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: -webkit-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
-	-moz-transform: translateY(61px);
-	-ms-transform: translateY(61px);
-	-o-transform: translateY(61px);
-	-webkit-transform: translateY(61px);
-	transform: translateY(61px);
+	-moz-transform: translateY(57px);
+	-ms-transform: translateY(57px);
+	-o-transform: translateY(57px);
+	-webkit-transform: translateY(57px);
+	transform: translateY(57px);
 }
 
 /* ----- Rounded sliders ----- */
@@ -1829,7 +1829,7 @@ input:hover + .slider:before {
 	bottom: 50px;
 	content: "";
 	height: 33px;
-	left: 4px;
+	left: 5px;
 	position: absolute;
 	-moz-transition: .4s;
 	-o-transition: .4s;
