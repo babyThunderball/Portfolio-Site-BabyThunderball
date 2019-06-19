@@ -813,25 +813,25 @@ hr {
 	z-index: -9;
 }
 
-.ichi[data-title]:hover::before {
+#ichi[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/SWOT-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
-	bottom: 160%;
+	bottom: 180%;
 	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
 	content: attr(data-title);
 	display: inline-block;
-  	left: 50%;
-  	margin-left: -81px;
+  left: 50%;
+  margin-left: -81px;
 	padding: 349px 478px;
 	position: absolute;
 	white-space: nowrap;
   	z-index: 1;
 }
 
-.ni[data-title]:hover::before {
+#ni[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -849,7 +849,7 @@ hr {
 	z-index: 2;
 }
 
-.san[data-title]:hover::before {
+#san[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Jason-Persona-LONG-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -867,7 +867,7 @@ hr {
 	z-index: 3;
 }
 
-.shi[data-title]:hover::before {
+#shi[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Jason-User-Flow-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -885,7 +885,7 @@ hr {
 	z-index: 4;
 }
 
-.go[data-title]:hover::before {
+#go[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/ink-tank-card-sort-960px.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -903,7 +903,7 @@ hr {
 	z-index: 5;
 }
 
-.roku[data-title]:hover::before {
+#roku[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/rapid-prototype-MI-FI-960.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -921,7 +921,7 @@ hr {
 	z-index: 6;
 }
 
-.shichi[data-title]:hover::before {
+#shichi[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/test-results-960.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -939,7 +939,7 @@ hr {
 	z-index: 7;
 }
 
-.hachi[data-title]:hover::before {
+#hachi[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -957,7 +957,7 @@ hr {
 	z-index: 8;
 }
 
-.kyu[data-title]:hover::before {
+#kyu[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/Survey-Screenshots.png);
 	background-repeat: no-repeat;
 	border-radius: 2px;
@@ -975,22 +975,45 @@ hr {
 	z-index: 9;
 }
 
+#ichi.top:after
+        {
+            border-top-color: transparent;
+            border-bottom: 10px solid #795EB1;
+            top: -20px;
+            bottom: auto;
+        }
+
+        #ichi.left:after
+        {
+            left: 10px;
+            margin: 0;
+        }
+
+        #ichi.right:after
+        {
+            right: 10px;
+            left: auto;
+            margin: 0;
+        }
+
 .container.col-md-6.col-lg-7.no-left-padding {
 	padding-left: 0;
 }
 
-/* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE TOOLTIP
+/* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE TOOLTIP */
 [data-title]:hover::after {
-	border: 8px solid transparent;
-	border-bottom: 8px solid #000;
-	bottom: -20px;
-	color: #fff;
-	content: '';
-	display: inline-block;
-	left: 8px;
-	position: absolute;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #795EB1;
+  bottom: 137px;
+  content: "";
+  height: 0;
+  left: 10%;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
 }
-*/
+
 /* ---------- SCROLLBAR STYLES ---------- */
 /* width */
 /*
