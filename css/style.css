@@ -1738,7 +1738,7 @@ tr > td.top-bottom {
 
 .slider {
 	background-color: none;
-	border: 3px solid #cc80ff;
+	border: 1px solid #cc80ff;
 	bottom: 0;
 	cursor: pointer;
 	left: 0;
@@ -1753,11 +1753,11 @@ tr > td.top-bottom {
 
 .slider:before {
 	background-color: none;
-	border: 3px solid #cc80ff;
+	border: 1px solid #cc80ff;
 	bottom: 60px;
 	content: "";
 	height: 43px;
-	left: 3px;
+	left: 5px;
 	position: absolute;
 	-moz-transition: .4s;
 	-o-transition: .4s;
@@ -1782,11 +1782,11 @@ input:hover + .slider:before {
 	background-image: -webkit-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: -webkit-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
-	-moz-transform: translateY(57px);
-	-ms-transform: translateY(57px);
-	-o-transform: translateY(57px);
-	-webkit-transform: translateY(57px);
-	transform: translateY(57px);
+	-moz-transform: translateY(54px);
+	-ms-transform: translateY(54px);
+	-o-transform: translateY(54px);
+	-webkit-transform: translateY(54px);
+	transform: translateY(54px);
 }
 
 /* ----- Rounded sliders ----- */
