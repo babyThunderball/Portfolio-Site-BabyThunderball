@@ -299,9 +299,11 @@ nav > div > ul {
 nav > div > ul > li > a,
 .subnav,
 .desktop-parent,
-.mobile-parent {
+.mobile-parent,
+.menuItem {
 	font-family: "Rokkitt", serif;
 	font-weight: 400;
+	list-style: none;
 	padding: 0 15px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -813,6 +815,41 @@ hr {
 	z-index: -9;
 }
 
+/* .body-link title {
+	background-image: -moz-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+	background-image: -ms-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+	background-image: -o-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+	background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+	background-image: -webkit-gradient(left, #cc80ff 0%, #5A3274 30%, #cc80ff 0%, transparent 50%);
+	border-radius: 5px;
+	bottom: 180%;
+	-moz-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	-webkit-box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
+	content: attr(data-title);
+	display: inline-block;
+	left: 50%;
+	margin-left: -81px;
+	padding: 100px 300px;
+	position: absolute;
+	white-space: nowrap;
+	z-index: 1;
+} */
+
+/* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE BODY-LINK TOOLTIP */
+/* .body-link title:hover::after {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5A3274;
+  bottom: 137px;
+  content: "";
+  height: 0;
+  left: 10%;
+  position: absolute;
+  margin-left: -10px;
+  width: 0;
+} */
+
 #ichi[data-title]:hover::before {
 	background-image: url(../img/Ink-Tank-project/Project/2x/2x-tinified/SWOT-960px.png);
 	background-repeat: no-repeat;
@@ -828,7 +865,7 @@ hr {
 	padding: 349px 478px;
 	position: absolute;
 	white-space: nowrap;
-  	z-index: 1;
+  z-index: 1;
 }
 
 #ni[data-title]:hover::before {
@@ -976,28 +1013,24 @@ hr {
 }
 
 #ichi.top:after
-        {
-            border-top-color: transparent;
-            border-bottom: 10px solid #795EB1;
-            top: -20px;
-            bottom: auto;
-        }
+{
+  border-top-color: transparent;
+  border-bottom: 10px solid #795EB1;
+  top: -20px;
+  bottom: auto;
+}
 
-        #ichi.left:after
-        {
-            left: 10px;
-            margin: 0;
-        }
+#ichi.left:after
+{
+  left: 10px;
+  margin: 0;
+}
 
-        #ichi.right:after
-        {
-            right: 10px;
-            left: auto;
-            margin: 0;
-        }
-
-.container.col-md-6.col-lg-7.no-left-padding {
-	padding-left: 0;
+#ichi.right:after
+{
+  right: 10px;
+  left: auto;
+  margin: 0;
 }
 
 /* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE TOOLTIP */
@@ -1012,6 +1045,10 @@ hr {
   position: absolute;
   margin-left: -10px;
   width: 0;
+}
+
+.container.col-md-6.col-lg-7.no-left-padding {
+	padding-left: 0;
 }
 
 /* ---------- SCROLLBAR STYLES ---------- */
@@ -2314,6 +2351,11 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
 	#mobile-menu { /* csslint allow: ids */
 		display: block;
+		/* height: 200px;
+  	max-height: 200px;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling:touch; // mobile safari
+		width: 100%; */
 	}
 
 	#mobile-menu a:link { /* csslint allow: ids */
