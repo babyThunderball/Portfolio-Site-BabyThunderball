@@ -48,8 +48,8 @@ Honey Flower —    #5A3274 (90,50,116) [for Body Links]
 /* ----- END UNIVERSAL SELECTOR ----- */
 html {
 	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
 	font-size: 18px;
 	height: 100%;
 	width: 100%;
