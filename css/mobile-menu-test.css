@@ -2158,12 +2158,12 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		/* Added in exercise 2.3 jQuery */
 	}
 
-	nav > div > ul > li {
+	nav > div > div > ul > li { /* CHANGED FROM NAV > DIV > UL > LI */
 		/* Added in exercise 2.3 jQuery but with div */
 		display: inline-block;
 	}
 
-	nav > div > ul {
+	nav > div > div > ul { /* CHANGED FROM NAV > DIV > UL */
 		/* Added in exercise 2.3 jQuery */
 		margin: 1em 0;
 	}
