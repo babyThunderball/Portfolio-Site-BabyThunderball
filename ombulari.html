@@ -64,46 +64,47 @@
 				</a>
 				<!-- END LOGO SVG CODE -->
 				<nav>
-					<div class="nav-container borderYtoX">
-						<ul class="navigation">
+					<div id="desktop-only" class="nav-container borderYtoX">
+            <div id="desktop-menu">
+						  <ul class="navigation">
 							<!-- DROPDOWN DESKTOP MENU -->
-							<div id="desktop-menu" class="dropdown">
-								<li class="desktop-parent"><a href="index.html">Work</a>
+								<li class="desktop-parent dropdown"><a href="index.html" class="current">Work</a>
 									<!-- SUB NAV -->
-									<div class="dropdown-content">
-										<ul class="subnav-ul">
+									<!-- <div class="dropdown-content"> -->
+										<ul class="subnav-ul dropdown-content">
 											<li><a href="ombulari.html" class="subnav current">Om:bulari</a></li>
 											<li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
 										</ul>
-									</div>
 									<!-- END SUB NAV -->
+              <!-- END DROPDOWN DESKTOP MENU -->
 								</li>
-							</div>
-							<!-- END DROPDOWN DESKTOP MENU -->
-							<!-- MOBILE MENU -->
-							<div id="mobile-menu">
-								<li class="mobile-parent"><a href="index.html">Work</a>
-									<!-- SUB NAV -->
-									<!-- <div class="dropdown-content"> -->
-									<ul class="subnav-ul">
-										<li><a href="ombulari.html" class="subnav current">Om:bulari</a></li>
+							<!-- </div> -->
+                <li><a href="about.html">About</a></li>
+				        <li><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
+							  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+						  </ul>
+            </div>
+          </div>
+
+					<!-- MOBILE MENU -->
+          <div id="mobile-only" class="nav-container borderYtoX">
+            <div id="mobile-menu">
+              <ul class="navigation">
+                <li class="mobile-parent"><a href="index.html" class="current">Work</a>
+								<!-- SUB NAV -->
+								  <ul class="subnav-ul">
+                    <li><a href="ombulari.html" class="subnav current">Om:bulari</a></li>
 										<li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
 									</ul>
-									<!-- </div> -->
-									<!-- END SUB NAV -->
-								</li>
-							</div>
+								<!-- END SUB NAV -->
+								 </li>
+                <li><a href="about.html">About</a></li>
+      					<li><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
+      					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </div>
+          </div>
 							<!-- END MOBILE MENU -->
-							<li><a href="about.html">About</a></li>
-							<li><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
-							<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-							<!-- <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><button class="hamburger hamburger--emphatic is-active" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button></a></li> -->
-						</ul>
-					</div>
 				</nav>
 
 			</div>

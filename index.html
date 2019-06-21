@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700%7cPoiret+One%7cRokkitt:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style__OLD.css"> -->
 	<link href="css/hamburgers.css" rel="stylesheet">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -64,41 +65,47 @@
 				</a>
 				<!-- END LOGO SVG CODE -->
 				<nav>
-					<div class="nav-container borderYtoX">
-						<ul class="navigation">
+					<div id="desktop-only" class="nav-container borderYtoX">
+            <div id="desktop-menu">
+						  <ul class="navigation">
 							<!-- DROPDOWN DESKTOP MENU -->
-							<div id="desktop-menu" class="dropdown">
-								<li class="desktop-parent menuItem"><a href="index.html">Work</a>
-									<!-- SUB NAV -->
-									<div class="dropdown-content">
-										<ul class="subnav-ul">
-											<li class="menuItem"><a href="ombulari.html" class="subnav">Om:bulari</a></li>
-											<li class="menuItem"><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
-										</ul>
-									</div>
-									<!-- END SUB NAV -->
-								</li>
-							</div>
-							<!-- END DROPDOWN DESKTOP MENU -->
-							<!-- MOBILE MENU -->
-							<div id="mobile-menu">
-								<li class="mobile-parent menuItem"><a href="index.html">Work</a>
+								<li class="desktop-parent dropdown current"><a href="index.html" class="current">Work</a>
 									<!-- SUB NAV -->
 									<!-- <div class="dropdown-content"> -->
-									<ul class="subnav-ul">
-										<li class="menuItem"><a href="ombulari.html" class="subnav">Om:bulari</a></li>
-										<li class="menuItem"><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
-									</ul>
-									<!-- </div> -->
+										<ul class="subnav-ul dropdown-content">
+											<li><a href="ombulari.html" class="subnav">Om:bulari</a></li>
+											<li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
+										</ul>
 									<!-- END SUB NAV -->
+              <!-- END DROPDOWN DESKTOP MENU -->
 								</li>
-							</div>
+							<!-- </div> -->
+                <li><a href="about.html">About</a></li>
+				        <li><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
+							  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+						  </ul>
+            </div>
+          </div>
+
+					<!-- MOBILE MENU -->
+          <div id="mobile-only" class="nav-container borderYtoX">
+            <div id="mobile-menu">
+              <ul class="navigation">
+                <li class="mobile-parent current"><a href="index.html" class="current">Work</a>
+								<!-- SUB NAV -->
+								  <ul class="subnav-ul">
+                    <li><a href="ombulari.html" class="subnav">Om:bulari</a></li>
+										<li><a href="ink-tank.html" class="subnav">Ink Tank</a></li>
+									</ul>
+								<!-- END SUB NAV -->
+								 </li>
+                <li><a href="about.html">About</a></li>
+      					<li><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
+      					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </div>
+          </div>
 							<!-- END MOBILE MENU -->
-							<li class="menuItem"><a href="about.html">About</a></li>
-							<li class="menuItem"><a href="#contact-scroll" onclick="menuToggle()" class="not-me">Contact</a></li>
-							<li class="menuItem"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-						</ul>
-					</div>
 				</nav>
 
 			</div>
