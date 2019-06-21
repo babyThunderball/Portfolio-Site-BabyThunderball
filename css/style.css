@@ -48,8 +48,8 @@ Honey Flower —    #5A3274 (90,50,116) [for Body Links]
 /* ----- END UNIVERSAL SELECTOR ----- */
 html {
 	-webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
 	font-size: 18px;
 	height: 100%;
 	width: 100%;
@@ -147,7 +147,7 @@ img[src$=".svg"] { /* csslint allow: $ */
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link:not(.body-link):not(.icon):not(.phone):not nav>div>ul>li>a>.not-me {
+a:link:not(.body-link):not(.icon):not(.phone):not nav>div>div>ul>li>a>.not-me {
 	color: #CC80FF;
 }
 
@@ -225,21 +225,61 @@ a:active {
 		transition: .1s .2s;
 	}
 
-	a:hover:not(.button):not(.icon):not(.phone) {
+	a:hover:not(.button):not(.icon):not(.phone):not(.body-link) {
 		background-position: 0 0;
-		color: transparent;
+		color: #cacaca;
+		transition: .4s;
+	}
+
+	a.body-link:hover {
+		background-position: 0 0;
 		transition: .4s;
 	}
 }
 
 /* ================  END LINK STYLING ================ */
 /* ================  5. NAVIGATION STYLING ================ */
-nav > a:link {
+nav a:link {
+	color: #cacaca;
+}
+
+nav a:visited {
+	color: #cacaca;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.current,
+nav a.subnav.current {
+	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	-ms-background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+nav a:active {
 	color: #CACACA;
 }
 
-nav > a:visited {
-	color: #CACACA;
+nav>ul>li>a.current {
+	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	/*background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);*/
+	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	-ms-background-clip: text;
+	-webkit-background-clip: text;
+	/*-webkit-text-fill-color: transparent;*/ /* NOTE: This was making the nav item "WORK" disappear in Safari */
+}
+
+nav div.current.borderYtoX a:hover:before, /* NOTE: This is to try to force the hover state when on the ACTIVE page, but it's not working. :( */
+nav div.current.borderYtoX a:hover:after {
+	height: 2px;
+	opacity: 1;
+	width: 100%;
 }
 
 .navtoggle li:not(:last-child) {
@@ -262,12 +302,12 @@ nav > a:visited {
 }
 
 .navtoggle.responsive .desktop-parent { /* csslint allow: adjoining-classes */
-	padding-bottom: 0;
+	padding: 0 15px;
 }
 
-.navtoggle.responsive .subnav { /* csslint allow: adjoining-classes */
+#desktop-only.navtoggle.responsive .subnav { /* csslint allow: adjoining-classes */ /* NOTE: Changed to #desktop-only and removed padding. It now works. YAY!!! */
 	display: block;
-	padding: 0 0;
+	/* padding: 0; */
 	/* NOTE: Maybe this has something to do w/ the shifting. Tried putting this in 320+ media query, but it didn't work. */
 }
 
@@ -296,56 +336,22 @@ nav > div > ul {
 /* nav>div>ul>li { /* Removed in exercise 2.3 jQuery */
 /*  display: inline-block;
 } */
-nav > div > ul > li > a,
+nav a,
 .subnav,
 .desktop-parent,
 .mobile-parent {
 	font-family: "Rokkitt", serif;
 	font-weight: 400;
-	list-style: none;
+  list-style: none;
 	padding: 0 15px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-nav > div > ul > li > a:visited,
+/* nav > div > ul > li > a:visited,
 nav > div > ul > div > li > a:visited {
 	color: #CACACA;
-}
-
-nav > div > ul > li > a:hover,
-nav > div > ul > li > a:focus,
-nav > div > ul > div > li > a:hover,
-nav > div > ul > div > li > a:focus,
-nav > div > ul > div > li > div > ul > li > a:hover,
-nav > div > ul > div > li > div > ul > li > a:focus {
-	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	-ms-background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-nav > div > ul > li > a:link,
-nav > div > ul > li > ul > li > a:link,
-nav > div > ul > li > a:active,
-nav > div > ul > div > li > a:link {
-	color: #CACACA;
-}
-
-nav .current {
-	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	-ms-background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+} */
 
 .dropdown {
 	display: inline-block;
@@ -377,6 +383,7 @@ nav .current {
 	display: block;
 	padding: 12px 16px;
 	text-decoration: none;
+	margin-left: 15px;
 }
 
 ul {
@@ -418,7 +425,6 @@ div.borderYtoX a:after {
 	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	content: '';
 	height: 100%;
@@ -1607,9 +1613,11 @@ h2.black-currant-text.center-me { /* csslint allow: unique-headings */
 }
 
 .left-col-skills ul,
-.right-col-skills ul {
+.right-col-skills ul,
+#process-list ul {
 	line-height: 1.5em;
 	list-style-type: square;
+	padding: inherit;
 }
 
 .left-col-skills ul {
@@ -2157,21 +2165,21 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		/* Added in exercise 2.3 jQuery */
 	}
 
-	nav > div > ul > li {
+	nav li { /* CHANGED FROM NAV > DIV > UL > LI */
 		/* Added in exercise 2.3 jQuery but with div */
 		display: inline-block;
 	}
 
-	nav > div > ul {
+	nav > div > div > ul.navigation { /* CHANGED FROM NAV > DIV > UL */
 		/* Added in exercise 2.3 jQuery */
-		margin: 1em 0;
+		margin: 1em 0; /* NOTE: This is what allows the user to hover over WORK and then move the cursor down to select a subnav item. */
 	}
 
 	.navtoggle li:not(:last-child) {
 		display: inline-block;
 	}
 
-	.navtoggle nav > div > ul > li:last-child {
+	.navtoggle nav > div > div > ul > li:last-child {
 		display: none;
 		/*------    This WAS breaking the subnav when I only had one menu! --- */
 	}
@@ -2189,16 +2197,20 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		cursor: default;
 	}
 
-	#desktop-menu {
+  #desktop-only { /* WAS #desktop-menu */
 		display: inline-block;
+	}
+
+  #mobile-only { /* WAS #mobile-menu */
+		display: none;
 	}
 
 	#desktop-menu a:link {
 		color: #cacaca;
 	}
 
-	#mobile-menu {
-		display: none;
+	#desktop-menu a:hover { /* NOTE: ZZZ */
+		color: #cacaca;
 	}
 
 	#contact-scroll:before { /* csslint allow: ids */
@@ -2269,6 +2281,14 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
 	div#process-list { /* csslint allow: ids */
 		display: inline-block;
+	}
+
+	.left-col-skills ul,
+	.right-col-skills ul,
+	#process-list ul {
+		direction: ltr;
+		padding: 0 0 0 40px;
+		text-align: left;
 	}
 }
 
@@ -2342,31 +2362,45 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
 	.navtoggle.responsive nav {
 		padding: 24px 0 0;
+		height: 237px;
+  	max-height: 100vh;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling:touch; /* mobile safari*/
+		width: 100%;
 	}
 
-	#desktop-menu { /* csslint allow: ids */
+	#desktop-only { /* csslint allow: ids */ /* WAS #desktop-menu */
 		display: none;
 	}
 
-	#mobile-menu { /* csslint allow: ids */
+	#mobile-only { /* csslint allow: ids */ /* WAS #mobile-menu */
 		display: block;
 		/* height: 200px;
-  	max-height: 200px;
+  	max-height: 100vh;
 		overflow-y: scroll;
-		-webkit-overflow-scrolling:touch; // mobile safari
-		width: 100%; */
+		-webkit-overflow-scrolling:touch; /* mobile safari*/
+		/* width: 100%; */
 	}
 
 	#mobile-menu a:link { /* csslint allow: ids */
 		color: #cacaca;
 	}
 
-	#mobile-menu .subnav-ul { /* csslint allow: ids */
+	#mobile-menu .subnav-ul{ /* csslint allow: ids */
 		padding-left: 40px;
+	}
+
+	#desktop-menu ul.navigation {
+		padding-left: 0;
 	}
 
 	#mobile-menu a:visited { /* csslint allow: ids */
 		color: #cacaca;
+	}
+
+	#mobile-menu ul.navigation {
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	div.borderYtoX a:before,
@@ -2429,12 +2463,14 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		text-align: right;
 	}
 
-	.left-col-skills ul,
-	.right-col-skills ul {
+	/* .left-col-skills ul,
+	.right-col-skills ul,
+	#process-list ul {
 		direction: ltr;
+		padding: 0 0 0 40px;
 		text-align: left;
 		/*width: 100%;*/
-	}
+	} */
 
 	.left-col-skills,
 	.right-col-skills {
@@ -2444,6 +2480,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 	#skills-wrapper { /* csslint allow: ids */
 		margin-left: 0;
 		margin-right: 10px;
+	}
+
+	ul.show-squares {
+		list-style-type: square;
 	}
 }
 
@@ -2528,6 +2568,10 @@ Large devices (1024px or larger)
 		text-align: unset;
 	}
 
+	main {
+		padding-top: 124px;
+	}
+
 	picture > img.work-pic-small {
 		/* NOTE: THIS ISN'T BEING DISPLAYED! NONE OF THE SMALL SOURCE SRCSET IMAGES ARE! */
 		max-height: 700px;
@@ -2599,6 +2643,14 @@ Large devices (1024px or larger)
 
 	#process-table { /* csslint allow: ids */
 		display: block;
+	}
+
+	#contact-scroll:before { /* csslint allow: ids */
+		content: " ";
+		display: block;
+		height: 124px;
+		margin-top: -124px;
+		visibility: hidden;
 	}
 }
 
