@@ -299,8 +299,7 @@ nav > div > ul {
 nav > div > ul > li > a,
 .subnav,
 .desktop-parent,
-.mobile-parent,
-.menuItem {
+.mobile-parent {
 	font-family: "Rokkitt", serif;
 	font-weight: 400;
 	list-style: none;
@@ -380,7 +379,7 @@ nav .current {
 	text-decoration: none;
 }
 
-ul ul {
+ul {
 	list-style-type: none;
 	padding-left: 0;
 }
