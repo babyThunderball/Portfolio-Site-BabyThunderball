@@ -147,7 +147,7 @@ img[src$=".svg"] { /* csslint allow: $ */
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link:not(.body-link):not(.icon):not(.phone):not nav>div>ul>li>a>.not-me {
+a:link:not(.body-link):not(.icon):not(.phone):not nav>div>div>ul>li>a>.not-me {
 	color: #CC80FF;
 }
 
@@ -227,19 +227,19 @@ a:active {
 
 	a:hover:not(.button):not(.icon):not(.phone) {
 		background-position: 0 0;
-		color: transparent;
+		color: #cacaca;
 		transition: .4s;
 	}
 }
 
 /* ================  END LINK STYLING ================ */
 /* ================  5. NAVIGATION STYLING ================ */
-nav > a:link {
-	color: #CACACA;
+nav a:link {
+	color: #cacaca;
 }
 
-nav > a:visited {
-	color: #CACACA;
+nav a:visited {
+	color: #cacaca;
 }
 
 .navtoggle li:not(:last-child) {
@@ -296,7 +296,7 @@ nav > div > ul {
 /* nav>div>ul>li { /* Removed in exercise 2.3 jQuery */
 /*  display: inline-block;
 } */
-nav > div > ul > li > a,
+nav a,
 .subnav,
 .desktop-parent,
 .mobile-parent,
@@ -309,17 +309,13 @@ nav > div > ul > li > a,
 	text-transform: uppercase;
 }
 
-nav > div > ul > li > a:visited,
+/* nav > div > ul > li > a:visited,
 nav > div > ul > div > li > a:visited {
 	color: #CACACA;
-}
+} */
 
-nav > div > ul > li > a:hover,
-nav > div > ul > li > a:focus,
-nav > div > ul > div > li > a:hover,
-nav > div > ul > div > li > a:focus,
-nav > div > ul > div > li > div > ul > li > a:hover,
-nav > div > ul > div > li > div > ul > li > a:focus {
+nav a:hover,
+nav a:focus {
 	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
@@ -330,10 +326,8 @@ nav > div > ul > div > li > div > ul > li > a:focus {
 	-webkit-text-fill-color: transparent;
 }
 
-nav > div > ul > li > a:link,
-nav > div > ul > li > ul > li > a:link,
-nav > div > ul > li > a:active,
-nav > div > ul > div > li > a:link {
+nav a:link,
+nav a:active {
 	color: #CACACA;
 }
 
@@ -341,11 +335,11 @@ nav .current {
 	background: -moz-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -ms-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	background: -o-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
-	background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
+	/*background: -webkit-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);*/
 	background: -webkit-linear-gradient(right bottom, #cc80ff, #e4d8cb, #CC80FF);
 	-ms-background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	/*-webkit-text-fill-color: transparent;*/ /* NOTE: This was making the nav item "WORK" disappear in Safari */
 }
 
 .dropdown {
@@ -378,6 +372,7 @@ nav .current {
 	display: block;
 	padding: 12px 16px;
 	text-decoration: none;
+	margin-left: 15px;
 }
 
 ul ul {
@@ -2158,14 +2153,14 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		/* Added in exercise 2.3 jQuery */
 	}
 
-	nav > div > div > ul > li { /* CHANGED FROM NAV > DIV > UL > LI */
+	nav li { /* CHANGED FROM NAV > DIV > UL > LI */
 		/* Added in exercise 2.3 jQuery but with div */
 		display: inline-block;
 	}
 
-	nav > div > div > ul { /* CHANGED FROM NAV > DIV > UL */
+	nav > div > div > ul.navigation { /* CHANGED FROM NAV > DIV > UL */
 		/* Added in exercise 2.3 jQuery */
-		margin: 1em 0;
+		margin: 1em 0; /* NOTE: This is what allows the user to hover over WORK and then move the cursor down to select a subnav item. */
 	}
 
 	.navtoggle li:not(:last-child) {
@@ -2362,8 +2357,12 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 		color: #cacaca;
 	}
 
-	#mobile-menu .subnav-ul { /* csslint allow: ids */
+	#mobile-menu .subnav-ul{ /* csslint allow: ids */
 		padding-left: 40px;
+	}
+
+	#desktop-menu ul.navigation {
+		padding-left: 0;
 	}
 
 	#mobile-menu a:visited { /* csslint allow: ids */
