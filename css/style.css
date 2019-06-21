@@ -275,8 +275,8 @@ nav>ul>li>a.current {
 	/*-webkit-text-fill-color: transparent;*/ /* NOTE: This was making the nav item "WORK" disappear in Safari */
 }
 
-nav div.current.borderYtoX a:hover:before, /* NOTE: This is to try to force the hover state when on the ACTIVE page, but it's not working. :( */
-nav div.current.borderYtoX a:hover:after {
+nav div.borderYtoX div ul li a.current:before,
+nav div.borderYtoX div ul li a.current:after {
 	height: 2px;
 	opacity: 1;
 	width: 100%;
