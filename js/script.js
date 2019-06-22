@@ -7,7 +7,18 @@ function menuToggle() {
   } else {
     x.className = "navtoggle";
   }
+  // } else if (x.className === "hamburger hamburger--emphatic") {
+  //   x.className += " is-active";
+  // } else {
+  //   x.className = "hamburger hamburger--emphatic";
+  // }
 }
+
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
 
 function removeResponsive(y) {
   if (y.matches) { // If media query matches
