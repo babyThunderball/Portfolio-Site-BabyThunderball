@@ -1,30 +1,34 @@
 var video = document.getElementById("myVideo");
+var x = document.getElementById("myNavtoggle")
 
 function menuToggle() {
-  var x = document.getElementById("myNavtoggle");
+  //var x = document.getElementById("myNavtoggle");
   if (x.className === "navtoggle") {
     x.className += " responsive";
   } else {
     x.className = "navtoggle";
   }
-  // } else if (x.className === "hamburger hamburger--emphatic") {
-  //   x.className += " is-active";
-  // } else {
-  //   x.className = "hamburger hamburger--emphatic";
-  // }
 }
 
-var $hamburger = $(".hamburger");
-  $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
-  });
+//&& $(".hamburger").addClass("is-active")
 
 function removeResponsive(y) {
   if (y.matches) { // If media query matches
     $( "#myNavtoggle" ).removeClass( "responsive" )
   }
 }
+
+//var $x = $("#myNavtoggle");
+var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+    if ($x.hasClass("navtoggle responsive")) {
+    $( ".hamburger" ).addClass( "is-active" )
+  } else {
+    $( ".hamburger" ).removeClass( "is-active" )
+  }
+  });
 
 var y = window.matchMedia("(min-width: 640px)")
 removeResponsive(y) // Call listener function at run time
