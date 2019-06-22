@@ -1856,7 +1856,6 @@ input:hover + .slider:before {
 	background-image: -moz-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: -ms-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: -o-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
-	background-image: -webkit-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: -webkit-linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	background-image: linear-gradient(to bottom right, #CC80FF, #e4d8cb, #CC80FF);
 	-moz-transform: translateY(54px);
@@ -2354,6 +2353,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
 	a:link.phone {
 		color: #CC80FF;
+	}
+
+	a.icon {
+		margin-right: -25px;
 	}
 
 	.navtoggle.responsive li.mobile-parent {
