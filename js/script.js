@@ -10,25 +10,76 @@ function menuToggle() {
   }
 }
 
-//&& $(".hamburger").addClass("is-active")
-
 function removeResponsive(y) {
   if (y.matches) { // If media query matches
     $( "#myNavtoggle" ).removeClass( "responsive" )
   }
 }
 
+// ============ WHAT I'VE TRIED SO FAR, PART 1 ============
+
+//&& $(".hamburger").addClass("is-active")
+
 //var $x = $("#myNavtoggle");
 var $hamburger = $(".hamburger");
   $hamburger.on("click", function(e) {
     $hamburger.toggleClass("is-active");
     // Do something else, like open/close menu
-    if ($x.hasClass("navtoggle responsive")) {
-    $( ".hamburger" ).addClass( "is-active" )
-  } else {
-    $( ".hamburger" ).removeClass( "is-active" )
-  }
+  //   if ($x.hasClass("navtoggle responsive")) {
+  //   $( ".hamburger" ).addClass( "is-active" )
+  // } else {
+  //   $( ".hamburger" ).removeClass( "is-active" )
+  // }
   });
+
+//THIS works to remove the class "is-active" from hamburger, but DOESN'T fix the issue of clicking "Contact" again while already at or scrolled to "#contact-scroll".
+  $(window).scroll(function() {
+   var hT = $('#contact-scroll').offset().top,
+       hH = $('#contact-scroll').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    //console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+     //alert('you have scrolled to the h1!');
+     $hamburger.removeClass( "is-active" );
+   }
+});
+
+// ============ END WHAT I'VE TRIED SO FAR, PART 1 ============
+
+// ============ WHAT I'VE TRIED SO FAR, PART 2 ============
+
+// Get the ID "contact-scroll"
+// var cscroll = document.getElementById('contact-scroll');
+//
+// // Get its position in the viewport
+// var bounding = cscroll.getBoundingClientRect();
+//
+// // If it's in the viewport, remove "is-active" class from hamburger. NOT WORKING!!!
+//
+// var isInViewport = function (elem) {
+//     var bounding = elem.getBoundingClientRect();
+//     if (isInViewport(cscroll)) {
+//         // Do something...
+//         $hamburger.removeClass( "is-active" );
+//     }
+//     // return (
+//     //     bounding.top >= 0 &&
+//     //     bounding.left >= 0 &&
+//     //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//     //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+//     // );
+// };
+
+// THIS is a test to see if the class will be removed if the user is already at the #contact-scroll element. Doesn't work.
+// $('#contact-scroll').on('inview', function (event, visible) {
+//   if (visible == true) {
+//     $hamburger.removeClass( "is-active" );
+    // element is now visible in the viewport
+//   }
+// });
+
+// ============ END WHAT I'VE TRIED SO FAR, PART 2 ============
 
 var y = window.matchMedia("(min-width: 640px)")
 removeResponsive(y) // Call listener function at run time
@@ -43,11 +94,6 @@ $('a[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
-
-// $('li.menuItem').click(function(){ //test to see if active state will work on click. Not finished yet.
-//     $('li.menuItem').removeClass('active')
-//     .filter(this).addClass('active');
-// })
 
 //TOOLTIP RESIZING SCRIPTS FOR INK TANK PROCESS PANEL
 $( function()
