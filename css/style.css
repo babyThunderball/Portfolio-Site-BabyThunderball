@@ -308,7 +308,6 @@ nav div.borderYtoX div ul li a.current:after {
 #desktop-only.navtoggle.responsive .subnav { /* csslint allow: adjoining-classes */ /* NOTE: Changed to #desktop-only and removed padding. It now works. YAY!!! */
 	display: block;
 	/* padding: 0; */
-	/* NOTE: Maybe this has something to do w/ the shifting. Tried putting this in 320+ media query, but it didn't work. */
 }
 
 .navtoggle.responsive a:link.desktop-parent { /* csslint allow: adjoining-classes */
