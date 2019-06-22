@@ -156,8 +156,7 @@ a:link.body-link {
 	font-size: 28px;
 	font-weight: 600;
 }
-
-a:link.phone {
+a:link {
 	text-decoration: none;
 }
 
@@ -177,13 +176,12 @@ a:active {
 	color: #CC80FF;
 }
 
-.body-link {
+a.body-link {
 	color: #5A3274;
 	font-weight: 400;
 	/*font-family: "Rokkitt", sans-serif;
 	font-size: 28px;
 	font-weight: 500;*/
-	text-decoration: underline !important; /* csslint allow: known-properties, important */
 }
 
 @media (-ms-min-device-pixel-ratio:0) {
@@ -343,7 +341,6 @@ nav a,
 	font-weight: 400;
   list-style: none;
 	padding: 0 15px;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -381,7 +378,6 @@ nav > div > ul > div > li > a:visited {
 	color: #CACACA;
 	display: block;
 	padding: 12px 16px;
-	text-decoration: none;
 	margin-left: 15px;
 }
 
@@ -415,7 +411,6 @@ ul {
 	margin: 0 10px;
 	padding: 10px 10px;
 	position: relative;
-	text-decoration: none;
 	z-index: 0;
 }
 
@@ -710,10 +705,6 @@ stroke-width: 19.859px;
 	margin: 0;
 }
 
-.phone {
-	text-decoration: none;
-}
-
 .baby {
 	color: #fff;
 	font-family: "Poiret One", cursive;
@@ -785,7 +776,6 @@ div #skills-wrapper { /* csslint allow: ids */
 	margin-bottom: auto;
 	margin-top: auto;
 	text-align: center;
-	text-decoration: none;
 	text-transform: uppercase;
 }
 
@@ -1532,7 +1522,6 @@ h2.black-currant-text.center-me { /* csslint allow: unique-headings */
 #copyright a { /* csslint allow: ids */
 	color: #cc80ff;
 	display: inline-block;
-	text-decoration: none;
 }
 
 #copyright .far.fa-copyright { /* csslint allow: ids */
@@ -1983,7 +1972,6 @@ input:hover + .slider-ink-tank:before {
 	font-weight: 700;
 	padding: 20px;
 	text-align: center;
-	text-decoration: none;
 	text-transform: uppercase;
 	-moz-transition: .8s opacity;
 	-o-transition: .8s opacity;
@@ -2120,6 +2108,23 @@ Video Aspect Ratio 16:9
 		width: auto;
 	}
 }
+
+/* ==============================
+Video Aspect Ratio 4:3 /* NOTE: Not working.
+================================= */
+/* @media (min-aspect-ratio: 4/3) {
+	#hero-video {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-aspect-ratio: 4/3) {
+	#hero-video {
+		height: 100%;
+		width: 100%;
+	}
+} */
 
 /* ==============================
 Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm */
