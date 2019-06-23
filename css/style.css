@@ -2513,9 +2513,9 @@ Large devices (1024px or larger)
   }
 
   picture > img.work-pic-small {
-    /* NOTE: THIS ISN'T BEING DISPLAYED! NONE OF THE SMALL SOURCE SRCSET IMAGES ARE! */
-    max-height: 700px;
-    max-width: 316px;
+    display: none;
+    /* max-height: 700px;
+    max-width: 316px; */
   }
 
   picture > img.work-pic-large {
