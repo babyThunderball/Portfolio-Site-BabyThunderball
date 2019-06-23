@@ -1,49 +1,54 @@
-var video = document.getElementById("myVideo");
-var x = document.getElementById("myNavtoggle")
+// ========================= BABYTHUNDERBALL ========================= //
+// ========== HOMEPAGE NAV & HERO ========== //
+/* eslint-env jquery */
+// var video = document.getElementById("myVideo");
 
-function menuToggle() {
-  //var x = document.getElementById("myNavtoggle");
-  if (x.className === "navtoggle") {
-    x.className += " responsive";
+/* eslint-disable no-unused-vars */
+var x = document.getElementById('myNavtoggle')
+
+function menuToggle () { /* eslint-disable-line no-unused-vars */
+  // var x = document.getElementById("myNavtoggle");
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive'
   } else {
-    x.className = "navtoggle";
+    x.className = 'navtoggle'
   }
 }
 
-function removeResponsive(y) {
+function removeResponsive (y) {
   if (y.matches) { // If media query matches
-    $( "#myNavtoggle" ).removeClass( "responsive" )
+    $('#myNavtoggle').removeClass('responsive')
   }
 }
 
 // ============ WHAT I'VE TRIED SO FAR, PART 1 ============
 
-//&& $(".hamburger").addClass("is-active")
+// && $(".hamburger").addClass("is-active")
 
-//var $x = $("#myNavtoggle");
-var $hamburger = $(".hamburger");
-  $hamburger.on("click", function(e) {
-    $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
+// var $x = $("#myNavtoggle");
+var $hamburger = $('.hamburger')
+$hamburger.on('click', function (e) {
+  $hamburger.toggleClass('is-active')
+  // Do something else, like open/close menu
   //   if ($x.hasClass("navtoggle responsive")) {
   //   $( ".hamburger" ).addClass( "is-active" )
   // } else {
   //   $( ".hamburger" ).removeClass( "is-active" )
   // }
-  });
+})
 
-//THIS works to remove the class "is-active" from hamburger, but DOESN'T fix the issue of clicking "Contact" again while already at or scrolled to "#contact-scroll".
-  $(window).scroll(function() {
-   var hT = $('#contact-scroll').offset().top,
-       hH = $('#contact-scroll').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-    //console.log((hT-wH) , wS);
-   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-     //alert('you have scrolled to the h1!');
-     $hamburger.removeClass( "is-active" );
-   }
-});
+// THIS works to remove the class "is-active" from hamburger, but DOESN'T fix the issue of clicking "Contact" again while already at or scrolled to "#contact-scroll".
+$(window).scroll(function () {
+  var hT = $('#contact-scroll').offset().top
+  var hH = $('#contact-scroll').outerHeight()
+  var wH = $(window).height()
+  var wS = $(this).scrollTop()
+  // console.log((hT-wH) , wS);
+  if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
+    // alert('you have scrolled to the h1!');
+    $hamburger.removeClass('is-active')
+  }
+})
 
 // ============ END WHAT I'VE TRIED SO FAR, PART 1 ============
 
@@ -75,125 +80,296 @@ var $hamburger = $(".hamburger");
 // $('#contact-scroll').on('inview', function (event, visible) {
 //   if (visible == true) {
 //     $hamburger.removeClass( "is-active" );
-    // element is now visible in the viewport
+// element is now visible in the viewport
 //   }
 // });
 
 // ============ END WHAT I'VE TRIED SO FAR, PART 2 ============
 
-var y = window.matchMedia("(min-width: 640px)")
+var y = window.matchMedia('(min-width: 640px)')
 removeResponsive(y) // Call listener function at run time
 y.addListener(removeResponsive) // Attach listener function on state changes
 
-$('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-});
+$('a[href^="#"]').on('click', function (event) {
+  var target = $(this.getAttribute('href'))
+  if (target.length) {
+    event.preventDefault()
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1000)
+  }
+})
 
-//TOOLTIP RESIZING SCRIPTS FOR INK TANK PROCESS PANEL
-$( function()
-{
-    var targets = $( '[rel~=tooltip]' ),
-        target  = false,
-        tooltip = false,
-        title   = false;
+// ============= PROCESS SLIDER MODAL SCRIPTS =================
 
-    targets.bind( 'mouseenter', function()
-    {
-        target  = $( this );
-        tip     = target.attr( 'title' );
-        tooltip = $( '<div id="ichi"></div>' );
+// ICHI //
+// Get the modal
+var ichiModal = document.getElementById('ichiModal')
 
-        if( !tip || tip == '' )
-            return false;
+// Get the slider that opens the modal
+var ichiSlider = document.getElementById('ichi')
 
-        target.removeAttr( 'title' );
-        tooltip.css( 'opacity', 0 )
-               .html( tip )
-               .appendTo( 'body' );
+// When the user clicks the button, open the modal
+ichiSlider.onclick = function () {
+  ichiModal.style.display = 'block'
+}
 
-        var init_tooltip = function()
-        {
-            if( $( window ).width() < tooltip.outerWidth() * 1.5 )
-                tooltip.css( 'max-width', $( window ).width() / 2 );
-            else
-                tooltip.css( 'max-width', 340 );
+// Get the <span> element that closes the modal
+var ichiSpan = document.getElementsByClassName('close-ichi')[0]
 
-            var pos_left = target.offset().left + ( target.outerWidth() / 2 ) - ( tooltip.outerWidth() / 2 ),
-                pos_top  = target.offset().top - tooltip.outerHeight() - 20;
+// When the user clicks on <span> (x), close the modal
+ichiSpan.onclick = function () {
+  ichiModal.style.display = 'none'
+}
 
-            if( pos_left < 0 )
-            {
-                pos_left = target.offset().left + target.outerWidth() / 2 - 20;
-                tooltip.addClass( 'left' );
-            }
-            else
-                tooltip.removeClass( 'left' );
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === ichiModal) {
+    ichiModal.style.display = 'none'
+  }
+}
 
-            if( pos_left + tooltip.outerWidth() > $( window ).width() )
-            {
-                pos_left = target.offset().left - tooltip.outerWidth() + target.outerWidth() / 2 + 20;
-                tooltip.addClass( 'right' );
-            }
-            else
-                tooltip.removeClass( 'right' );
+// END ICHI //
 
-            if( pos_top < 0 )
-            {
-                var pos_top  = target.offset().top + target.outerHeight();
-                tooltip.addClass( 'top' );
-            }
-            else
-                tooltip.removeClass( 'top' );
+// NI //
+// Get the modal
+var niModal = document.getElementById('niModal')
 
-            tooltip.css( { left: pos_left, top: pos_top } )
-                   .animate( { top: '+=10', opacity: 1 }, 50 );
-        };
+// Get the slider that opens the modal
+var niSlider = document.getElementById('ni')
 
-        init_tooltip();
-        $( window ).resize( init_tooltip );
+// When the user clicks the button, open the modal
+niSlider.onclick = function () {
+  niModal.style.display = 'block'
+}
 
-        var remove_tooltip = function()
-        {
-            tooltip.animate( { top: '-=10', opacity: 0 }, 50, function()
-            {
-                $( this ).remove();
-            });
+// Get the <span> element that closes the modal
+var niSpan = document.getElementsByClassName('close-ni')[0]
 
-            target.attr( 'title', tip );
-        };
+// When the user clicks on <span> (x), close the modal
+niSpan.onclick = function () {
+  niModal.style.display = 'none'
+}
 
-        target.bind( 'mouseleave', remove_tooltip );
-        tooltip.bind( 'click', remove_tooltip );
-    });
-});
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === niModal) {
+    niModal.style.display = 'none'
+  }
+}
 
-//TEST HOVER SCROLL FOR INK TANK PROCESS PANEL not working
-var flag = false,
-    goto = 0,
-    hre;
+// END NI //
 
-    $('#ichi-title').bind('mouseenter mouseleave', function(e) {
-        if (e.type === 'mouseenter') {
-           flag = true;
-           hre = $(this).attr('href');
-           goto = $(hre).position().top;
-           $('#ichi').stop().animate({top : '-'+goto },800);
-        } else {
-           flag = false;
+// SAN //
+// Get the modal
+var sanModal = document.getElementById('sanModal')
 
-            setTimeout(function() {
-               if( flag != true ){
-                  $('#ichi').stop().animate({top : '0' },800);
-               }
-            }, 1000);
-        }
-    });
+// Get the slider that opens the modal
+var sanSlider = document.getElementById('san')
+
+// When the user clicks the button, open the modal
+sanSlider.onclick = function () {
+  sanModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var sanSpan = document.getElementsByClassName('close-san')[0]
+
+// When the user clicks on <span> (x), close the modal
+sanSpan.onclick = function () {
+  sanModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === sanModal) {
+    sanModal.style.display = 'none'
+  }
+}
+
+// END SAN //
+
+// SHI //
+// Get the modal
+var shiModal = document.getElementById('shiModal')
+
+// Get the slider that opens the modal
+var shiSlider = document.getElementById('shi')
+
+// When the user clicks the button, open the modal
+shiSlider.onclick = function () {
+  shiModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var shiSpan = document.getElementsByClassName('close-shi')[0]
+
+// When the user clicks on <span> (x), close the modal
+shiSpan.onclick = function () {
+  shiModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === shiModal) {
+    shiModal.style.display = 'none'
+  }
+}
+
+// END SHI //
+
+// GO //
+// Get the modal
+var goModal = document.getElementById('goModal')
+
+// Get the slider that opens the modal
+var goSlider = document.getElementById('go')
+
+// When the user clicks the button, open the modal
+goSlider.onclick = function () {
+  goModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var goSpan = document.getElementsByClassName('close-go')[0]
+
+// When the user clicks on <span> (x), close the modal
+goSpan.onclick = function () {
+  goModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === goModal) {
+    goModal.style.display = 'none'
+  }
+}
+
+// END GO //
+
+// ROKU //
+// Get the modal
+var rokuModal = document.getElementById('rokuModal')
+
+// Get the slider that opens the modal
+var rokuSlider = document.getElementById('roku')
+
+// When the user clicks the button, open the modal
+rokuSlider.onclick = function () {
+  rokuModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var rokuSpan = document.getElementsByClassName('close-roku')[0]
+
+// When the user clicks on <span> (x), close the modal
+rokuSpan.onclick = function () {
+  rokuModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === rokuModal) {
+    rokuModal.style.display = 'none'
+  }
+}
+
+// END ROKU //
+
+// SHICHI //
+// Get the modal
+var shichiModal = document.getElementById('shichiModal')
+
+// Get the slider that opens the modal
+var shichiSlider = document.getElementById('shichi')
+
+// When the user clicks the button, open the modal
+shichiSlider.onclick = function () {
+  shichiModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var shichiSpan = document.getElementsByClassName('close-shichi')[0]
+
+// When the user clicks on <span> (x), close the modal
+shichiSpan.onclick = function () {
+  shichiModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === shichiModal) {
+    shichiModal.style.display = 'none'
+  }
+}
+
+// END SHICHI //
+
+// HACHI //
+// Get the modal
+var hachiModal = document.getElementById('hachiModal')
+
+// Get the slider that opens the modal
+var hachiSlider = document.getElementById('hachi')
+
+// When the user clicks the button, open the modal
+hachiSlider.onclick = function () {
+  hachiModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var hachiSpan = document.getElementsByClassName('close-hachi')[0]
+
+// When the user clicks on <span> (x), close the modal
+hachiSpan.onclick = function () {
+  hachiModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === hachiModal) {
+    hachiModal.style.display = 'none'
+  }
+}
+
+// END HACHI //
+
+// KYU //
+// Get the modal
+var kyuModal = document.getElementById('kyuModal')
+
+// Get the slider that opens the modal
+var kyuSlider = document.getElementById('kyu')
+
+// When the user clicks the button, open the modal
+kyuSlider.onclick = function () {
+  kyuModal.style.display = 'block'
+}
+
+// Get the <span> element that closes the modal
+var kyuSpan = document.getElementsByClassName('close-kyu')[0]
+
+// When the user clicks on <span> (x), close the modal
+kyuSpan.onclick = function () {
+  kyuModal.style.display = 'none'
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === kyuModal) {
+    kyuModal.style.display = 'none'
+  }
+}
+
+// END KYU //
+
+// When the user hovers over the slider, open the modal
+// document.getElementById("ichi").addEventListener("mouseover", mouseOver);
+// function mouseOver() {
+//   modal.style.display = "block";
+// }
+
+// ============= END PROCESS SLIDER MODAL SCRIPTS =================
 
 // function removeColMd4(z) {
 //   if (z.matches) { // If media query matches
