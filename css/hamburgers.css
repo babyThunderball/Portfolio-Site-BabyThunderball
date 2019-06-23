@@ -15,7 +15,7 @@
   font: inherit;
   margin: 0;
   overflow: visible;
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 15px;
   text-transform: none;
   transition-duration: 0.15s;
   transition-property: opacity, filter;
@@ -23,23 +23,24 @@
 }
 
 /* .hamburger:focus { /* NOTE: Changed from :hover b/c it's not  */
-  /* opacity: 0.7;
+
+/* opacity: 0.7;
 } */
 
 /* .hamburger.is-active:focus { /* NOTE: Changed from :hover b/c it's not in use in desktop views. */
-  /* opacity: 0.7;
+
+/* opacity: 0.7;
 } */
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
   /* background-color: #cc80ff; */
-  background-image: -moz-linear-gradient(to bottom right, #5A3274, #CC80FF, #5A3274);
-	background-image: -ms-linear-gradient(to bottom right, #5A3274, #CC80FF, #5A3274);
-	background-image: -o-linear-gradient(to bottom right, #5A3274, #CC80FF, #5A3274);
-	background-image: -webkit-linear-gradient(to bottom right, #5A3274, #CC80FF, #5A3274);
-	background-image: linear-gradient(to bottom right, #5A3274, #CC80FF, #5A3274);
-
+  background-image: -moz-linear-gradient(bottom right, #5a3274, #cc80ff, #5a3274);
+  background-image: -ms-linear-gradient(bottom right, #5a3274, #cc80ff, #5a3274);
+  background-image: -o-linear-gradient(bottom right, #5a3274, #cc80ff, #5a3274);
+  background-image: -webkit-linear-gradient(bottom right, #5a3274, #cc80ff, #5a3274);
+  background-image: linear-gradient(to bottom right, #5a3274, #cc80ff, #5a3274);
 }
 
 .hamburger-box {
@@ -55,9 +56,11 @@
   top: 50%;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   height: 6px;
-  background-color: #CACACA;
+  background-color: #cacaca;
   border-radius: 0;
   position: absolute;
   transition-duration: 0.15s;
@@ -66,7 +69,8 @@
   width: 48px;
 }
 
-.hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner::before,
+.hamburger-inner::after {
   content: "";
   display: block;
 }
