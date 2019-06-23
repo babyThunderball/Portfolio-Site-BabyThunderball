@@ -123,11 +123,11 @@ ichiSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === ichiModal) {
     ichiModal.style.display = 'none'
   }
-}
+})
 
 // END ICHI //
 
@@ -152,11 +152,11 @@ niSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === niModal) {
     niModal.style.display = 'none'
   }
-}
+})
 
 // END NI //
 
@@ -181,11 +181,11 @@ sanSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === sanModal) {
     sanModal.style.display = 'none'
   }
-}
+})
 
 // END SAN //
 
@@ -210,11 +210,11 @@ shiSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === shiModal) {
     shiModal.style.display = 'none'
   }
-}
+})
 
 // END SHI //
 
@@ -239,11 +239,11 @@ goSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === goModal) {
     goModal.style.display = 'none'
   }
-}
+})
 
 // END GO //
 
@@ -268,11 +268,11 @@ rokuSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === rokuModal) {
     rokuModal.style.display = 'none'
   }
-}
+})
 
 // END ROKU //
 
@@ -297,11 +297,11 @@ shichiSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === shichiModal) {
     shichiModal.style.display = 'none'
   }
-}
+})
 
 // END SHICHI //
 
@@ -326,11 +326,11 @@ hachiSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === hachiModal) {
     hachiModal.style.display = 'none'
   }
-}
+})
 
 // END HACHI //
 
@@ -355,11 +355,11 @@ kyuSpan.onclick = function () {
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
+window.addEventListener('click', function (event) {
   if (event.target === kyuModal) {
     kyuModal.style.display = 'none'
   }
-}
+})
 
 // END KYU //
 
