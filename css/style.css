@@ -1220,29 +1220,29 @@ hr {
   padding: 40px 20px;
 }
 
-#problem-section {
+#problem-section, #solution-section {
   /* csslint allow: ids */
   padding: 40px 20px;
 }
 
-.problem-text-block {
+.section-text-block {
   background-color: #cacaca;
   height: 388px;
 }
 
-div.problem-text-block h3,
+div.section-text-block h3,
 /* csslint allow: qualified-headings, unique-headings */
-div.problem-text-block p {
+div.section-text-block p {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-div.problem-text-block h3 {
+div.section-text-block h3 {
   /* csslint allow: unique-headings */
   padding-top: 20px;
 }
 
-div.problem-text-block p {
+div.section-text-block p {
   padding-bottom: 20px;
 }
 
@@ -1300,7 +1300,7 @@ h2.black-currant-text.center-me {
   padding: 0 20px 40px;
 }
 
-#ink-tank-title-table-section {
+#ink-tank-title-table-section, #ombulari-title-table-section {
   /* csslint allow: ids */
   padding: 0 20px;
 }
@@ -1315,12 +1315,12 @@ h2.black-currant-text.center-me {
   /* ----- This is preventing the gap b/w sections.----- */
 }
 
-#problem-section.row {
+#problem-section.row, #solution-section.row {
   /* csslint allow: ids */
   margin: 0 0 20px;
 }
 
-#problem-wrapper { /* csslint allow: ids */
+#problem-wrapper, #solution-wrapper { /* csslint allow: ids */
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -1606,7 +1606,7 @@ h2.black-currant-text.center-me {
   /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSEING THE ISSUE! */
 }
 
-#ink-tank-title-table {
+#ink-tank-title-table, #ombulari-title-table {
   /* csslint allow: ids */
   border: 1px solid #cacaca;
   margin: 40px auto 0;
@@ -2621,7 +2621,7 @@ Large devices (1024px or larger)
     margin-right: 20px;
   }
 
-  .problem-text-block {
+  .section-text-block {
     height: auto;
   }
 }
