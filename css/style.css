@@ -1265,11 +1265,11 @@ h2.black-currant-text.center-me {
   /* csslint allow: unique-headings */
   /* background-color: #cacaca;
 	background-color: rgba(202, 202, 202, .65); */
-  background-image: -moz-linear-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
-  background-image: -ms-linear-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
-  background-image: -o-linear-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
-  background-image: -webkit-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
+  background-image: -moz-linear-gradient(left, transparent 10%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 90%);
+  background-image: -ms-linear-gradient(left, transparent 10%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 90%);
+  background-image: -o-linear-gradient(left, transparent 10%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 90%);
   background-image: -webkit-linear-gradient(left, transparent 5%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 95%);
+  background-image: linear-gradient(to left, transparent 5%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 95%);
 }
 
 .process-switch-container {
