@@ -1320,9 +1320,11 @@ h2.black-currant-text.center-me {
   margin: 0 0 20px;
 }
 
-#problem-wrapper {
-  /* csslint allow: ids */
+#problem-wrapper { /* csslint allow: ids */
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #ink-tank-section.row {
