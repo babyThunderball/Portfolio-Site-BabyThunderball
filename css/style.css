@@ -17,7 +17,7 @@
 16. Social Switch Styles
 17. Button Styles
 18. Media Breakpoints
-19. Ink Tank "PROCESS" Modal Styles
+19. Ink Tank & Om:bulari "PROCESS" Modal Styles
 
 ================ END TABLE OF CONTENTS ================ */
 
@@ -2646,7 +2646,7 @@ Large devices (1024px or larger)
 
 /* ================ END MEDIA BREAKPOINTS ================ */
 
-/* ================ 19. INK TANK "PROCESS" MODAL STYLES ================ */
+/* ================ 19. INK TANK & OM:BULARI "PROCESS" MODAL STYLES ================ */
 
 /* The Modal (background) */
 .modal {
@@ -2929,4 +2929,4 @@ img.modal-pic {
   width: 0;
 } */
 /* ------------------ END OLD TOOLTIP STYLING ---------------------- */
-/* ================ END INK TANK "PROCESS" MODAL STYLES ================ */
+/* ================ END INK TANK & OM:BULARI "PROCESS" MODAL STYLES ================ */
