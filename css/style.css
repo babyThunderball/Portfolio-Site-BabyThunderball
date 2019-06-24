@@ -1220,9 +1220,13 @@ hr {
   padding: 40px 20px;
 }
 
-#problem-section, #solution-section {
+#problem-section {
   /* csslint allow: ids */
-  padding: 40px 20px;
+  padding: 0 20px 40px;
+}
+
+#solution-section {
+  padding: 100px 20px 40px;
 }
 
 .section-text-block {
@@ -1265,7 +1269,7 @@ h2.black-currant-text.center-me {
   background-image: -ms-linear-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
   background-image: -o-linear-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
   background-image: -webkit-gradient(left, transparent 10%, #5a3274 20%, #cc80ff 50%, #5a3274 80%, transparent 90%);
-  background-image: -webkit-linear-gradient(left, transparent 5%, rgba(204, 128, 255, 0.8) 20%, rgba(204, 128, 255, 0.8) 50%, rgba(204, 128, 255, 0.8) 80%, transparent 95%);
+  background-image: -webkit-linear-gradient(left, transparent 5%, rgba(202, 202, 202, 0.8) 20%, rgba(202, 202, 202, 0.8) 50%, rgba(202, 202, 202, 0.8) 80%, transparent 95%);
 }
 
 .process-switch-container {
@@ -1315,12 +1319,14 @@ h2.black-currant-text.center-me {
   /* ----- This is preventing the gap b/w sections.----- */
 }
 
-#problem-section.row, #solution-section.row {
+#problem-section.row,
+#solution-section.row {
   /* csslint allow: ids */
   margin: 0 0 20px;
 }
 
-#problem-wrapper, #solution-wrapper { /* csslint allow: ids */
+#problem-wrapper,
+#solution-wrapper { /* csslint allow: ids */
   overflow: hidden;
   display: flex;
   flex-direction: row;
