@@ -110,7 +110,7 @@ var ichiModal = document.getElementById('ichiModal')
 var ichiSlider = document.getElementById('ichi')
 
 // When the user clicks the button, open the modal
-ichiSlider.onclick = function (e) {
+ichiSlider.onclick = function () {
   ichiModal.style.display = 'block'
 }
 
