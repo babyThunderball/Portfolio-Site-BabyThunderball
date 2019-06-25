@@ -1234,9 +1234,16 @@ hr {
   height: 388px;
 }
 
+.ombulari-text-block {
+  background-color: #cacaca;
+  height: auto;
+}
+
 div.section-text-block h3,
 /* csslint allow: qualified-headings, unique-headings */
-div.section-text-block p {
+div.section-text-block p,
+div.ombulari-text-block h3,
+div.ombulari-text-block p {
   padding-left: 20px;
   padding-right: 20px;
 }
