@@ -1360,6 +1360,10 @@ h2.black-currant-text.center-me {
   color: #cacaca;
 }
 
+#contact.project-footer {
+  padding: 0 20px;
+}
+
 /* #contact-scroll {
   display: inline-block;
   height: 127px;
