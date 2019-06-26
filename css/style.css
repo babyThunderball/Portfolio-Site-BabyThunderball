@@ -774,6 +774,10 @@ div #skills-wrapper {
   margin-bottom: 0;
 }
 
+#why-bt-wrapper {
+  padding: 0 20px;
+}
+
 #pitch-pounds-why {
   /* csslint allow: ids */
   overflow: auto;
@@ -2226,6 +2230,14 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     padding: 0 0 0 40px;
     text-align: left;
   }
+
+	#problem-wrapper,
+	#solution-wrapper { /* csslint allow: ids */
+	  overflow: hidden;
+	  display: block;
+	  /* flex-direction: column; */
+	  align-items: unset;
+	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -2278,7 +2290,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   }
 
   h2.black-currant-text.center-me {
-    background-color: rgba(204, 128, 255, 0.5);
+    background-color: rgba(202, 202, 202, 0.5);
   }
 }
 
@@ -2744,6 +2756,77 @@ img.modal-pic {
   margin: auto;
   align-self: center;
 }
+
+#ombulari-section::before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #19141a;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
+#ink-tank-section::before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #fff;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
+#contact::before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #cacaca;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
+#contact.project-footer::before {
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 0 solid transparent;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
+#contact.about-footer::before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #e4d8cb;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
 
 /* ------------------ THIS IS THE OLD TOOLTIP STYLING ---------------------- */
 /* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE BODY-LINK TOOLTIP */
