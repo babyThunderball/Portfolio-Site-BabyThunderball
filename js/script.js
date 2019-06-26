@@ -21,34 +21,57 @@ function removeResponsive (y) {
   }
 }
 
+// ========== WHAT SVENJA'S SUGGESTED ==========
+
+$(function () {
+  $('.hamburger').click(function (e) {
+    e.stopPropagation()
+    console.log(this)
+    $(this).toggleClass('is-active')
+    var x = document.getElementById('myNavtoggle')
+    if (x.className === 'navtoggle') {
+      x.className += ' responsive'
+    } else {
+      x.className = 'navtoggle'
+    }
+  })
+
+  $(document).click(function () {
+    $('.hamburger').removeClass('is-active')
+  })
+})
 // ============ WHAT I'VE TRIED SO FAR, PART 1 ============
 
 // && $(".hamburger").addClass("is-active")
 
 // var $x = $("#myNavtoggle");
-var $hamburger = $('.hamburger')
-$hamburger.on('click', function (e) {
-  $hamburger.toggleClass('is-active')
-  // Do something else, like open/close menu
-  //   if ($x.hasClass("navtoggle responsive")) {
-  //   $( ".hamburger" ).addClass( "is-active" )
-  // } else {
-  //   $( ".hamburger" ).removeClass( "is-active" )
-  // }
-})
+
+// ========== COMMENTED OUT TO SEE IF SVENJA'S SUGGESTIONS WORK ==========
+// var $hamburger = $('.hamburger')
+// $hamburger.on('click', function (e) {
+//   $hamburger.toggleClass('is-active')
+//   // Do something else, like open/close menu
+//   //   if ($x.hasClass("navtoggle responsive")) {
+//   //   $( ".hamburger" ).addClass( "is-active" )
+//   // } else {
+//   //   $( ".hamburger" ).removeClass( "is-active" )
+//   // }
+// })
 
 // THIS works to remove the class "is-active" from hamburger, but DOESN'T fix the issue of clicking "Contact" again while already at or scrolled to "#contact-scroll".
-$(window).scroll(function () {
-  var hT = $('#contact-scroll').offset().top
-  var hH = $('#contact-scroll').outerHeight()
-  var wH = $(window).height()
-  var wS = $(this).scrollTop()
-  // console.log((hT-wH) , wS);
-  if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
-    // alert('you have scrolled to the h1!');
-    $hamburger.removeClass('is-active')
-  }
-})
+// $(window).scroll(function () {
+//   var hT = $('#contact-scroll').offset().top
+//   var hH = $('#contact-scroll').outerHeight()
+//   var wH = $(window).height()
+//   var wS = $(this).scrollTop()
+//   // console.log((hT-wH) , wS);
+//   if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
+//     // alert('you have scrolled to the h1!');
+//     $hamburger.removeClass('is-active')
+//   }
+// })
+
+// ========== END COMMENTED OUT TO SEE IF SVENJA'S SUGGESTIONS WORK ==========
 
 // ============ END WHAT I'VE TRIED SO FAR, PART 1 ============
 
