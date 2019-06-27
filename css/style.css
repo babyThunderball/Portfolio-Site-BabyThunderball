@@ -757,13 +757,25 @@ stroke-width: 19.859px;
 div #skills-wrapper {
   /* csslint allow: ids */
   width: 100vw;
+  overflow: hidden;
+}
+
+div .skills-row {
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+div .skills-row {
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 40px;
 }
 
 #why-bt-section {
   /* csslint allow: ids */
   background-color: #e4d8cb;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 60px;
   padding-bottom: 40px;
   width: 100%;
 }
@@ -2181,7 +2193,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   .left-col-skills.col-lg-4,
   .right-col-skills.col-md-4,
   .right-col-skills.col-lg-4 {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 
   /* .left-col-skills ul, .right-col-skills ul {
@@ -2292,6 +2304,44 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
   h2.black-currant-text.center-me {
     background-color: rgba(202, 202, 202, 0.5);
   }
+
+  /* #ombulari-section::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #19141a;
+    bottom: -389px;
+    content: "";
+    height: 0;
+    left: 45%;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 0;
+  }
+
+  #ink-tank-section::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -389px;
+    content: "";
+    height: 0;
+    left: 45%;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 0;
+  }
+
+  #contact::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #cacaca;
+    bottom: -389px;
+    content: "";
+    height: 0;
+    left: 45%;
+    position: -webkit-sticky;
+    width: 0;
+  } */
 }
 
 /* ==============
@@ -2418,8 +2468,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     margin: 0 auto;
   }
 
-  .skills-row {
+  div .skills-row {
     justify-content: center;
+    overflow: hidden;
+    padding-bottom: 40px;
   }
 
   .col-sm-6 {
@@ -2448,6 +2500,7 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     /* csslint allow: ids */
     margin-left: 0;
     margin-right: 10px;
+    overflow: hidden;
   }
 
   ul.show-squares {
@@ -2826,7 +2879,6 @@ img.modal-pic {
   /* margin-left: 50%; */
   width: 0;
 }
-
 
 /* ------------------ THIS IS THE OLD TOOLTIP STYLING ---------------------- */
 /* THIS IS THE ARROW THAT APPEARS AT THE BOTTOM OF THE BODY-LINK TOOLTIP */
