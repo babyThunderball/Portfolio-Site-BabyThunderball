@@ -1450,6 +1450,7 @@ h2.black-currant-text.center-me {
 
 #pitch-pic-col {
   /* csslint allow: ids */
+  display: block;
   float: left;
   /* max-width: 720px; */
   position: absolute;
