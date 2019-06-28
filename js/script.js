@@ -4,8 +4,8 @@
 // var video = document.getElementById("myVideo");
 
 /* eslint-disable no-unused-vars */
-var newWnd = window.open()
-newWnd.opener = null
+// var newWnd = window.open()
+// newWnd.opener = null
 
 var x = document.getElementById('myNavtoggle')
 
