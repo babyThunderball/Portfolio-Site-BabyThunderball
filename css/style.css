@@ -2275,6 +2275,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     padding-top: 20px;
   }
 
+  #pitch-wrapper {
+    padding-bottom: 20px;
+  }
+
   /* .left-col-skills ul, .right-col-skills ul {
     width: 50%;
   } */
@@ -2622,6 +2626,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 
   .mic {
     display: inline-block;
+  }
+
+  #skills-wrapper {
+    margin-left: 80px;
   }
 }
 
