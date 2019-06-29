@@ -109,8 +109,8 @@
                 <text id="Elbow-Grease" font-family="Rokkitt-Regular, Rokkitt" font-size="28" font-weight="normal" fill="#19141A">
                     <tspan x="1016.64" y="480">Elbow Grease</tspan>
                 </text>
-                <path d="M113.68272,145.5 L618.5,650.5" id="Needle" stroke="#CC80FF" stroke-width="5"></path>
-                
+                <g id="Needle_an_BBHM9qEld" data-animator-group="true" data-animator-type="0"><g id="Needle_an_J5w22oOdJ" data-animator-group="true" data-animator-type="1"><path d="M113.68272,145.5 L618.5,650.5" id="Needle" stroke="#CC80FF" stroke-width="5"></path>
+
                 <image x="597" y="25"
                   id="sandbox-tuner-icon"
                   data-name="Sandbox Tuner Icon"
