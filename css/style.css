@@ -1092,19 +1092,104 @@ hr {
 }
 
 /* csslint ignore:end */
-/* @-webkit-keyframes needle-move { /* NOTE: Can't figure out how to get the needle not to come off the bottom!!! */
-/* 0%{transform:rotate(0deg);}
-  20%{transform:rotate(30deg);}
-  50%{transform:rotate(80deg);}
-  100%{transform:rotate(90deg);}
+/* @-webkit-keyframes needle-move {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(30deg); }
+  50% { transform: rotate(80deg); }
+  100% { transform: rotate(90deg); }
 }
 
 #Needle {
   -webkit-animation: needle-move infinite alternate linear 5s;
-    transform:rotate(0deg);
-    transform-origin: bottom;
-    transform:
+  transform: rotate(0deg);
+  transform-origin: bottom;
 } */
+
+@-webkit-keyframes kf_Needle_an_J5w22oOdJ {
+  0% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+    transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+  }
+
+  100% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) rotate(-90deg) translate(-113.6827163696289px, -145.5px);
+    transform: translate(113.6827163696289px, 145.5px) rotate(-90deg) translate(-113.6827163696289px, -145.5px);
+  }
+}
+
+@keyframes kf_Needle_an_J5w22oOdJ {
+  0% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+    transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+  }
+
+  100% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) rotate(-90deg) translate(-113.6827163696289px, -145.5px);
+    transform: translate(113.6827163696289px, 145.5px) rotate(-90deg) translate(-113.6827163696289px, -145.5px);
+  }
+}
+
+@-webkit-keyframes kf_Needle_an_BBHM9qEld {
+  0% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(505px, 505px);
+    transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(505px, 505px);
+  }
+
+  100% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(690px, 505px);
+    transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(690px, 500px);
+  }
+}
+
+@keyframes kf_Needle_an_BBHM9qEld {
+  0% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(505px, 505px);
+    transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(505px, 505px);
+  }
+
+  100% {
+    -webkit-transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(690px, 505px);
+    transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(690px, 505px);
+  }
+}
+/* #Needle {
+  stroke: #CC80FF;
+  stroke-width: 5;
+} */
+
+#cb-tools-dial * {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite, alternate;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+#Needle_an_BBHM9qEld {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(500px, 500px);
+  transform: translate(113.6827163696289px, 145.5px) translate(-113.6827163696289px, -145.5px) translate(500px, 500px);
+  -webkit-animation-name: kf_Needle_an_BBHM9qEld;
+  animation-name: kf_Needle_an_BBHM9qEld;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+#Needle_an_J5w22oOdJ {
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+  transform: translate(113.6827163696289px, 145.5px) rotate(-180deg) translate(-113.6827163696289px, -145.5px);
+  -webkit-animation-name: kf_Needle_an_J5w22oOdJ;
+  animation-name: kf_Needle_an_J5w22oOdJ;
+  -webkit-animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
 @-webkit-keyframes scroller-move {
   0% {
     transform: translateY(40px);
@@ -1600,16 +1685,12 @@ h2.black-currant-text.center-me {
 #why-bt-text-col-1 {
   /* csslint allow: ids */
   padding-left: 0;
+  position: relative;
 }
 
 #why-bt-text-col-2 {
   /* csslint allow: ids */
   padding-right: 0;
-}
-
-.van-pic-bkgd {
-  display: contents;
-  /* csslint allow: known-properties */
 }
 
 /*  #story-col::after, #skills-n-tools::after, #skill-col::after, #tools-col::after { THIS ISN'T MAKING ANY DIFFERENCE TO THE ABOUT PAGE LAYOUT ISSUE.
@@ -1676,10 +1757,8 @@ table {
 td > h1 {
   /* csslint allow: qualified-headings, unique-headings */
   line-height: normal;
-  margin-block-end: 0; /* stylelint-disable-line */
-  /* csslint allow: known-properties */
-  margin-block-start: 0; /* stylelint-disable-line */
-  /* csslint allow: known-properties */
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .top-align {
@@ -1855,7 +1934,6 @@ input:hover + .slider-ink-tank::before {
   background-image: -moz-linear-gradient(bottom right, #cc80ff, #e4d8cb, #cc80ff);
   background-image: -ms-linear-gradient(bottom right, #cc80ff, #e4d8cb, #cc80ff);
   background-image: -o-linear-gradient(bottom right, #cc80ff, #e4d8cb, #cc80ff);
-  background-image: -webkit-gradient(to bottom right, #cc80ff, #e4d8cb, #cc80ff);
   background-image: -webkit-linear-gradient(bottom right, #cc80ff, #e4d8cb, #cc80ff);
   background-image: linear-gradient(to bottom right, #cc80ff, #e4d8cb, #cc80ff);
   -moz-transform: translateY(61px);
