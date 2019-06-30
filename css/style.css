@@ -1811,9 +1811,11 @@ tr > td.top-bottom {
 }
 
 .switch input {
-  height: 0;
-  opacity: 0;
-  width: 0;
+  position: absolute;
+  height: 9em;
+  width: 3em;
+  opacity: 0.001;
+  z-index: 1;
 }
 
 .slider {
@@ -1887,9 +1889,11 @@ input:hover + .slider::before {
 }
 
 .switch-ink-tank input {
-  height: 0;
-  opacity: 0;
-  width: 0;
+	position: absolute;
+  height: 8em;
+  width: 2em;
+  opacity: 0.001;
+  z-index: 1
 }
 
 .slider-ink-tank {
