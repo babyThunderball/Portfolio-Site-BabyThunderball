@@ -11,7 +11,6 @@ var x = document.getElementById('myNavtoggle')
 
 function menuToggle () { /* eslint-disable-line no-unused-vars */
   // var x = document.getElementById("myNavtoggle");
-  window.location.href = 'javascript:void(0);'
   if (x.className === 'navtoggle') {
     x.className += ' responsive'
   } else {
