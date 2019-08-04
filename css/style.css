@@ -941,6 +941,77 @@ hr {
 }
 */
 /* ---------- END SCROLLBAR STYLES ---------- */
+
+/* ---------- FORM STYLES ---------- */
+
+.contact-item:not(:last-child) {
+  border-bottom: 1px solid #e3e6ea;
+  padding-bottom: 1.25rem;
+}
+
+.contact-item {
+  border-bottom: none !important;
+}
+
+.contact-item .contact-item-content .title {
+  display: block;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.contact-item-content input,
+.contact-item-content textarea {
+  border: none;
+  padding: 10px;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+}
+
+.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 2px solid #e3e6ea;
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
+  border-color: #e3e6ea;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 1px 1px 2px 0 rgba(40, 43, 46, 0.06);
+  -moz-box-shadow: inset 1px 1px 2px 0 rgba(40, 43, 46, 0.06);
+  box-shadow: inset 1px 1px 2px 0 rgba(40, 43, 46, 0.06);
+  color: #464a4c;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem;
+  /* padding: 0.5rem 0.75rem; */
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+}
+
+::placeholder {
+  color: #cacaca;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #cacaca;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #cacaca;
+}
+
+/* ---------- END FORM STYLES ---------- */
+
 /* ================ END LAYOUT STYLING ================ */
 
 /* ================ 10. ANIMATIONS ================ */
@@ -1419,7 +1490,8 @@ h2.black-currant-text.center-me {
   padding: 0 20px 40px;
 }
 
-#ink-tank-title-table-section, #ombulari-title-table-section {
+#ink-tank-title-table-section,
+#ombulari-title-table-section {
   /* csslint allow: ids */
   padding: 0 20px;
 }
@@ -1592,15 +1664,6 @@ h2.black-currant-text.center-me {
   margin-top: 0;
 }
 
-.button.cv-download {
-  /* csslint allow: adjoining-classes */
-  background-color: transparent;
-  border: 2px solid #cacaca;
-  color: #fff !important;
-  /* csslint allow: important */
-  margin: 40px;
-}
-
 .left-col-skills,
 .mic,
 .right-col-skills {
@@ -1728,7 +1791,8 @@ h2.black-currant-text.center-me {
   /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSEING THE ISSUE! */
 }
 
-#ink-tank-title-table, #ombulari-title-table {
+#ink-tank-title-table,
+#ombulari-title-table {
   /* csslint allow: ids */
   border: 1px solid #cacaca;
   margin: 40px auto 0;
@@ -2012,6 +2076,26 @@ input:hover + .slider-ink-tank::before {
   -ms-background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.button.cv-download {
+  /* csslint allow: adjoining-classes */
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  color: #fff !important;
+  /* csslint allow: important */
+  margin: 40px;
+}
+
+.button.contact {
+  /* csslint allow: adjoining-classes */
+  background-color: transparent;
+  border: 2px solid #cacaca;
+  color: #fff !important;
+  /* csslint allow: important */
+  margin: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 
 /* ================ END BUTTON STYLES ================ */
