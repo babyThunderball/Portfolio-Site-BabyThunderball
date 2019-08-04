@@ -389,6 +389,21 @@ window.addEventListener('click', function (event) {
 
 // END KYU //
 
+function resetForm () {
+  document.getElementById('myForm').reset()
+}
+
+// function submitForm() {
+//    // Get the first form with the name
+//    // Usually the form name is not repeated
+//    // but duplicate names are possible in HTML
+//    // Therefore to work around the issue, enforce the correct index
+//    var frm = document.getElementById('myForm')[0]
+//    frm.submit() // Submit the form
+//    frm.reset()  // Reset all form data
+//    return false // Prevent page refresh
+// }
+
 // When the user hovers over the slider, open the modal
 // document.getElementById("ichi").addEventListener("mouseover", mouseOver);
 // function mouseOver() {
