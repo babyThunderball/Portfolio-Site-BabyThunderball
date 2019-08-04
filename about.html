@@ -42,7 +42,7 @@
 	<title>About | BabyThunderball | UX Architect | Brighton, UK</title>
 </head>
 
-<body>
+<body onload="resetForm()">
 	<header>
 		<div class="container">
       <div id="myNavtoggle" class="navtoggle">
@@ -18438,18 +18438,59 @@
 			<h4>Like what you've seen and think <strong>we'd work well together</strong>?</h4>
 			<!--EMAIL-->
 			<!-- <div>
-        <a href="mailto:jodi@babythunderball.com" class="button contact">Drop me a line</a>
+        <a href="mailto:xxxxxxx" class="button contact">Drop me a line</a>
       </div> -->
 			<div>
-				<p class="email-addy contact"><span class="grey-text">Drop me a line</span><br /><span class="small-rokkitt grey-text">on</span><br /><span class="mid-rokkitt">jodi[at]babythunderball.com</span></p>
+				<p class="email-addy contact"><span class="grey-text">Drop me a line</span><br /><!--<span class="small-rokkitt grey-text">on</span><br /><span class="mid-rokkitt">xxxxxxx</span>--></p>
+				<p class="small-rokkitt grey-text">Items marked * are required</p>
+				<form id="myForm" action="https://mailthis.to/BabyThunderball" method="POST" enctype="multipart/form-data">
+					<div class="contact-box-content text-left">
+						<!-- Name Box -->
+						<div class="contact-item">
+							<div class="contact-item-content">
+								<span class="title">Name*</span>
+								<input type="text" class="form-control" name="name" placeholder="e.g. Jayne Q. Public" required>
+							</div>
+						</div>
+						<!-- Email Box -->
+						<div class="contact-item">
+							<div class="contact-item-content">
+								<span class="title">Email*</span>
+								<input type="email" class="form-control" name="email" placeholder="e.g. me@email.com" required>
+							</div>
+						</div>
+						<!-- Phone Box -->
+						<div class="contact-item">
+							<div class="contact-item-content">
+								<span class="title">Phone <br /> <span class="small-rokkitt grey-text">(if you'd prefer a chinwag!)</span></span>
+								<input type="text" class="form-control" name="phone" placeholder="+44 (0)1234 567 890">
+							</div>
+						</div>
+						<!-- Text Box -->
+						<div class="contact-item">
+							<div class="contact-item-content">
+								<span class="title">What's on your mind?*</span>
+								<textarea class="form-control" name="message" placeholder="Enter your message here..." style="height:90px" required></textarea>
+							</div>
+						</div>
+						<input type="hidden" name="_subject" value="Somebody needs a UX Architect! WOOT!">
+						<input type="hidden" name="_after" value="/">
+						<input type="hidden" name="_honeypot" value="">
+						<input type="hidden" name="_confirmation" value="">
+						<!-- Submit Button -->
+						<div>
+							<input type="submit" name="submit" value="Submit" class="button contact" onclick="submitForm()">
+						</div>
+					</div>
+				</form>
 			</div>
 			<!--END EMAIL-->
-			<hr />
+			<!-- <hr /> -->
 			<!--PHONE-->
-			<div>
+			<!-- <div>
 				<h4>Prefer a bit of a <strong>chin wag</strong>?</h4>
-				<p>Give me a call on <a href="tel:+447515853112" class="phone"><strong>+44 (0)7515 853 112</strong></a>.</p>
-			</div>
+				<p>Give me a call on <a href="tel:xxxxxxx" class="phone"><strong>xxxxxxx</strong></a>.</p>
+			</div> -->
 			<!--END PHONE-->
 
 			<!--SOCIAL-->
