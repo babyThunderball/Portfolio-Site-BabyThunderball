@@ -944,6 +944,10 @@ hr {
 
 /* ---------- FORM STYLES ---------- */
 
+.form-control {
+  width: 50%;
+}
+
 .contact-item:not(:last-child) {
   border-bottom: 1px solid #e3e6ea;
   padding-bottom: 1.25rem;
