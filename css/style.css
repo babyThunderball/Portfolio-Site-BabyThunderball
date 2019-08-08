@@ -2091,15 +2091,16 @@ input:hover + .slider-ink-tank::before {
   margin: 40px;
 }
 
-.button.contact {
+.button.contact.contact-form-submit {
   /* csslint allow: adjoining-classes */
   background-color: transparent;
   border: 2px solid #cacaca;
   color: #fff !important;
   /* csslint allow: important */
   margin: 20px;
-  padding-left: 55px;
-  padding-right: 55px;
+  /* padding-left: 55px;
+  padding-right: 55px; */
+  width: 50%;
 }
 
 /* ================ END BUTTON STYLES ================ */
