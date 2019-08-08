@@ -129,6 +129,10 @@ h3 {
   line-height: 150%;
 }
 
+.cookies-h3 {
+  color: #e4d8cb;
+}
+
 h4 {
   color: #e4d8cb;
   font-family: "Lato", sans-serif;
@@ -156,11 +160,12 @@ img[src$=".svg"] {
 
 /* ================ 4. LINK STYLING ================  */
 /* unvisited link */
-a:link:not(.body-link):not(.icon):not(.phone):not(nav > div > div > ul > li > a > .not-me) {
+a:link:not(.body-link):not(.cookies-body-link):not(.icon):not(.phone):not(nav > div > div > ul > li > a > .not-me) {
   color: #cc80ff;
 }
 
-a:link.body-link {
+a:link.body-link,
+a:link.cookies-body-link {
   font-family: "Rokkitt", serif;
   font-size: 28px;
   font-weight: 600;
@@ -239,12 +244,56 @@ a.body-link {
     transition: 0.4s;
   }
 
-  a.body-link:hover {
+  a.body-link:hover,
+  a.cookies-body-link {
     background-position: 0 0;
     transition: 0.4s;
   }
 }
 
+a.cookies-body-link {
+  color: #cc80ff;
+}
+
+/* @media (-ms-min-device-pixel-ratio: 0) {
+  a.cookies-body-link {
+    -ms-background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #cc80ff;
+    background-image: -moz-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -ms-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -o-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -webkit-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -moz-transition: 0.1s 0.2s;
+    -o-transition: 0.1s 0.2s;
+    -webkit-transition: 0.1s 0.2s;
+    transition: 0.1s 0.2s;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 0) {
+  a.cookies-body-link {
+    -ms-background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #cc80ff;
+    background-image: -moz-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -ms-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -o-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -webkit-linear-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-image: -webkit-gradient(left, #cc80ff 0%, #5a3274 30%, #cc80ff 0%, transparent 50%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -moz-transition: 0.1s 0.2s;
+    -o-transition: 0.1s 0.2s;
+    -webkit-transition: 0.1s 0.2s;
+    transition: 0.1s 0.2s;
+  }
+} */
 /* ================  END LINK STYLING ================ */
 /* ================  5. NAVIGATION STYLING ================ */
 nav a:link {
