@@ -2479,13 +2479,13 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     text-align: left;
   }
 
-	#problem-wrapper,
-	#solution-wrapper { /* csslint allow: ids */
-	  overflow: hidden;
-	  display: block;
-	  /* flex-direction: column; */
-	  align-items: unset;
-	}
+  #problem-wrapper,
+  #solution-wrapper { /* csslint allow: ids */
+    overflow: hidden;
+    display: block;
+    /* flex-direction: column; */
+    align-items: unset;
+  }
 }
 
 @media only screen and (min-width: 768px) {
