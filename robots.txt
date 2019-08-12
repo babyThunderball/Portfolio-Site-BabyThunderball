@@ -1,1 +1,2 @@
-User-agent: *Disallow: /
+User-agent: *Disallow: /files/Bennett-Jodi-N-CV.pdf
+Noindex: /files/Bennett-Jodi-N-CV.pdf
