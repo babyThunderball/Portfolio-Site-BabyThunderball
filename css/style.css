@@ -1876,7 +1876,13 @@ h2.black-currant-text.center-me {
 
 table {
   border-collapse: collapse;
+  text-align: left;
   width: 100%;
+}
+
+.section-text-block,
+.ombulari-text-block {
+  text-align: left;
 }
 
 td > h1 {
