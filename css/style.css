@@ -1541,6 +1541,7 @@ h2.black-currant-text.center-me {
 #process-section {
   /* csslint allow: ids */
   padding: 0 20px 40px;
+  text-align: center;
 }
 
 #ink-tank-title-table-section,
