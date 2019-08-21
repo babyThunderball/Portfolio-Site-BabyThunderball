@@ -14,14 +14,14 @@
 	<!-- END GOOGLE SITE TAG -->
 
 	<!-- BUGHERD SCRIPT -->
-	<script type='text/javascript'>
+	<!-- <script type='text/javascript'>
 		(function (d, t) {
   	var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
   	bh.type = 'text/javascript';
   	bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=vupmcwn5gcx6fxgr5monhg';
   	s.parentNode.insertBefore(bh, s);
   	})(document, 'script');
-	</script>
+	</script> -->
 	<!-- END BUGHERD SCRIPT -->
 
 	<!-- FULLSTORY SCRIPT -->
@@ -80,6 +80,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<title>BabyThunderball | UX Architect | Brighton, UK</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 
 <body onload="resetForm()">
@@ -487,6 +488,28 @@
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#e4d8cb",
+	      "text": "#19141a"
+	    },
+	    "button": {
+	      "background": "transparent",
+	      "text": "#19141a",
+	      "border": "#19141a"
+	    }
+	  },
+	  "position": "bottom-right",
+	  "content": {
+	    "message": "This website uses third-party tools (e.g. Google Analytics) which use cookies which are necessary for their functioning and required to achieve the purposes illustrated in the cookie policy. \n\nYou accept the use of cookies by closing or dismissing this notice.",
+	    "link": "Learn more",
+	    "href": "http://www.babythunderball.com/cookie-policy.html"
+	  }
+	});
+	</script>
 </body>
 
 </html>
