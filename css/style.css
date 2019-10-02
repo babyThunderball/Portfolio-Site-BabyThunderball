@@ -1856,7 +1856,8 @@ h2.black-currant-text.center-me {
 /* ================ 14. OM:BULARI IDs ================ */
 #ombulari-table,
 #ink-tank-table,
-#process-table {
+#process-table,
+#the-studio-table {
   /* csslint allow: ids */
   border: 1px solid #cacaca;
   margin-top: 20px;
