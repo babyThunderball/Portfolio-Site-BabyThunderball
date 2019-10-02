@@ -1471,26 +1471,49 @@ hr {
   height: 388px;
 }
 
-.ombulari-text-block {
+.studio-section-text-block {
   background-color: #cacaca;
   height: auto;
+}
+
+.studio-section-text-block ul {
+  line-height: 1.5em;
+  list-style-type: square;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.ombulari-text-block,
+.studio-section-text-block {
+  background-color: #cacaca;
+  height: auto;
+}
+
+.studio-process-text,
+.studio-section-text-block {
+  margin: 0 40px;
+  text-align: left;
 }
 
 div.section-text-block h3,
 /* csslint allow: qualified-headings, unique-headings */
 div.section-text-block p,
 div.ombulari-text-block h3,
-div.ombulari-text-block p {
+div.ombulari-text-block p,
+div.studio-section-text-block h3,
+div.studio-section-text-block p {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-div.section-text-block h3 {
+div.section-text-block h3,
+div.studio-section-text-block h3 {
   /* csslint allow: unique-headings */
   padding-top: 20px;
 }
 
-div.section-text-block p {
+div.section-text-block p,
+div.studio-section-text-block p{
   padding-bottom: 20px;
 }
 
@@ -1550,7 +1573,8 @@ h2.black-currant-text.center-me {
 }
 
 #ink-tank-title-table-section,
-#ombulari-title-table-section {
+#ombulari-title-table-section,
+#the-studio-title-table-section {
   /* csslint allow: ids */
   padding: 0 20px;
 }
@@ -1852,7 +1876,8 @@ h2.black-currant-text.center-me {
 }
 
 #ink-tank-title-table,
-#ombulari-title-table {
+#ombulari-title-table,
+#the-studio-title-table {
   /* csslint allow: ids */
   border: 1px solid #cacaca;
   margin: 40px auto 0;
