@@ -432,8 +432,8 @@ nav > div > ul > div > li > a:visited {
   box-shadow: 0 15px 15px -10px #cc80ff;
   box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
   display: none;
-  height: 110px;
-  min-width: 160px;
+  height: 200px;
+  min-width: 170px;
   position: absolute;
   text-align: left;
   transform: translateY(10px);
