@@ -1489,9 +1489,12 @@ hr {
   height: auto;
 }
 
-.studio-process-text,
-.studio-section-text-block {
+.studio-process-text {
   margin: 0 40px;
+  text-align: left;
+}
+
+.studio-section-text-block {
   text-align: left;
 }
 
@@ -1566,7 +1569,8 @@ h2.black-currant-text.center-me {
   padding: 40px 20px;
 }
 
-#process-section {
+#process-section,
+#studio-solution-section {
   /* csslint allow: ids */
   padding: 0 20px 40px;
   text-align: center;
