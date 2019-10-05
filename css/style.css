@@ -1463,7 +1463,7 @@ hr {
 }
 
 #solution-section {
-  padding: 100px 20px 40px;
+  padding: 0 20px 40px;
 }
 
 .section-text-block {
@@ -1875,9 +1875,9 @@ h2.black-currant-text.center-me {
 #process-table {
   /* csslint allow: ids */
   border: 1px solid #cacaca;
-  margin: 40px auto 0;
+  /* margin: 40px auto 0; */
   /* width: 95%; */
-  /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSEING THE ISSUE! */
+  /* NOTE: DON'T NEED THIS B/C I'VE MOVED THE SECTIONS INSIDE THE INK TANK WRAPPER, WHICH WAS CAUSING THE ISSUE! */
 }
 
 #ink-tank-title-table,
@@ -2629,6 +2629,10 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
 @media only screen and (max-width: 640px) {
   .mobile-parent {
     display: none;
+  }
+
+  .form-control {
+    width: 90%;
   }
 
   a:link:not(.phone):not(.icon) {
