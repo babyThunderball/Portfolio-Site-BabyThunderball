@@ -433,7 +433,7 @@ nav > div > ul > div > li > a:visited {
   box-shadow: 0 15px 15px -10px rgba(204, 128, 255, 0.5);
   display: none;
   height: 200px;
-  min-width: 170px;
+  min-width: 210px;
   position: absolute;
   text-align: left;
   transform: translateY(10px);
@@ -2631,7 +2631,8 @@ Medium devices (641px and larger) /* NOTE: Changed from 640 on 9 JUN 19 @ 7:30pm
     display: none;
   }
 
-  .form-control {
+  .form-control,
+  .button.contact.contact-form-submit {
     width: 90%;
   }
 
