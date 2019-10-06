@@ -1504,7 +1504,8 @@ div.section-text-block p,
 div.ombulari-text-block h3,
 div.ombulari-text-block p,
 div.studio-section-text-block h3,
-div.studio-section-text-block p {
+div.studio-section-text-block p,
+div.cookie-text {
   padding-left: 20px;
   padding-right: 20px;
 }
