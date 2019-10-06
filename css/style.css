@@ -1511,13 +1511,16 @@ div.cookie-text {
 }
 
 div.section-text-block h3,
-div.studio-section-text-block h3 {
+div.studio-section-text-block h3,
+div.ombulari-text-block h3,
+div.ink-tank-text-block h3 {
   /* csslint allow: unique-headings */
   padding-top: 20px;
 }
 
 div.section-text-block p,
-div.studio-section-text-block p{
+div.studio-section-text-block p,
+div.ombulari-text-block p {
   padding-bottom: 20px;
 }
 
