@@ -1457,6 +1457,11 @@ hr {
   padding: 40px 20px 60px;
 }
 
+#fitness-studio-section {
+  background-color: #ffffff;
+  padding: 40px 20px 60px;
+}
+
 #problem-section {
   /* csslint allow: ids */
   padding: 0 20px 40px;
@@ -1612,7 +1617,8 @@ h2.black-currant-text.center-me {
 }
 
 #ink-tank-section.row,
-#babythunderball-section.row {
+#babythunderball-section.row,
+#fitness-studio-section.row {
   /* csslint allow: ids */
   margin: 0;
 }
@@ -3144,10 +3150,24 @@ img.modal-pic {
   width: 0;
 }
 
-#contact::before {
+#fitness-studio-section::before {
   border-left: 40px solid transparent;
   border-right: 40px solid transparent;
   border-top: 40px solid #e4d8cb;
+  bottom: -389px;
+  content: "";
+  height: 0;
+  left: 47%;
+  position: -webkit-sticky;
+  position: sticky;
+  /* margin-left: 50%; */
+  width: 0;
+}
+
+#contact::before {
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #ffffff;
   bottom: -389px;
   content: "";
   height: 0;
