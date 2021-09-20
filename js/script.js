@@ -7,6 +7,38 @@
 // var newWnd = window.open()
 // newWnd.opener = null
 
+// ================ vv CALLBACK HOOK FOR COOKIE CONSENT vv ================ //
+onInitialise: function (status) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+    // enable cookies
+    }
+    if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    }
+    },
+    onStatusChange: function(status, chosenBefore) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+    // enable cookies
+    }
+    if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    }
+    },
+    onRevokeChoice: function() {
+    var type = this.options.type;
+    if (type == 'opt-in') {
+    // disable cookies
+    }
+    if (type == 'opt-out') {
+    // enable cookies
+    }
+    }
+// ================ ^^ END CALLBACK HOOK FOR COOKIE CONSENT ^^ ================ //
+
 var x = document.getElementById('myNavtoggle')
 
 function menuToggle () { /* eslint-disable-line no-unused-vars */
