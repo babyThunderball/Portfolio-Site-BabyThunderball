@@ -255,6 +255,26 @@ a.cookies-body-link {
   color: #cc80ff;
 }
 
+.cc-link {
+  color: #5A3274 !important;
+  text-decoration: underline !important;
+}
+
+.cc-link:hover {
+  color: #19141a !important;
+  text-underline-offset: 0.3em;
+}
+
+a.cc-deny:hover {
+  color: #5A3274 !important;
+  text-underline-offset: 0.3em;
+}
+
+a.cc-allow:hover {
+  background-color: #19141a;
+  color: #e4d8cb !important;
+}
+
 /* @media (-ms-min-device-pixel-ratio: 0) {
   a.cookies-body-link {
     -ms-background-clip: text;
