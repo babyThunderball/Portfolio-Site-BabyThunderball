@@ -347,7 +347,7 @@
 							<!--TO GET TEXT TO FLOW AROUND IMAGE, REMOVE COL-MD-6 -->
 							<!--SECOND COLUMN-->
 							<h3>Boutique Fitness Studio</h3>
-							<p>This project was a new website buildfor a boutique fitness studio in London. They wanted to offer their clients a fitness journey unlike any other and the website was to be an extension of this journey.</p>
+							<p>This project was a new website build for a boutique fitness studio in London. They wanted to offer their clients a fitness journey unlike any other and the website was to be an extension of this journey.</p>
 							<a href="fitness-studio.html" class="button">Check out the case study</a>
 						</div>
 						<!--END SECOND COLUMN-->
@@ -542,26 +542,29 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 	<script>
-	window.cookieconsent.initialise({
-	  "palette": {
-	    "popup": {
-	      "background": "#e4d8cb",
-	      "text": "#19141a"
-	    },
-	    "button": {
-	      "background": "transparent",
-	      "text": "#19141a",
-	      "border": "#19141a"
-	    }
-	  },
-	  "position": "bottom-right",
-	  "content": {
-	    "message": "This website uses third-party tools (e.g. Google Analytics) which use cookies which are necessary for their functioning and required to achieve the purposes illustrated in the cookie policy. \n\nYou accept the use of cookies by closing or dismissing this notice.",
-	    "link": "Learn more",
-	    "href": "http://www.babythunderball.com/cookie-policy.html"
-	  }
-	});
+		window.cookieconsent.initialise({
+		  "palette": {
+		    "popup": {
+		      "background": "#e4d8cb",
+		      "text": "#19141a"
+		    },
+		    "button": {
+		      "background": "transparent",
+		      "text": "#19141a",
+		      "border": "#19141a"
+		    }
+		  },
+		  "position": "bottom-right",
+		  "type": "opt-out",
+		  "content": {
+		    "message": "This website uses third-party tools (e.g. Google Analytics) which use cookies which are necessary for their functioning and required to achieve the purposes illustrated in the cookie policy.",
+		    "deny": "Refuse cookies",
+		    "link": "Learn more",
+		    "href": "http://www.babythunderball.com/cookie-policy.html"
+		  }
+		});
 	</script>
 </body>
 
